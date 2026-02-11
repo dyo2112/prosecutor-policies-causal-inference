@@ -1,0 +1,17 @@
+county,election_year,n_candidates,winner_name,winner_pct,runnerup_name,runnerup_pct,margin_1st_2nd,winner_incum_chall,contested,tenure_start,tenure_end,close_5pp,close_10pp,close_15pp
+Alameda,2022,2,Pamela Price,53.2,Terry Wiley,46.9,6.300000000000004,O,contested,2023,2026,False,True,True
+Imperial,2022,2,George Marquez,53.3,Mario Vela,46.7,6.599999999999994,O,contested,2023,2026,False,True,True
+Lassen,2018,2,Susan Rios,57.72,David Evans,41.78,15.939999999999998,O,contested,2019,2022,False,False,False
+Los Angeles,2020,3,George GascÃ³n,53.53,George Gascon,53.5,0.030000000000001137,C,contested,2021,2024,True,True,True
+Los Angeles,2024,2,Nathan Hochman,59.9,George Gascon,40.1,19.799999999999997,C,contested,2025,2028,False,False,False
+Madera,2014,2,David Linn,58.6,Michael Keitz,41.0,17.6,C,contested,2015,2018,False,False,False
+Madera,2018,2,Sally Moreno,50.76,Paul Hornick,38.4,12.36,O,contested,2019,2022,False,False,True
+Marin,2018,2,Lori Frugoli,50.07,Anna Pletcher,49.73,0.3400000000000034,O,contested,2019,2022,True,True,True
+Napa,2014,2,Gary Lieberstein,67.24,Tom Kensok,32.76,34.48,I,contested,2015,2018,False,False,False
+Orange,2018,2,Todd Spitzer,53.24,Tony Rackauckas,46.76,6.480000000000004,C,contested,2019,2022,False,True,True
+San Diego,2022,1,Summer Stephan,100.0,,0.0,100.0,I,uncontested,2023,2026,False,False,False
+San Francisco,2015,1,George Gascon,98.24,,0.0,98.24,I,uncontested,2016,2019,False,False,False
+San Francisco,2019,4,Chesa Boudin,35.71,Suzy Loftus,31.08,4.630000000000003,C,contested,2020,2023,True,True,True
+San Francisco,2022,4,Brooke Jenkins,46.0,John Hamasaki,37.3,8.700000000000003,O,contested,2023,2026,False,True,True
+San Francisco,2024,2,Brooke Jennings,65.9,Ryan Khojasteh,34.1,31.800000000000004,I,contested,2025,2028,False,False,False
+Sutter,2014,2,Amanda Hopper,61.8,Jennifer Dupre,37.85,23.949999999999996,O,contested,2015,2018,False,False,False

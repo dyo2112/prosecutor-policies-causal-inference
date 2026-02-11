@@ -1,0 +1,20 @@
+# Raw PDF documents (6.2 GB)
+aclu_prosecutor_policies/
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE / tool config
+.claude/
+.gemini/
+
+# Logs and temp files
+*.log
+page_source.html
+
+# Archive of old/duplicate files
+archive/

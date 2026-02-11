@@ -1,0 +1,32 @@
+county,n_county_years,n_disruptions,n_major_disruptions,first_disruption_year,most_disruptive_year,max_disruption_score,dominant_direction,n_novel_reforms
+San Francisco County,5,5,0,2016.0,2016,0.6633333331729482,progressive,13
+San Diego County,4,4,0,2017.0,2021,0.5859999996839692,progressive,13
+Inyo County,1,1,0,2021.0,2021,0.5731613901984179,traditional,5
+Yolo County,5,5,0,2015.0,2015,0.5643291612638243,progressive,11
+Los Angeles County,10,10,0,2012.0,2016,0.5442444569193301,progressive,19
+San Luis Obispo County,9,9,0,2015.0,2015,0.541249999690569,progressive,16
+Stanislaus County,5,5,0,2018.0,2018,0.5333333333333333,traditional,15
+Contra Costa County,5,5,0,2016.0,2020,0.5299299639636702,progressive,10
+Marin County,8,8,0,2003.0,2022,0.4999501441326785,progressive,14
+Yuba County,2,2,0,2019.0,2020,0.4853804086491497,progressive,9
+Santa Clara County,3,3,0,2019.0,2022,0.47604439252213016,progressive,10
+San Mateo County,5,5,0,2018.0,2018,0.4718996974643357,progressive,16
+Santa Barbara County,4,3,0,2019.0,2019,0.4674999999991504,traditional,9
+Alameda County,7,7,0,2015.0,2018,0.466947732621095,progressive,13
+Riverside County,3,3,0,2020.0,2020,0.45885424184541157,progressive,5
+Orange County,7,7,0,2016.0,2016,0.4509236397359423,progressive,13
+Sacramento County,5,5,0,2018.0,2025,0.4224999998399908,progressive,8
+Monterey County,4,4,0,2010.0,2021,0.41917786244552036,traditional,15
+Placer County,5,3,0,1997.0,2020,0.413537952290148,progressive,12
+Sonoma County,3,2,0,2020.0,2020,0.3953773544473457,progressive,9
+Tulare County,3,3,0,2018.0,2018,0.389999999676305,progressive,11
+Madera County,2,2,0,2020.0,2020,0.3704186259220448,neutral,8
+Merced County,5,5,0,2019.0,2021,0.36608919952932734,progressive,12
+Tuolumne County,1,1,0,2021.0,2021,0.3630209087407907,traditional,9
+Sutter County,2,2,0,2021.0,2022,0.3077517298691031,traditional,9
+San Bernardino County,2,2,0,2020.0,2021,0.30338099098492716,progressive,7
+San Benito County,1,1,0,2022.0,2022,0.2825,traditional,4
+Ventura County,7,6,0,2016.0,2019,0.23288138083458573,progressive,12
+Napa County,1,1,0,2025.0,2025,0.18333333333333335,neutral,8
+Fresno County,1,1,0,2021.0,2021,0.17238397639590067,traditional,10
+Amador County,1,0,0,,2022,0.08333333333333333,neutral,4

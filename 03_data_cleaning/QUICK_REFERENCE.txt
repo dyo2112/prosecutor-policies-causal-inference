@@ -1,0 +1,172 @@
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    PROSECUTOR POLICY DATA - QUICK REFERENCE                 │
+│                         BERQ-J Research Database                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+FILE: prosecutor_policies_CLEANED.csv
+DOCUMENTS: 1,865 | COUNTIES: 41 | DATE RANGE: 1996-2025 | COVERAGE: 100%
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║ CORE VARIABLES - USE THESE FOR MOST ANALYSES                               ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ IDEOLOGY MEASURES (Choose based on your needs)                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ ideology              Categorical (7 levels: clearly_progressive →          │
+│                       clearly_traditional)                                  │
+│                       USE FOR: Cross-tabs, descriptive stats                │
+│                                                                             │
+│ ideology_score        Numeric (-2 to +2)                                    │
+│                       USE FOR: Regressions, correlations, time series       │
+│                                                                             │
+│ is_progressive        Binary (1 = progressive, 0 = not)                     │
+│                       USE FOR: Logit models, simple comparisons             │
+│                                                                             │
+│ is_traditional        Binary (1 = traditional, 0 = not)                     │
+│                       USE FOR: Logit models, comparing to progressives      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ POLICY IMPACT - Extensive vs Intensive Margins                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ EXTENSIVE MARGIN (Who enters the criminal justice system?)                 │
+│   extensive_margin_direction_clean    more_lenient/more_punitive/neutral   │
+│   extensive_lenient                   Binary (1/0)                          │
+│   extensive_punitive                  Binary (1/0)                          │
+│                                                                             │
+│ INTENSIVE MARGIN (How severe is their treatment?)                          │
+│   intensive_margin_direction_clean    more_lenient/more_punitive/neutral   │
+│   intensive_lenient                   Binary (1/0)                          │
+│   intensive_punitive                  Binary (1/0)                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CONTEXT VARIABLES - Control for these in regressions                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ county                        41 California counties (use fixed effects)    │
+│ year                          1996-2025 (use for temporal trends)           │
+│ document_type_clean           13 types (control for policy vs training)    │
+│ primary_topic_clean           Policy area (sentencing, bail, etc.)         │
+│ da_administration_clean       DA name (for within-county variation)        │
+│ office_wide_policy_clean      yes/no (mandate vs individual guidance)      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ SPECIFIC POLICY POSITIONS                                                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ supports_diversion_clean              yes/no/not_addressed                  │
+│ supports_alternatives_clean           yes/no/not_addressed                  │
+│ position_on_enhancements_clean        minimize/maximize/selective/etc.     │
+│ position_on_three_strikes_clean       reform_oriented/maintain/etc.        │
+│ position_on_bail_clean                reform/maintain/etc.                 │
+│ racial_justice_emphasis_clean         high/moderate/low/not_addressed      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║ QUICK START CODE                                                           ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+# Load data
+import pandas as pd
+df = pd.read_csv('prosecutor_policies_CLEANED.csv')
+
+# Basic stats
+print(df['ideology'].value_counts())
+print(f"Progressive: {df['is_progressive'].mean()*100:.1f}%")
+
+# Filter progressive policies in LA County
+la_progressive = df[(df['county'] == 'Los Angeles County') & 
+                    (df['is_progressive'] == 1)]
+
+# Temporal trends
+trends = df.groupby('year')['ideology_score'].mean()
+
+# County comparison  
+county_stats = df.groupby('county').agg({
+    'is_progressive': 'mean',
+    'ideology_score': 'mean'
+})
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║ COMMON RESEARCH QUESTIONS & VARIABLES TO USE                               ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+Q: How progressive is each county?
+   → Use: county, ideology_score, is_progressive
+
+Q: Has progressive prosecution increased over time?
+   → Use: year, ideology_score, is_progressive
+
+Q: Do progressive prosecutors focus on different margins?
+   → Use: is_progressive, extensive_lenient, intensive_lenient
+
+Q: Which policies are most associated with progressive ideology?
+   → Use: ideology, position_on_enhancements_clean, supports_diversion_clean
+
+Q: Media bias in coverage of prosecutors?
+   → Use: county, ideology, da_administration_clean, year
+
+Q: How do Bay Area counties compare?
+   → Filter: county in ['San Francisco', 'Alameda', 'Contra Costa', 'Marin']
+   → Use: ideology_score, policy positions
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║ REGRESSION MODEL TEMPLATES                                                 ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+# Progressive probability (Logit)
+from sklearn.linear_model import LogisticRegression
+y = df['is_progressive']
+X = pd.get_dummies(df[['year', 'county', 'document_type']], drop_first=True)
+
+# Ideology score (OLS)
+import statsmodels.formula.api as smf
+model = smf.ols('ideology_score ~ year + C(county) + C(document_type)', 
+                data=df).fit()
+
+# Leniency analysis
+y = df['intensive_lenient']
+X = df[['is_progressive', 'year']].join(
+    pd.get_dummies(df['county'], drop_first=True))
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║ KEY STATISTICS TO REMEMBER                                                 ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+Progressive documents: 30.7% | Traditional documents: 17.1%
+Mean ideology score: +0.262 (slightly progressive overall)
+
+Progressive peaked in 2022: 55.6% of documents
+Biggest increase: 2019→2020 (18% → 40%)
+
+Most progressive county: Sacramento (77.8% net progressive)
+Most traditional county: Stanislaus (47.4% traditional)
+
+Largest county: Los Angeles (373 docs, 24.6% net progressive)
+
+Document types most progressive: 
+  - Diversion protocols (93.1%)
+  - Policy memos (59.7%)
+
+Policy support among progressive docs:
+  - Alternatives to incarceration: 285 docs
+  - Diversion programs: 235 docs  
+  - High racial justice emphasis: 213 docs
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║ FILES IN THIS PACKAGE                                                      ║
+╚═════════════════════════════════════════════════════════════════════════════╝
+
+prosecutor_policies_CLEANED.csv    → Main data file (USE THIS)
+clean_prosecutor_policies_v2.py    → Cleaning script (rerun if needed)
+DATA_CLEANING_README.md            → Full documentation
+PROJECT_SUMMARY.md                 → Complete summary with findings
+quick_start_guide.py               → 6 analysis examples with code
+prosecutor_policy_analysis.png     → 6-panel visualization
+QUICK_REFERENCE.txt                → This file
+
+═══════════════════════════════════════════════════════════════════════════════
+                            BERQ-J @ UC Berkeley Law
+                    Criminal Law & Justice Center Research
+═══════════════════════════════════════════════════════════════════════════════

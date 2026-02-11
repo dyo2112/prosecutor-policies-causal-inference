@@ -1,0 +1,348 @@
+county,year,reform_type,reform_name,document,ideology_score,statewide_first,adoption_rank
+San Luis Obispo County,1996,novel_topic,charging_decisions,1996_San Luis Obispo County_UCC Standards.pdf,0.0,False,1.0
+San Luis Obispo County,1996,novel_position,diversion_support,1996_San Luis Obispo County_UCC Standards.pdf,0.0,False,1.0
+Placer County,1997,novel_topic,charging_decisions,1997.09.27_Placer County_ DA's Office - Domestic Violence Prosecutions.pdf,-2.0,False,2.0
+Placer County,1997,novel_topic,bail,1997.09.27_Placer County_DA's Office - Bail-Own Recognizance Releases.pdf,-2.0,False,1.0
+Placer County,1997,novel_topic,diversion,1997.09.27_Placer County_DA's Office - Deferral Programs.pdf,1.0,False,1.0
+Placer County,1997,novel_position,diversion_support,1997.09.27_Placer County_DA's Office - Deferral Programs.pdf,1.0,False,2.0
+Placer County,1997,novel_position,alternatives_support,1997.09.27_Placer County_DA's Office - Deferral Programs.pdf,1.0,False,1.0
+Placer County,1997,novel_topic,administrative,1997.09.27_Placer County_DA's Office - Office Behavior.pdf,0.0,False,1.0
+Placer County,1997,novel_topic,death_penalty,1997.09.27_Placer County_DA's Office - Special Circumstance Cases-Filing Policy.pdf,-2.0,False,1.0
+Marin County,2003,novel_topic,case_law_update,2003.10.20_Marin County_Annual Wheeler Update.pdf,0.0,False,1.0
+Marin County,2003,novel_position,racial_justice_high,2003.10.27_Marin County_Annual Wheeler Update.pdf,1.0,False,1.0
+Orange County,2003,novel_topic,case_law_update,2003_Orange County_PROSECUTORIAL MISCONDUCT RECOGNIZING ERRORS IN CLOSING ARGUMENT.pdf,0.0,False,1.0
+Tulare County,2006,novel_topic,case_law_update,2006_Tulare County_Mr. Wheeler Goes to Washington (CDAA).pdf,0.0,False,2.0
+Ventura County,2006,novel_topic,administrative,Ventura County_CCP 177.5 Monetary Sanctions.pdf,0.0,False,2.0
+Orange County,2008,novel_topic,racial_justice,2008_Orange County_Reducing Racial Disparity in CJ System-Manual.pdf,2.0,False,1.0
+Orange County,2008,novel_position,diversion_support,2008_Orange County_Reducing Racial Disparity in CJ System-Manual.pdf,2.0,False,3.0
+Orange County,2008,novel_position,alternatives_support,2008_Orange County_Reducing Racial Disparity in CJ System-Manual.pdf,2.0,False,2.0
+Orange County,2008,novel_position,bail_reform,2008_Orange County_Reducing Racial Disparity in CJ System-Manual.pdf,2.0,False,1.0
+Orange County,2008,novel_position,enhancement_limits,2008_Orange County_Reducing Racial Disparity in CJ System-Manual.pdf,2.0,False,1.0
+Orange County,2008,novel_position,racial_justice_high,2008_Orange County_Reducing Racial Disparity in CJ System-Manual.pdf,2.0,False,2.0
+Orange County,2009,novel_topic,diversion,2009.02.24_Orange County_DEJ Eligibility & Suitability Procedures.pdf,1.0,False,2.0
+San Bernardino County,2009,novel_topic,racial_justice,2009_San Bernardino County_Natl Center for State Courts-Implicit Bias Appendix.pdf,2.0,False,2.0
+San Bernardino County,2009,novel_position,racial_justice_high,2009_San Bernardino County_Natl Center for State Courts-Implicit Bias Appendix.pdf,2.0,False,3.0
+San Francisco County,2009,novel_topic,diversion,2009_San Francisco County_Policy Manual.pdf,2.0,False,2.0
+San Francisco County,2009,novel_position,diversion_support,2009_San Francisco County_Policy Manual.pdf,2.0,False,4.0
+San Francisco County,2009,novel_position,alternatives_support,2009_San Francisco County_Policy Manual.pdf,2.0,False,3.0
+Monterey County,2010,novel_topic,administrative,2010.01.01_Monterey County_Chief Assistant DA Review.pdf,0.0,False,3.0
+Monterey County,2010,novel_topic,enhancements,2010.01.01_Monterey County_Deadly Weapons and Firearms.pdf,-2.0,False,1.0
+Monterey County,2010,novel_topic,diversion,2010.01.01_Monterey County_Diversion-PC Section 1000.pdf,1.0,False,3.0
+Monterey County,2010,novel_position,diversion_support,2010.01.01_Monterey County_Diversion-PC Section 1000.pdf,1.0,False,5.0
+Monterey County,2010,novel_position,alternatives_support,2010.01.01_Monterey County_Diversion-PC Section 1000.pdf,1.0,False,4.0
+Monterey County,2010,novel_topic,charging_decisions,2010.01.01_Monterey County_Filing Criminal Charges.pdf,0.0,False,3.0
+Monterey County,2010,novel_topic,juvenile,2010.01.01_Monterey County_Juvenile Court Policy.pdf,-1.0,False,1.0
+Monterey County,2010,novel_topic,discovery,2010_Monterey County_Brady Policy.pdf,0.0,False,1.0
+San Francisco County,2010,novel_topic,discovery,2010.08.13_San Francisco County_External Brady Policy.pdf,0.0,False,1.0
+Los Angeles County,2011,novel_topic,administrative,2011.07.19_LA County_Reporting State Bar Investigations.pdf,0.0,False,4.0
+Napa County,2011,novel_topic,discovery,2011.07.07_Napa County_Brady Protocol.pdf,0.0,False,2.0
+Santa Clara County,2011,novel_topic,charging_decisions,2011.09.03_Santa Clara County_DAO Issuing Binder.pdf,0.0,False,4.0
+Santa Clara County,2011,novel_position,diversion_support,2011.09.03_Santa Clara County_DAO Issuing Binder.pdf,0.0,False,6.0
+Santa Clara County,2011,novel_position,alternatives_support,2011.09.03_Santa Clara County_DAO Issuing Binder.pdf,0.0,False,5.0
+Los Angeles County,2012,novel_topic,discovery,2012.01.31_Los Angeles County_Brady Outline (Brady and the Prudent Prosecutor).pdf,1.0,True,3.0
+Los Angeles County,2012,novel_topic,case_law_update,2012.12.15_Los Angeles County_Closing Argument Handout.pdf,0.0,True,3.0
+Amador County,2013,novel_topic,case_law_update,2013.06.10_Amador County_Batson-Wheeler Guide.pdf,0.0,False,4.0
+Marin County,2013,novel_topic,charging_decisions,2013.06.06_Marin County_DUI Drugs-VC23103 5 Policy.docx,0.0,False,5.0
+Marin County,2013,novel_position,diversion_support,2013.06.06_Marin County_DUI Drugs-VC23103 5 Policy.docx,0.0,False,7.0
+San Luis Obispo County,2013,novel_topic,discovery,2013.01.23_San Luis Obispo County_Brady and Discovery for New Prosecutors.pdf,0.0,False,4.0
+Fresno County,2014,novel_topic,administrative,2014.05.09_Fresno County_Interpreting 969B Packets.pdf,0.0,False,5.0
+Monterey County,2014,novel_topic,death_penalty,2014.10.27_Monterey County_Filing of Special Circs. Allegations.pdf,0.0,False,2.0
+San Francisco County,2014,novel_topic,administrative,2014.06.24_San Francisco County_Prosecutorial Misconduct Policy Director.pdf,-2.0,False,5.0
+Yolo County,2014,novel_topic,case_law_update,2014.07.31_Yolo County_Batson-Wheeler Motions (1).pdf,-2.0,False,5.0
+Yolo County,2014,novel_topic,racial_justice,2014.07.31_Yolo County_Batson-Wheeler Motions.pdf,0.0,False,3.0
+Alameda County,2015,novel_topic,case_law_update,2015.01.12_Alameda County_NEW LAWS FOR 2015.pdf,1.0,False,6.0
+Alameda County,2015,novel_position,diversion_support,2015.01.20_Alameda County_2015 Laws Competency.pdf,1.0,False,8.0
+Alameda County,2015,novel_position,alternatives_support,2015.01.20_Alameda County_2015 Laws Competency.pdf,1.0,False,6.0
+Alameda County,2015,novel_topic,enhancements,2015.03.02_Alameda County_GUN BATTLES II.pdf,-2.0,False,2.0
+Contra Costa County,2015,novel_topic,juvenile,2015.10.15_Contra Costa County_Panel Session re Juvenile Justice Materials.pdf,2.0,False,2.0
+Contra Costa County,2015,novel_position,diversion_support,2015.10.15_Contra Costa County_Panel Session re Juvenile Justice Materials.pdf,2.0,False,8.0
+Contra Costa County,2015,novel_position,alternatives_support,2015.10.15_Contra Costa County_Panel Session re Juvenile Justice Materials.pdf,2.0,False,6.0
+Contra Costa County,2015,novel_position,racial_justice_high,2015.10.15_Contra Costa County_Panel Session re Juvenile Justice Materials.pdf,2.0,False,4.0
+Contra Costa County,2015,novel_topic,charging_decisions,2015_Contra Costa County_DUI Filings.pdf,-1.0,False,6.0
+Fresno County,2015,novel_topic,other,2015.10.29_Fresno County_Secrets to Prosecuting ID Theft_Redacted.pdf,,False,1.0
+Los Angeles County,2015,novel_topic,charging_decisions,2015.12.29_LA County_Special Directive 15-03.pdf,1.0,True,6.0
+Los Angeles County,2015,novel_position,alternatives_support,2015.12.29_LA County_Special Directive 15-03.pdf,1.0,False,6.0
+Los Angeles County,2015,novel_topic,diversion,2015.12.31_LA County_Misdemeanor Military Pretrial Diversion Program Memo.pdf,0.0,True,4.0
+Los Angeles County,2015,novel_position,diversion_support,2015.12.31_LA County_Misdemeanor Military Pretrial Diversion Program Memo.pdf,0.0,False,8.0
+Los Angeles County,2015,novel_topic,victim_services,2015_Los Angeles County_Civil Justice for Victims of Crime in CA (Natl Crime Victim Bar Assoc).pdf,0.0,True,1.0
+Los Angeles County,2015,novel_topic,enhancements,"2015.04.20_LA County_Prop 47, Supplement 7 Memo.pdf",-2.0,True,2.0
+Marin County,2015,novel_topic,discovery,2015.10.08_Marin County_MCDA BRADY POLICY.pdf,0.0,False,5.0
+Orange County,2015,novel_topic,discovery,2015.09.21_Orange County_ Alameda County DA Points and Authorities (Facebook and Subpoenas) (redacted).pdf,-1.0,False,5.0
+San Diego County,2015,novel_topic,discovery,"2015.12.02_San Diego County_Basic Brady, Statutory, and Ethical Discovery Obligations.pdf",0.0,False,5.0
+San Luis Obispo County,2015,novel_topic,diversion,2015.03.27_San Luis Obispo County_MDP-Elim of Direct Filing Memo to Court.pdf,1.0,False,4.0
+San Luis Obispo County,2015,novel_position,alternatives_support,2015.03.27_San Luis Obispo County_MDP-Elim of Direct Filing Memo to Court.pdf,1.0,False,6.0
+San Luis Obispo County,2015,novel_topic,case_law_update,2015.03.31_San Luis Obispo County_Flyer for Class on Cutting-Edge Prosecution Tools.pdf,-1.0,False,6.0
+San Luis Obispo County,2015,novel_topic,administrative,2015.03.31_San Luis Obispo County_Memo on Training for Balance for Prosectors.pdf,,False,6.0
+San Mateo County,2015,novel_topic,case_law_update,2015_San Mateo County_Ethical Search Warrants Outline.pdf,0.0,False,6.0
+Yolo County,2015,novel_position,racial_justice_high,2015.11.18_Yolo County_National Prosecution Summit Agenda and News Article.pdf,1.0,False,4.0
+Yolo County,2015,novel_topic,diversion,2015_Yolo County_NHC Homeless Program.docx,2.0,False,4.0
+Yolo County,2015,novel_position,diversion_support,2015_Yolo County_NHC Homeless Program.docx,2.0,False,8.0
+Yolo County,2015,novel_position,alternatives_support,2015_Yolo County_NHC Homeless Program.docx,2.0,False,6.0
+Yolo County,2015,novel_topic,administrative,2015_Yolo County_Training Legal Interns.pdf,,False,6.0
+Alameda County,2016,novel_topic,sentencing,2016.03.28_Alameda Count_BASIC FELONY SENTENCING.pdf,,False,1.0
+Alameda County,2016,novel_topic,juvenile,2016.05.23_Alameda County_YOUTHFUL OFFENDERS.pdf,0.0,False,3.0
+Contra Costa County,2016,novel_topic,administrative,2016_Contra Costa County_Filing Protocols.pdf,0.0,False,7.0
+Inyo County,2016,novel_topic,case_law_update,2016_Inyo County_CDAA Professionalism Manual re Jury Selection.pdf,0.0,False,7.0
+Kern County,2016,novel_topic,victim_services,2016.03.29_Kern County_Internal Memo re U Visa and T Visa Certifier.pdf,1.0,False,2.0
+Lake County,2016,novel_topic,administrative,2016_Lake County_Policy & Procedure Manual.pdf,-2.0,False,7.0
+Los Angeles County,2016,novel_topic,juvenile,2016.11.09_LA County_Special Directive 16-12.pdf,0.0,True,3.0
+Los Angeles County,2016,novel_topic,sentencing,2016.12.22_LA County_Reduction of Misdemeanor Cases (Penal Code Sect 18.5(b)) Memo.pdf,0.0,True,1.0
+Madera County,2016,novel_topic,case_law_update,2016.06.10_Madera County_Batson-Wheeler Outline (IPG).pdf,0.0,False,7.0
+Marin County,2016,novel_topic,sentencing,2016.06.15_Marin County_DUI and Wet Reckless Policy.pdf,0.0,False,1.0
+Orange County,2016,novel_topic,other,2016.06.22_Orange County_Laying Foundation for Exhibits-RD.pdf,,False,2.0
+San Francisco County,2016,novel_topic,case_law_update,2016.06.10_San Francisco County_IPG19 BATSON-Wheeler OUTLINE.pdf,0.0,False,7.0
+San Luis Obispo County,2016,novel_topic,other,2016.03.29_San Luis Obispo County_Keith Lyon Biography.pdf,,False,2.0
+San Luis Obispo County,2016,novel_position,racial_justice_high,2016_San Luis Obispo County_Batson-Wheeler Overview.pdf,1.0,False,5.0
+San Luis Obispo County,2016,novel_topic,death_penalty,San Luis Obispo County_Death Penalty Review Process.pdf,0.0,False,3.0
+San Luis Obispo County,2016,novel_topic,bail,San Luis Obispo County_Attachment A to Request for Bail Increase.pdf,-1.0,False,2.0
+San Luis Obispo County,2016,novel_topic,sentencing,San Luis Obispo County_Misdemeanor Consequences.pdf,-2.0,False,1.0
+Tuolumne County,2016,novel_topic,discovery,"2016_Tuolumne County_Brady, Statutory, and Ethical Obligations Outline.pdf",0.0,False,6.0
+Ventura County,2016,novel_topic,case_law_update,2016.09.13_Ventura County_MCLE Criminal Procedure.pdf,0.0,False,7.0
+Ventura County,2016,novel_topic,victim_services,2016.10.06_Ventura County_MCLE Restitution.pdf,-1.0,False,2.0
+Ventura County,2016,novel_topic,juvenile,2016.10.28_Ventura County_MCLE Intro to Juvenile Law.pdf,,False,3.0
+Ventura County,2016,novel_topic,discovery,2016.02.12_Ventura County_MCLE Revised Informant Policy.pdf,0.0,False,6.0
+Yolo County,2016,novel_position,bail_reform,Yolo County_Implicit Bias Training Hourly Distribution.pdf,2.0,False,2.0
+Alameda County,2017,novel_topic,discovery,2017.07.31_Alameda County_Brady Alerts and Pitchess.pdf,0.0,False,7.0
+Fresno County,2017,novel_topic,case_law_update,2017.04.27_Fresno County_Human Trafficking_Redacted.pdf,0.0,False,8.0
+Los Angeles County,2017,novel_topic,racial_justice,2017.09.25_LA County_Wheeler-Batson New Hire Training.pdf,1.0,True,4.0
+Los Angeles County,2017,novel_position,racial_justice_high,2017.09.25_LA County_Wheeler-Batson New Hire Training.pdf,1.0,False,6.0
+Los Angeles County,2017,novel_topic,other,2017.02.28_LA County_Jury Selection PowerPoint.pdf,-1.0,True,3.0
+Madera County,2017,novel_topic,juvenile,2017.09.28_Madera County_Confidentiality of Records (CA Rules of Court).pdf,0.0,False,4.0
+Orange County,2017,novel_topic,death_penalty,2017.02.17_Orange County_ Cal. AG Weekly Report (REDACTED).pdf,-1.0,False,4.0
+San Diego County,2017,novel_topic,death_penalty,2017.02.26_San Diego County_CA DOJ-AG Capital Case Compendium.pdf,-2.0,False,4.0
+San Diego County,2017,novel_topic,juvenile,2017.05.22_San Diego County_Juvenile Field Services Programs and Commitments.pdf,2.0,False,4.0
+San Diego County,2017,novel_position,diversion_support,2017.05.22_San Diego County_Juvenile Field Services Programs and Commitments.pdf,2.0,False,9.0
+San Diego County,2017,novel_position,alternatives_support,2017.05.22_San Diego County_Juvenile Field Services Programs and Commitments.pdf,2.0,False,7.0
+San Diego County,2017,novel_topic,case_law_update,2017_San Diego County_Handling a Batson-Wheeler Motion.pdf,0.0,False,8.0
+San Mateo County,2017,novel_topic,administrative,2017.08.07_San Mateo County_Unlawful Cannabis Grows and Environmental Violations.pdf,,False,8.0
+Siskiyou County,2017,novel_topic,sentencing,2017.03.28_Siskiyou County_SCDA Parole Hearing recommendations.pdf,-2.0,False,2.0
+Stanislaus County,2017,novel_topic,case_guidance,2017.02.10_Stanislaus County_Preparing a Case.pdf,-1.0,False,1.0
+Tulare County,2017,novel_topic,administrative,2017_Tulare County_Ethical Use of Social Media (CDAA).pdf,0.0,False,8.0
+Ventura County,2017,novel_topic,charging_decisions,2017.07.20_Ventura County_MCLE Drug Endangered Children.pdf,-2.0,False,7.0
+Ventura County,2017,novel_position,diversion_support,2017.08.21_Ventura County_MCLE Pathways to Justice.pdf,1.0,False,9.0
+Ventura County,2017,novel_position,alternatives_support,2017.08.21_Ventura County_MCLE Pathways to Justice.pdf,1.0,False,7.0
+Alameda County,2018,novel_topic,bail,2018.02.20_Alameda County_Humphrey Bail.pdf,1.0,False,3.0
+Alameda County,2018,novel_position,bail_reform,2018.02.20_Alameda County_Humphrey Bail.pdf,1.0,False,3.0
+Alameda County,2018,novel_topic,diversion,2018.07.30_Alameda County_Mental Health Diversion Law.pdf,1.0,False,5.0
+Del Norte County,2018,novel_topic,case_law_update,2018.09.26_Del Norte County_Misdemeanor Voir Dire 101 Training.pdf,-2.0,False,9.0
+Inyo County,2018,novel_topic,other,2018.08.27_Inyo County_Letter to Board of Parole Hearing.pdf,-2.0,False,4.0
+Los Angeles County,2018,novel_topic,death_penalty,2018.01.19_LA County_Special Directive 18-01.pdf,0.0,True,5.0
+Los Angeles County,2018,novel_topic,bail,2018.02.16_LA County_General Office Memorandum 18-028.pdf,1.0,True,3.0
+Los Angeles County,2018,novel_position,bail_reform,2018.02.16_LA County_General Office Memorandum 18-028.pdf,1.0,False,3.0
+Madera County,2018,novel_topic,administrative,Madera County_Report by Prosecuting Agency of Charges Against Attorney Form.pdf,,False,9.0
+Merced County,2018,novel_topic,bail,2018.01.30_Merced County_Felony Bail Schedule.pdf,-2.0,False,3.0
+Sacramento County,2018,novel_topic,diversion,2018.07.13_Sacramento County_Mental Health Diversion-Memorandum.pdf,2.0,False,5.0
+Sacramento County,2018,novel_position,diversion_support,2018.07.13_Sacramento County_Mental Health Diversion-Memorandum.pdf,2.0,False,10.0
+Sacramento County,2018,novel_position,alternatives_support,2018.07.13_Sacramento County_Mental Health Diversion-Memorandum.pdf,2.0,False,8.0
+San Diego County,2018,novel_topic,sentencing,2018.01.01_San Diego County_CA Rules of Court-Determinate Sentencing Law.pdf,0.0,False,3.0
+San Luis Obispo County,2018,novel_position,bail_reform,2018.01.25_San Luis Obispo County_In re Kenneth Humphrey.pdf,2.0,False,3.0
+San Luis Obispo County,2018,novel_topic,victim_services,2018.05.30_San Luis Obispo County_Neurobiology of Trauma and Efective Victim Interview.pdf,1.0,False,3.0
+San Mateo County,2018,novel_topic,other,2018.02.23_San Mateo County_Opioids Presentation.pdf,2.0,False,4.0
+San Mateo County,2018,novel_position,diversion_support,2018.02.23_San Mateo County_Opioids Presentation.pdf,2.0,False,10.0
+San Mateo County,2018,novel_position,alternatives_support,2018.02.23_San Mateo County_Opioids Presentation.pdf,2.0,False,8.0
+San Mateo County,2018,novel_position,bail_reform,2018.03.05_San Mateo County_Training Announcements.docx,1.0,False,3.0
+San Mateo County,2018,novel_topic,bail,2018.03.09_San Mateo County_In re Humphrey Presentation.pdf,0.0,False,3.0
+San Mateo County,2018,novel_topic,victim_services,2018.09.26_San Mateo County_Quarterly Staff Mtg - Training Announcement.docx,-1.0,False,3.0
+San Mateo County,2018,novel_topic,diversion,2018_San Mateo County_Choices Program Handout.pdf,2.0,False,5.0
+San Mateo County,2018,novel_position,enhancement_limits,2018_San Mateo County_New Laws for Prosecutors Presentation .pdf,2.0,False,2.0
+Santa Barbara County,2018,novel_topic,diversion,2018.10.01_Santa Barbara County_PC1001.36 Policy and Guidelines.pdf,1.0,False,5.0
+Santa Barbara County,2018,novel_position,diversion_support,2018.10.01_Santa Barbara County_PC1001.36 Policy and Guidelines.pdf,1.0,False,10.0
+Santa Barbara County,2018,novel_position,alternatives_support,2018.10.01_Santa Barbara County_PC1001.36 Policy and Guidelines.pdf,1.0,False,8.0
+Stanislaus County,2018,novel_topic,sentencing,2018.01.12_Stanislaus County_Life Offers.pdf,0.0,False,3.0
+Stanislaus County,2018,novel_topic,diversion,2018.08.13_Stanislaus County_DVP Eligibility and Suitability Procedures.pdf,1.0,False,5.0
+Stanislaus County,2018,novel_position,diversion_support,2018.08.13_Stanislaus County_DVP Eligibility and Suitability Procedures.pdf,1.0,False,10.0
+Stanislaus County,2018,novel_position,alternatives_support,2018.08.13_Stanislaus County_DVP Eligibility and Suitability Procedures.pdf,1.0,False,8.0
+Sutter County,2018,novel_topic,administrative,2018_Sutter County_DA Office Policy Manual.pdf,0.0,False,9.0
+Sutter County,2018,novel_position,diversion_support,2018_Sutter County_DA Office Policy Manual.pdf,0.0,False,10.0
+Sutter County,2018,novel_position,alternatives_support,2018_Sutter County_DA Office Policy Manual.pdf,0.0,False,8.0
+Tulare County,2018,novel_topic,bail,2018.01.30_Tulare County_Judicial Guide to Setting Bail Under Humphrey.pdf,1.0,False,3.0
+Tulare County,2018,novel_position,alternatives_support,2018.01.30_Tulare County_Judicial Guide to Setting Bail Under Humphrey.pdf,1.0,False,8.0
+Tulare County,2018,novel_position,bail_reform,2018.01.30_Tulare County_Judicial Guide to Setting Bail Under Humphrey.pdf,1.0,False,3.0
+Tulare County,2018,novel_topic,death_penalty,2018.05.17_Tulare County_DP Jury Selection.pdf,-2.0,False,5.0
+Tulare County,2018,novel_topic,case_guidance,2018_Tulare County_Jury Selection Presentation.pdf,-1.0,False,2.0
+Yolo County,2018,novel_topic,victim_services,2018.09.24_Yolo County_CADAA Misdemeanors Seminar.pdf,-1.0,False,3.0
+Contra Costa County,2019,novel_topic,case_law_update,2019_Contra Costa County_Batson-Wheeler Guide.pdf,0.0,False,10.0
+Inyo County,2019,novel_topic,racial_justice,2019.02.05_Inyo County_Bias Training.pdf,1.0,False,5.0
+Inyo County,2019,novel_position,racial_justice_high,2019.02.05_Inyo County_Bias Training.pdf,1.0,False,7.0
+Madera County,2019,novel_position,diversion_support,2019.10.11_Madera County_Sealing Juvenile Records.pdf,1.0,False,11.0
+Madera County,2019,novel_position,alternatives_support,2019.10.11_Madera County_Sealing Juvenile Records.pdf,1.0,False,9.0
+Marin County,2019,novel_topic,administrative,2019_Marin County_Professionalism Manual.pdf,0.0,False,10.0
+Merced County,2019,novel_topic,case_law_update,2019_Merced County_CDAA Voir Dire in Domestic Violence Cases Presentation.pdf,-2.0,False,10.0
+Merced County,2019,novel_topic,racial_justice,2019_Merced County_CDAA Eliminating Bias.pdf,2.0,False,5.0
+Merced County,2019,novel_position,diversion_support,2019_Merced County_CDAA Eliminating Bias.pdf,2.0,False,11.0
+Merced County,2019,novel_position,alternatives_support,2019_Merced County_CDAA Eliminating Bias.pdf,2.0,False,9.0
+Merced County,2019,novel_position,bail_reform,2019_Merced County_CDAA Eliminating Bias.pdf,2.0,False,4.0
+Merced County,2019,novel_position,enhancement_limits,2019_Merced County_CDAA Eliminating Bias.pdf,2.0,False,3.0
+Merced County,2019,novel_position,racial_justice_high,2019_Merced County_CDAA Eliminating Bias.pdf,2.0,False,7.0
+Monterey County,2019,novel_topic,racial_justice,2019.02.05_Monterey County_A Look at Bias.pdf,1.0,False,5.0
+Monterey County,2019,novel_position,racial_justice_high,2019.02.05_Monterey County_A Look at Bias.pdf,1.0,False,7.0
+Monterey County,2019,novel_topic,case_guidance,2019_Monterey County_Voir Dire in Domestic Violence Cases.pdf,-1.0,False,3.0
+Monterey County,2019,novel_position,bail_reform,2019_Monterey County_CDAA-Winter Workshop-Bias Materials.pdf,2.0,False,4.0
+Monterey County,2019,novel_position,enhancement_limits,2019_Monterey County_CDAA-Winter Workshop-Bias Materials.pdf,2.0,False,3.0
+Monterey County,2019,novel_topic,case_law_update,2019_Monterey County_Voir Dire-Domestic Violence-Stalking.pdf,-1.0,False,10.0
+Placer County,2019,novel_topic,racial_justice,2019.02.05_Placer County_A Look at Bias.pdf,1.0,False,5.0
+Placer County,2019,novel_position,racial_justice_high,2019.02.05_Placer County_A Look at Bias.pdf,1.0,False,7.0
+Placer County,2019,novel_topic,case_guidance,2019_Placer County_Voir Dire in Domestic Violence Cases-Stalking.pdf,-1.0,False,3.0
+Riverside County,2019,novel_topic,case_law_update,2019_Riverside County_Voir Dire Training.pdf,0.0,False,10.0
+Sacramento County,2019,novel_topic,juvenile,2019.02.26_Sacramento County_Sac Juvenile Court Dedicated Calendar.pdf,2.0,False,5.0
+Sacramento County,2019,novel_topic,administrative,2019.12.10_Sacramento County_Legal & Case Prosecution Policy Manual.pdf,-1.0,False,10.0
+San Diego County,2019,novel_topic,diversion,2019_San Diego County_SD County DA-JDI Slides.pdf,2.0,False,6.0
+San Mateo County,2019,novel_topic,discovery,2019.10.25_Brady Training Flyer.pdf,0.0,False,8.0
+San Mateo County,2019,novel_topic,charging_decisions,2019_San Mateo County_Excerpts from the Policy and Procedures Manual.pdf,0.0,False,8.0
+Santa Barbara County,2019,novel_topic,racial_justice,2019.02.05_Santa Barbara County_A Look at Bias Presentation.pdf,1.0,False,5.0
+Santa Barbara County,2019,novel_position,racial_justice_high,2019.02.05_Santa Barbara County_A Look at Bias Presentation.pdf,1.0,False,7.0
+Santa Barbara County,2019,novel_topic,case_guidance,2019_Santa Barbara County_Voir Dire in Domestic Violence Cases-New Prosecutors.pdf,-2.0,False,3.0
+Santa Barbara County,2019,novel_position,bail_reform,2019_Santa Barbara County_CDAA Winter Workshop Bias-Materials.pdf,2.0,False,4.0
+Santa Barbara County,2019,novel_position,enhancement_limits,2019_Santa Barbara County_CDAA Winter Workshop Bias-Materials.pdf,2.0,False,3.0
+Santa Clara County,2019,novel_topic,case_law_update,2019.04.05_Santa Clara County_Petition (The People vs. Roberts).pdf,,False,10.0
+Santa Clara County,2019,novel_topic,diversion,2019_Santa Clara County_Narcotics Public Safety Presentation.pdf,2.0,False,6.0
+Santa Clara County,2019,novel_position,racial_justice_high,2019_Santa Clara County_Narcotics Public Safety Presentation.pdf,2.0,False,7.0
+Siskiyou County,2019,novel_topic,case_guidance,2019_Siskiyou County_Voir Dire in Domestic Violence Cases.pdf,-1.0,True,3.0
+Sonoma County,2019,novel_topic,racial_justice,2019.02.05_Sonoma County_A Look at Bias - CDAA Roof.pptx.pdf,1.0,False,5.0
+Sonoma County,2019,novel_position,racial_justice_high,2019.02.05_Sonoma County_A Look at Bias - CDAA Roof.pptx.pdf,1.0,False,7.0
+Sonoma County,2019,novel_topic,case_law_update,2019.06.10_Sonoma County_Jury-Selection-Examination-Impeachment-Attendee-Manual.pdf,-1.0,False,10.0
+Sonoma County,2019,novel_position,diversion_support,2019_Sonoma County_CDAA-Winter-Workshop-Bias-Materials.pdf,2.0,False,11.0
+Sonoma County,2019,novel_position,alternatives_support,2019_Sonoma County_CDAA-Winter-Workshop-Bias-Materials.pdf,2.0,False,9.0
+Sonoma County,2019,novel_position,bail_reform,2019_Sonoma County_CDAA-Winter-Workshop-Bias-Materials.pdf,2.0,False,4.0
+Sonoma County,2019,novel_position,enhancement_limits,2019_Sonoma County_CDAA-Winter-Workshop-Bias-Materials.pdf,2.0,False,3.0
+Stanislaus County,2019,novel_topic,racial_justice,2019.02.05_Stanislaus County_A-Look-at-Bias-Webinar-Presentation-1.pdf,1.0,False,5.0
+Stanislaus County,2019,novel_position,racial_justice_high,2019.02.05_Stanislaus County_A-Look-at-Bias-Webinar-Presentation-1.pdf,1.0,False,7.0
+Stanislaus County,2019,novel_topic,case_law_update,2019.06.10_Stanislaus County_Jury-Selection-Examination-Impeachment-Attendee-Manual (1).pdf,-2.0,False,10.0
+Stanislaus County,2019,novel_position,bail_reform,2019_Stanislaus County_CDAA-Winter-Workshop-Bias-Materials.pdf,2.0,False,4.0
+Stanislaus County,2019,novel_position,enhancement_limits,2019_Stanislaus County_CDAA-Winter-Workshop-Bias-Materials.pdf,2.0,False,3.0
+Tuolumne County,2019,novel_topic,racial_justice,2019_Tuolumne County_CDAA Bias Workshop.pdf,2.0,False,5.0
+Tuolumne County,2019,novel_position,diversion_support,2019_Tuolumne County_CDAA Bias Workshop.pdf,2.0,False,11.0
+Tuolumne County,2019,novel_position,alternatives_support,2019_Tuolumne County_CDAA Bias Workshop.pdf,2.0,False,9.0
+Tuolumne County,2019,novel_position,bail_reform,2019_Tuolumne County_CDAA Bias Workshop.pdf,2.0,False,4.0
+Tuolumne County,2019,novel_position,enhancement_limits,2019_Tuolumne County_CDAA Bias Workshop.pdf,2.0,False,3.0
+Tuolumne County,2019,novel_position,racial_justice_high,2019_Tuolumne County_CDAA Bias Workshop.pdf,2.0,False,7.0
+Tuolumne County,2019,novel_topic,case_law_update,2019_Tuolumne County_Jury Selection Examination Impeachment Attendee Manual.pdf,-1.0,False,10.0
+Ventura County,2019,novel_topic,sentencing,Ventura County_Drescher Instructor Certificate.pdf,,False,4.0
+Ventura County,2019,novel_topic,case_guidance,2019_Ventura County_Mental Competency Handout.pdf,0.0,False,3.0
+Yuba County,2019,novel_topic,racial_justice,2019.02.05_Yuba County_ A Look at Bias Presentation.pdf,1.0,False,5.0
+Yuba County,2019,novel_position,racial_justice_high,2019.02.05_Yuba County_ A Look at Bias Presentation.pdf,1.0,False,7.0
+Yuba County,2019,novel_position,diversion_support,2019_Yuba County_CDAA Winter Workshop Bias Materials.pdf,2.0,False,11.0
+Yuba County,2019,novel_position,alternatives_support,2019_Yuba County_CDAA Winter Workshop Bias Materials.pdf,2.0,False,9.0
+Yuba County,2019,novel_position,bail_reform,2019_Yuba County_CDAA Winter Workshop Bias Materials.pdf,2.0,False,4.0
+Yuba County,2019,novel_position,enhancement_limits,2019_Yuba County_CDAA Winter Workshop Bias Materials.pdf,2.0,False,3.0
+Yuba County,2019,novel_topic,case_guidance,2019_Yuba County_Voir Dire in Domestic Violence Cases Presentation.pdf,-2.0,False,3.0
+Yuba County,2019,novel_topic,case_law_update,2019_Yuba County_Jury Selection Examination Impeachment Attendee Manual.pdf,-1.0,False,10.0
+Alameda County,2020,novel_topic,charging_decisions,2020.03.26_Alameda County_Immigration Guidelines.pdf,2.0,False,9.0
+Alameda County,2020,novel_position,racial_justice_high,"2020.12.07_Alameda County_New Laws 2021, Pt.1.pdf",2.0,False,8.0
+Contra Costa County,2020,novel_topic,racial_justice,2020.03.10_Contra Costa County_Announcing the Racial Justice Act.pdf,,False,6.0
+Contra Costa County,2020,novel_topic,discovery,2020_Contra Costa County_Racial Justice Act Motion to Compel Discovery in People v. Vargas.pdf,-2.0,False,9.0
+El Dorado County,2020,novel_topic,case_law_update,2020.12.07_El Dorado County_Selected 2021 New Laws-Part 1.docx,0.0,False,11.0
+Glenn County,2020,novel_topic,discovery,2020.02.11_Glenn County_DS ltr to ACLU re Brady Issues discovered by Victim Witness.pdf,0.0,False,9.0
+Los Angeles County,2020,novel_position,enhancement_limits,2020.12.18_LA County_Special Directive 20-08.2.pdf,2.0,False,4.0
+Los Angeles County,2020,novel_topic,conviction_integrity,2020.12.07_LA County_Special Directive 20-13.pdf,2.0,True,1.0
+Madera County,2020,novel_topic,racial_justice,2020.10.02_Madera County_AB 2542-Legislative Counsel's Digest.pdf,2.0,False,6.0
+Madera County,2020,novel_position,enhancement_limits,2020.10.02_Madera County_AB 2542-Legislative Counsel's Digest.pdf,2.0,False,4.0
+Madera County,2020,novel_position,racial_justice_high,2020.10.02_Madera County_AB 2542-Legislative Counsel's Digest.pdf,2.0,False,8.0
+Marin County,2020,novel_position,alternatives_support,2020.06.04_Marin County_Immigration Relief Policy-May 2020.pdf,1.0,False,10.0
+Marin County,2020,novel_topic,bail,2020.06.12_Marin County_Inquisitive Prosecutor's Guide-Bail Issues.pdf,-1.0,False,4.0
+Merced County,2020,novel_topic,death_penalty,2020_Merced County_CDAA Voir Dire in Homicide Capital Cases Presentation.pdf,-2.0,False,6.0
+Merced County,2020,novel_topic,case_guidance,2020_Merced County_CDAA Voir Dire in Domestic Violence Cases.pdf,-1.0,False,4.0
+Napa County,2020,novel_topic,sentencing,2020.01.21_Napa County_Internal Email re Life Sentences.pdf,1.0,False,5.0
+Napa County,2020,novel_topic,diversion,2020.07.28_Napa County_Internal Email re Pre-filing Diversion.pdf,2.0,False,7.0
+Napa County,2020,novel_position,diversion_support,2020.07.28_Napa County_Internal Email re Pre-filing Diversion.pdf,2.0,False,12.0
+Napa County,2020,novel_position,alternatives_support,2020.07.28_Napa County_Internal Email re Pre-filing Diversion.pdf,2.0,False,10.0
+Orange County,2020,novel_topic,bail,2020_Orange County_Uniform Bail Schedule.pdf,-2.0,False,4.0
+Placer County,2020,novel_topic,case_law_update,Placer County_The Art of Voir Dire.pdf,-2.0,False,11.0
+Riverside County,2020,novel_topic,discovery,2020.07.21_Riverside County_Internal Policies-Redacted.pdf,0.0,False,9.0
+Riverside County,2020,novel_topic,racial_justice,2020_Riverside County_Bias Training.pdf,,False,6.0
+San Benito County,2020,novel_topic,case_law_update,2020_San Benito County_Excerpts from CDAA Legislative Digest.pdf,2.0,False,11.0
+San Benito County,2020,novel_position,racial_justice_high,2020_San Benito County_Excerpts from CDAA Legislative Digest.pdf,2.0,False,8.0
+San Bernardino County,2020,novel_position,alternatives_support,2020.02.19_San Bernardino County_AB 2542.pdf,2.0,False,10.0
+San Bernardino County,2020,novel_position,enhancement_limits,2020.02.19_San Bernardino County_AB 2542.pdf,2.0,False,4.0
+San Bernardino County,2020,novel_topic,case_law_update,2020.10.01_San Bernardino County_Email RE AB 2542 & 3070 signed by Governnor.pdf,1.0,False,11.0
+San Bernardino County,2020,novel_topic,death_penalty,2020.11.23_San Bernardino County_The People vs. Don te Lamont McDaniel.pdf,-2.0,False,6.0
+San Diego County,2020,novel_topic,bail,2020.06.29_San Diego County_Temp Emergency Mod. to the Bail Schedule.pdf,1.0,False,4.0
+San Diego County,2020,novel_position,bail_reform,2020.06.29_San Diego County_Temp Emergency Mod. to the Bail Schedule.pdf,1.0,False,5.0
+San Francisco County,2020,novel_topic,sentencing,2020.05.22_San Francisco County_Indeterminate Sentencing Law Outline.docx,-1.0,False,5.0
+San Francisco County,2020,novel_position,racial_justice_high,2020.05.27_San Francisco County_Restorative Justice (Impact Justice).pdf,2.0,False,8.0
+San Francisco County,2020,novel_topic,charging_decisions,2020.09.21_San Francisco County_Policy on Charging Decisions and Police-Accountability.pdf,2.0,False,9.0
+San Francisco County,2020,novel_topic,racial_justice,2020_San Francisco County_Email PRA Correspondence re RJA (Compiled)_Redacted.pdf,2.0,False,6.0
+San Francisco County,2020,novel_topic,bail,2020.01.22_San Francisco County_Pretrial Detention and Release Conditions.pdf,2.0,False,4.0
+San Francisco County,2020,novel_position,bail_reform,2020.01.22_San Francisco County_Pretrial Detention and Release Conditions.pdf,2.0,False,5.0
+San Luis Obispo County,2020,novel_topic,juvenile,2020.01.17_San Luis Obispo County_Email re Promoting Trainings.pdf,,False,6.0
+San Luis Obispo County,2020,novel_topic,racial_justice,2020.12.18_San Luis Obispo County_SLODA Racial Justice Act Group.pdf,1.0,False,6.0
+San Mateo County,2020,novel_topic,racial_justice,2020.11.07_San Mateo County_Bias Training Flyer.pdf,1.0,False,6.0
+San Mateo County,2020,novel_position,racial_justice_high,2020.11.07_San Mateo County_Bias Training Flyer.pdf,1.0,False,8.0
+San Mateo County,2020,novel_topic,three_strikes,2020.04.03_San Mateo County_Proving Strikes Training Announcement.pdf,-1.0,True,1.0
+San Mateo County,2020,novel_topic,sentencing,"2020_San Mateo County_New Hire Training, Taking Felony Pleas.docx",-1.0,False,5.0
+Sonoma County,2020,novel_topic,death_penalty,2020.05.15_Sonoma County_Voir Dire in Homicide_Capital Cases.pdf,-2.0,False,6.0
+Stanislaus County,2020,novel_topic,death_penalty,2020.05.15_Stanislaus County_Voir-Dire-in-Homicide-Capital-Cases-Handout.pdf,-2.0,False,6.0
+Stanislaus County,2020,novel_topic,juvenile,2020.03.03_Stanislaus County_Juvenile Justice System.pdf,0.0,False,6.0
+Sutter County,2020,novel_topic,case_law_update,2020.11.02_Sutter County_Criminal Justice Legislation.pdf,2.0,False,11.0
+Sutter County,2020,novel_position,racial_justice_high,2020.11.02_Sutter County_Criminal Justice Legislation.pdf,2.0,False,8.0
+Tulare County,2020,novel_topic,racial_justice,2020.12.16_Tulare County_Avoiding Bias in Prosecution-RJA (CDAA).pdf,0.0,False,6.0
+Tulare County,2020,novel_position,racial_justice_high,2020.12.16_Tulare County_Avoiding Bias in Prosecution-RJA (CDAA).pdf,0.0,False,8.0
+Ventura County,2020,novel_topic,other,2020.10.02_Ventura County_Asset Forfeiture PowerPoint.pdf,-2.0,False,5.0
+Ventura County,2020,novel_topic,racial_justice,2020.06.30_Ventura County_Email re Racial Justice In Ethical Lawyering (Pepperdine MCLE).pdf,1.0,False,6.0
+Yolo County,2020,novel_topic,sentencing,2020.12.07_Yolo County_Yolo DA Uses New Law to Reduce Sentence of Prison Inmate.pdf,1.0,False,5.0
+Alameda County,2021,novel_topic,administrative,2021.09.22_Alameda County_Certificate of Rehabilitation of Pardons.pdf,1.0,False,11.0
+Calaveras County,2021,novel_topic,administrative,2021_Calaveras County_Defense Attorney Report.pdf,,True,11.0
+Contra Costa County,2021,novel_topic,other,2021_Contra Costa County_Will California See Another Wave (Covid).pdf,,False,6.0
+El Dorado County,2021,novel_topic,racial_justice,2021.05.05_El Dorado County_IPG-Laws on Discrimination in Prosecution and Sentencing.pdf,0.0,False,7.0
+El Dorado County,2021,novel_position,racial_justice_high,2021.05.05_El Dorado County_IPG-Laws on Discrimination in Prosecution and Sentencing.pdf,0.0,False,9.0
+El Dorado County,2021,novel_topic,diversion,2021_El Dorado County_CDAA Prosecutors Brief-Vol.43-No.4.pdf,-2.0,False,8.0
+Fresno County,2021,novel_topic,diversion,2021.10.04_Fresno County_Death of the Misdemeanor_Redacted.pdf,0.0,False,8.0
+Fresno County,2021,novel_topic,enhancements,Fresno County_Gangs Handout_Redacted.pdf,-2.0,False,3.0
+Fresno County,2021,novel_topic,juvenile,Fresno County_Prosecuting a Juvenile as an Adult _Redacted.pdf,1.0,False,7.0
+Fresno County,2021,novel_topic,charging_decisions,Fresno County_How to Run a Grand Jury_Redacted.pdf,,False,10.0
+Imperial County,2021,novel_topic,sentencing,2021.06.08_Imperial County_Internal Email re Felony Plea Request.pdf,-1.0,False,6.0
+Inyo County,2021,novel_topic,bail,2021_Inyo County_Peoples' Opposition to Motion to Reduce Bail.pdf,-2.0,False,5.0
+Kern County,2021,novel_topic,diversion,2021.02.04_Kern County_Misdemeanor Diversion Program Pamphlet.pdf,1.0,False,8.0
+Kern County,2021,novel_position,diversion_support,2021.02.04_Kern County_Misdemeanor Diversion Program Pamphlet.pdf,1.0,False,13.0
+Kern County,2021,novel_position,alternatives_support,2021.02.04_Kern County_Misdemeanor Diversion Program Pamphlet.pdf,1.0,False,11.0
+Kings County,2021,novel_topic,administrative,Kings County_List of Attorneys.pdf,,False,11.0
+Marin County,2021,novel_topic,racial_justice,2021.05.05_Marin County_Inquisitive Prosecutor's Guide-Discrimination in Prosecution & Sentencing.pdf,0.0,False,7.0
+Marin County,2021,novel_topic,victim_services,2021_Marin County_Victims Rights.pdf,-1.0,False,4.0
+Marin County,2021,novel_position,bail_reform,2021.04.01_Marin County_Bail Procedures per Humphrey.pdf,2.0,False,6.0
+Marin County,2021,novel_topic,diversion,2021.01.08_Marin County_Behavioral Health Diversion Implementation Plan - Pilot.pdf,2.0,False,8.0
+Marin County,2021,novel_topic,other,Marin County_Voir Dire for Sexual Assault Cases.pdf,,False,6.0
+Merced County,2021,novel_topic,other,Merced County_CDAA Voir Dire Questions for People v. Everest.pdf,-1.0,False,6.0
+Napa County,2021,novel_topic,case_law_update,2021.03_Napa County_Memo re AB 1950 and Humphreys.pdf,0.0,False,12.0
+Nevada County,2021,novel_topic,bail,2021.09.27_Nevada County_Sullivan People's Response to Bail Motion.pdf,-2.0,False,5.0
+Orange County,2021,novel_topic,administrative,2021.01.01_Orange County_DA Policy Defining Responsibilities of Prosecutors.pdf,0.0,False,11.0
+Placer County,2021,novel_position,bail_reform,2021.03.25_Placer County_In re Humphrey-Opinion.pdf,2.0,False,6.0
+Riverside County,2021,novel_position,racial_justice_high,Riverside County_CRJA Powerpoint (AB 2542).pdf,1.0,False,9.0
+San Benito County,2021,novel_topic,racial_justice,2021.04.05_San Benito County_Gang Prosecution & RJA.pdf,2.0,False,7.0
+San Bernardino County,2021,novel_topic,administrative,2021.02.03_San Bernardino County_Email RE General Fund Request.pdf,,False,11.0
+Santa Barbara County,2021,novel_topic,case_law_update,2021.02.01_Santa Barbara County_AB 3070-Peremptory Challenges Handout.pdf,0.0,False,12.0
+Santa Clara County,2021,novel_topic,racial_justice,2021.05.05_Santa Clara County_The Inquisitive Prosecutor's Guide.pdf,0.0,False,7.0
+Santa Clara County,2021,novel_topic,bail,2021.11.12_Santa Clara County_Email RE Bail_Redacted.pdf,2.0,False,5.0
+Santa Clara County,2021,novel_position,bail_reform,2021.11.12_Santa Clara County_Email RE Bail_Redacted.pdf,2.0,False,6.0
+Siskiyou County,2021,novel_topic,case_law_update,2021.03.30_Siskiyou County_Jury Selection Voir Dire AB3070 Presentation.pdf,-1.0,False,12.0
+Sonoma County,2021,novel_topic,case_guidance,2021.05.24_Sonoma County_HANDOUTS-HATE-CRIMES-PAST-PRESENT-FUTURE.pdf,0.0,False,5.0
+Stanislaus County,2021,novel_topic,administrative,2021.09.28_Stanislaus County_Values _ Ethics of Prosecution.pdf,0.0,False,11.0
+Stanislaus County,2021,novel_topic,charging_decisions,2021.04.13_Stanislaus County_Charging_Sentencing Sex Assault.pdf,-2.0,False,10.0
+Sutter County,2021,novel_position,bail_reform,2021.11.15_Sutter County_Memo re Criminal Justice Legislation.pdf,2.0,False,6.0
+Sutter County,2021,novel_position,enhancement_limits,2021.11.15_Sutter County_Memo re Criminal Justice Legislation.pdf,2.0,False,5.0
+Sutter County,2021,novel_topic,sentencing,2021.12.03_Sutter County_Basic Felony Sentencing PowerPoint.pdf,0.0,False,6.0
+Tulare County,2021,novel_topic,diversion,Tulare County_DEJ FORM (Pre-Trial Diversion-Drug Court).docx,0.0,False,8.0
+Tulare County,2021,novel_position,diversion_support,Tulare County_DEJ FORM (Pre-Trial Diversion-Drug Court).docx,0.0,False,13.0
+Yolo County,2021,novel_topic,discovery,Yolo County_Brady Obligations.pdf,0.0,False,10.0
+Amador County,2022,novel_topic,racial_justice,2022_Amador County_New Jury Voir Dire and Wheeler-Batson Rules.pdf,2.0,False,8.0
+Amador County,2022,novel_position,racial_justice_high,2022_Amador County_New Jury Voir Dire and Wheeler-Batson Rules.pdf,2.0,False,10.0
+Amador County,2022,novel_topic,administrative,Amador County_Training List.pdf,,False,12.0
+Merced County,2022,novel_topic,administrative,2022_Merced County_Exhibit C 2022 Parole Hearings.pdf,,False,12.0
+Riverside County,2022,novel_position,enhancement_limits,Riverside County_RJA Training.pdf,2.0,False,6.0
+Sacramento County,2022,novel_topic,racial_justice,Sacramento County_AB 3070 Sac DA Training.pdf,1.0,False,8.0
+Sacramento County,2022,novel_position,racial_justice_high,Sacramento County_AB 3070 Sac DA Training.pdf,1.0,False,10.0
+Sacramento County,2022,novel_position,enhancement_limits,Sacramento County_AB 2542 Training.pdf,2.0,False,6.0
+San Benito County,2022,novel_position,bail_reform,San Benito County_The Impact of Implicit Racial Bias-Smith and Levinson.pdf,2.0,False,7.0
+San Francisco County,2022,novel_topic,case_preparation,2022.01.18_San Francisco County_Trial Preparation.pdf,0.0,True,1.0
+Santa Clara County,2022,novel_position,enhancement_limits,Santa Clara County_Bend the Arc Reforms Update.pdf,2.0,False,6.0
+Yuba County,2022,novel_topic,charging_decisions,Yuba County_Chapter 6 - Case Settlement Policies.pdf,-1.0,False,11.0
+Fresno County,2024,novel_position,diversion_support,2024_Fresno County_Policy Binder.pdf,1.0,False,14.0
+Fresno County,2024,novel_position,alternatives_support,2024_Fresno County_Policy Binder.pdf,1.0,False,12.0
+Fresno County,2024,novel_position,bail_reform,2024_Fresno County_Policy Binder.pdf,1.0,False,8.0
+Napa County,2025,novel_position,bail_reform,2021.03_Napa County_Memo re AB 150 and Humphreys.pdf,0.0,False,9.0
+Napa County,2025,novel_topic,juvenile,2021.04_Napa County_Juvenile Transfer to Adult Court per WIC 707.pdf,1.0,False,8.0
+San Diego County,2025,novel_topic,charging_decisions,2021.06_San Diego County_SD DA's Offie Legal Policies Guide.pdf,0.0,False,12.0
+San Diego County,2025,novel_topic,administrative,2021.12_San Diego County_DA's Office - Legal Policies Guide.pdf,2.0,False,13.0
+San Diego County,2025,novel_position,racial_justice_high,2021.12_San Diego County_DA's Office - Legal Policies Guide.pdf,2.0,False,11.0
+Stanislaus County,2025,novel_topic,three_strikes,2020.09_Stanislaus County_Three Strikes Policy.docx,-2.0,False,2.0
+Sutter County,2025,novel_topic,bail,2021.11_Sutter County_Prehearing Release of Probationers (Couzens).pdf,2.0,False,6.0
+Tuolumne County,2025,novel_topic,victim_services,2021.09_Tuolumne County_CDAA 10th Annual Summit Schedule.pdf,-1.0,False,5.0

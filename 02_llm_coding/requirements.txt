@@ -1,0 +1,22 @@
+# Prosecutor Policy Coding Pipeline Dependencies
+
+# Core LLM API
+anthropic>=0.25.0
+
+# PDF processing
+pypdf>=3.0.0
+pdfplumber>=0.10.0
+
+# Word document processing
+python-docx>=1.0.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Progress tracking
+tqdm>=4.65.0
+
+# Optional: for legacy .doc files (requires system install)
+# antiword (install via: apt-get install antiword)
+# catdoc (install via: apt-get install catdoc)
