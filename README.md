@@ -230,4 +230,4 @@ Retrieved from https://www.aclunc.org/racial-justice-act
 ## Contact
 
 **Dvir Yogev** — Post-Doctoral Researcher, UC Berkeley School of Law  
-📧 dvir.karp@berkeley.edu
+📧 dyo@berkeley.edu

@@ -354,7 +354,7 @@ If you use this system in your research, please cite:
 
 Questions or issues:
 - GitHub: [Your repository]
-- Email: dvir.karp@berkeley.edu
+- Email: dyo@berkeley.edu
 - BERQ-J: https://www.law.berkeley.edu/research/criminal-law-justice-center/
 
 ## License

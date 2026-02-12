@@ -508,4 +508,4 @@ Plot β_k coefficients to show dynamic effects
 
 **Version:** 1.0  
 **Last Updated:** October 2025  
-**Contact:** dvir.karp@berkeley.edu
+**Contact:** dyo@berkeley.edu

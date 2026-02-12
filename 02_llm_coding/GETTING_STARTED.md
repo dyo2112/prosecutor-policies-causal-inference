@@ -248,7 +248,7 @@ Questions? Check:
 3. `EXAMPLE_OUTPUT.py` - Data structure
 4. Logs: `coding_pipeline.log`
 
-Contact: dvir.karp@berkeley.edu
+Contact: dyo@berkeley.edu
 
 ## Citation
 
