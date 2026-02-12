@@ -1,0 +1,6 @@
+Outcome,Progressive_mean,Traditional_mean,Difference,Pct_diff,Cohens_d,t_stat,p_value,Significant
+Jail Population Rate (per 100k),244.4,312.8,-68.5,-21.9,-0.81,-3.61,0.0006,***
+Jail Admission Rate (per 100k),3896.7,4543.3,-646.5,-14.2,-0.32,-1.4,0.1687,
+Pretrial Share (%),71.0,76.8,-5.8,-7.6,-0.48,-2.05,0.0442,*
+Black/White Jail Rate Ratio,6.9,5.0,2.0,39.7,0.57,2.52,0.0143,*
+Jail Utilisation (% capacity),77.0,76.0,1.0,1.2,0.06,0.28,0.7765,

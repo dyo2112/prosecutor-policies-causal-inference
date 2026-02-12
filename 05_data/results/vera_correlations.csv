@@ -1,0 +1,6 @@
+Outcome,Variable,N,Pearson_r,Pearson_p,Spearman_rho,Spearman_p,Significant
+Jail Population Rate (per 100k),jail_pop_rate,137,-0.233,0.0062,-0.224,0.0084,**
+Jail Admission Rate (per 100k),jail_adm_rate,137,-0.236,0.0055,-0.128,0.1346,**
+Pretrial Share (%),pretrial_share,121,0.004,0.9636,-0.053,0.5608,
+Black/White Jail Rate Ratio,bw_disparity,119,0.104,0.2615,0.034,0.7149,
+Jail Utilisation (% capacity),jail_utilisation,137,-0.117,0.1724,-0.146,0.0878,
