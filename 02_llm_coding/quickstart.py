@@ -166,7 +166,7 @@ def main():
 ║              PROSECUTOR POLICY DOCUMENT CODING SYSTEM                         ║
 ║                          Quick Start Setup                                    ║
 ║                                                                               ║
-║                    BERQ-J, UC Berkeley School of Law                          ║
+║                    CLJC, UC Berkeley School of Law                            ║
 ║                                                                               ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 """)

@@ -1,6 +1,6 @@
 # Quick Start Guide: Prosecutor Policy Coding System
 
-**For: Dvir Karp, BERQ-J**  
+**For: Dvir Yogev, CLJC, UC Berkeley School of Law**  
 **Project: Analyzing Prosecutorial Ideology Across Time and Place**
 
 ## What You Have

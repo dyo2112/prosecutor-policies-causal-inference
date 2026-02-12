@@ -2,7 +2,7 @@
 Prosecutor Policy Document Coding Pipeline
 Extracts structured policy data from DA office documents using Claude API
 
-Author: Dvir Karp, BERQ-J
+Author: Dvir Yogev, CLJC, UC Berkeley School of Law
 Purpose: Analyze prosecutorial ideology across time and place
 """
 

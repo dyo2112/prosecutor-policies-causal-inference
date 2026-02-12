@@ -264,6 +264,6 @@ The data is now clean, standardized, and ready for analysis. You can:
 - Build regression models for ideology prediction
 - Analyze progressive prosecutor effectiveness
 - Compare Bay Area counties for media bias research
-- Create time series for BERQ-J working papers
+- Create time series for CLJC working papers
 
 Everything is validated and documented. Good luck with your research!

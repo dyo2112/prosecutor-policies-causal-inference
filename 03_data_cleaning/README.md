@@ -194,6 +194,6 @@ All test cases passed with 100% data extraction.
 
 ## Contact
 
-For questions about the data cleaning process or the BERQ-J prosecutor database project:
+For questions about the data cleaning process or the CLJC prosecutor database project:
 - Criminal Law & Justice Center, UC Berkeley School of Law
-- Berkeley Empirical Research in Quantitative Justice (BERQ-J)
+- Center for Law and Justice (CLJC), UC Berkeley School of Law

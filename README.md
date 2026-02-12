@@ -1,6 +1,6 @@
 # Prosecutorial Policy Analysis: AI-Powered Measurement of Criminal Justice Reform in California
 
-**BERQ-J, UC Berkeley School of Law**  
+**Center for Law and Justice (CLJC), UC Berkeley School of Law**  
 **Principal Investigator: Dvir Yogev**
 
 ---
@@ -221,7 +221,7 @@ aclu_policies/
 
 ```
 Yogev, D. (2025). Prosecutorial Policy Analysis: AI-Powered Measurement of Criminal Justice Reform 
-in California. BERQ-J Working Paper, UC Berkeley School of Law.
+in California. Working Paper, Center for Law and Justice, UC Berkeley School of Law.
 
 Data source: ACLU of Northern California. (2020-2025). Racial Justice Act Public Records Database.
 Retrieved from https://www.aclunc.org/racial-justice-act

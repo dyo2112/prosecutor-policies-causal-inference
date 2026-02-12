@@ -7,7 +7,7 @@ county-level jail population outcomes in California.
 Research Question: Do counties with more progressive prosecutor policies
 show lower jail populations, admissions, and racial disparities?
 
-Author: Dvir Yogev, BERQ-J, UC Berkeley School of Law
+Author: Dvir Yogev, CLJC, UC Berkeley School of Law
 """
 
 import sys, io

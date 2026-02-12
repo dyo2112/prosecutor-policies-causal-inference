@@ -1,6 +1,6 @@
 # Vera Jail Data x Prosecutor Policies: Pilot Report
 
-**BERQ-J, UC Berkeley School of Law | February 2025**
+**Center for Law and Justice (CLJC), UC Berkeley School of Law | February 2025**
 
 ---
 

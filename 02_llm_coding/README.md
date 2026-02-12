@@ -2,7 +2,7 @@
 
 A comprehensive LLM-based pipeline for systematically coding prosecutor office policy documents to analyze ideological orientation across time and place.
 
-**Author:** Dvir Karp, BERQ-J  
+**Author:** Dvir Yogev, CLJC, UC Berkeley School of Law  
 **Institution:** Criminal Law & Justice Center, UC Berkeley Law
 
 ## Overview
@@ -355,7 +355,7 @@ If you use this system in your research, please cite:
 Questions or issues:
 - GitHub: [Your repository]
 - Email: dyo@berkeley.edu
-- BERQ-J: https://www.law.berkeley.edu/research/criminal-law-justice-center/
+- CLJC: https://www.law.berkeley.edu/research/criminal-law-justice-center/
 
 ## License
 

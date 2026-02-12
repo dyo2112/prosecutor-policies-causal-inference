@@ -143,7 +143,7 @@ Comprehensive analysis of prosecutor policy documents focusing on temporal trend
 - Geographic variation justifies county-level studies (Figure 2)
 - RJ emergence supports racial justice framing (Figure 3)
 
-### For BERQ-J Database Papers
+### For CLJC Database Papers
 - Comprehensive documentation of coding and patterns
 - Replicable analysis scripts
 - Publication-ready visualizations
@@ -311,7 +311,7 @@ Code:
 **Everything you need for:**
 - Journal articles (Public Opinion Quarterly paper)
 - Grant applications (Arnold Ventures)
-- BERQ-J database papers
+- CLJC database papers
 - Media bias research
 - Conference presentations
 - PhD dissertation chapters
@@ -324,7 +324,7 @@ Code:
 
 ---
 
-*Prepared for BERQ-J Research*  
+*Prepared for CLJC Research*  
 *UC Berkeley School of Law*  
 *Criminal Law & Justice Center*  
 *October 2025*

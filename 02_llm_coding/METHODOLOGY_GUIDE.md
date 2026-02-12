@@ -1,6 +1,6 @@
 # Methodological Guide: Research with Coded Prosecutor Policy Data
 
-**BERQ-J, UC Berkeley School of Law**  
+**Center for Law and Justice (CLJC), UC Berkeley School of Law**  
 **Author: Dvir Karp**
 
 ## Overview

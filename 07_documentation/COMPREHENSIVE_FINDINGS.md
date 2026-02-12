@@ -440,6 +440,6 @@ These findings provide a solid empirical foundation for further research on pros
 
 ---
 
-**Document prepared for BERQ-J Research**
+**Document prepared for CLJC Research**
 **UC Berkeley School of Law - Criminal Law & Justice Center**
 **Date**: October 2025

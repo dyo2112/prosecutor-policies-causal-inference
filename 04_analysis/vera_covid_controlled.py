@@ -11,7 +11,7 @@ This script addresses that by:
 3. Showing pre-trends explicitly to assess parallel trends assumption
 4. Re-running cross-sectional correlations with year controls
 
-Author: Dvir Yogev, BERQ-J, UC Berkeley School of Law
+Author: Dvir Yogev, CLJC, UC Berkeley School of Law
 """
 
 import sys, io
