@@ -116,7 +116,7 @@ Edit `prosecutor_policy_coder.py`:
 # Update these paths at the bottom of the file
 DOCUMENTS_DIR = "/path/to/your/prosecutor_policies"
 METADATA_FILE = "/path/to/your/prosecutor_policies_metadata.csv"
-OUTPUT_FILE = "/mnt/user-data/outputs/coded_prosecutor_policies.csv"
+OUTPUT_FILE = "05_data/intermediate/coded_prosecutor_policies.csv"
 ```
 
 ### Step 3: Test Run (Small Batch)
@@ -341,11 +341,11 @@ sudo apt-get install antiword catdoc
 If you use this system in your research, please cite:
 
 ```bibtex
-@software{karp2025prosecutor,
-  author = {Karp, Dvir},
+@software{yogev2026prosecutor,
+  author = {Yogev, Dvir},
   title = {Prosecutor Policy Document Coding System},
-  year = {2025},
-  publisher = {Berkeley Empirical Research in Quantitative Justice},
+  year = {2026},
+  publisher = {Center for Law and Justice (CLJC)},
   institution = {UC Berkeley School of Law}
 }
 ```
@@ -353,22 +353,22 @@ If you use this system in your research, please cite:
 ## Contact
 
 Questions or issues:
-- GitHub: [Your repository]
+- GitHub: https://github.com/dyo2112/prosecutor-policies-causal-inference
 - Email: dyo@berkeley.edu
 - CLJC: https://www.law.berkeley.edu/research/criminal-law-justice-center/
 
 ## License
 
-[Your chosen license - e.g., MIT, GPL-3.0]
+MIT License
 
 ## Acknowledgments
 
 - ACLU of Northern California (document collection)
 - Criminal Law & Justice Center, UC Berkeley Law
 - Anthropic Claude API
-- Arnold Ventures (potential funding)
+
 
 ---
 
 **Version:** 1.0  
-**Last Updated:** October 2025
+**Last Updated:** February 2026

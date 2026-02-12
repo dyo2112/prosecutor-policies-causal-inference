@@ -334,17 +334,17 @@ Close elections produce dramatically more emphasis on:
 ## 📁 **DATA FILES**
 
 **Main Analysis:**
-- [final_post_election_analysis.csv](computer:///mnt/user-data/outputs/final_post_election_analysis.csv) - 28 county-year observations
-- [election_margins_1st_2nd.csv](computer:///mnt/user-data/outputs/election_margins_1st_2nd.csv) - All 16 elections with proper margins
-- [margin_correlations_proper.csv](computer:///mnt/user-data/outputs/margin_correlations_proper.csv) - Correlation table
-- [close_election_thresholds_comparison.csv](computer:///mnt/user-data/outputs/close_election_thresholds_comparison.csv) - Comparison of thresholds
+- `05_data/results/final_post_election_analysis.csv` - 28 county-year observations
+- `05_data/results/election_margins_1st_2nd.csv` - All 16 elections with proper margins
+- `05_data/results/margin_correlations_proper.csv` - Correlation table
+- `05_data/results/close_election_thresholds_comparison.csv` - Comparison of thresholds
 
 **Visualizations:**
-- [final_analysis_visualizations.png](computer:///mnt/user-data/outputs/final_analysis_visualizations.png) - 9 key charts
-- [final_analysis_elections_detail.png](computer:///mnt/user-data/outputs/final_analysis_elections_detail.png) - Election details
+- `06_figures/final_analysis_visualizations.png` - 9 key charts
+- `06_figures/final_analysis_elections_detail.png` - Election details
 
 **Code:**
-- [prosecutor_analysis_final.py](computer:///mnt/user-data/outputs/prosecutor_analysis_final.py) - Complete Python script
+- `04_analysis/prosecutor_analysis_final.py` - Complete Python script
 
 ---
 

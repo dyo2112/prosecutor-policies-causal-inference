@@ -220,10 +220,10 @@ aclu_policies/
 ## Citation
 
 ```
-Yogev, D. (2025). Prosecutorial Policy Analysis: AI-Powered Measurement of Criminal Justice Reform 
+Yogev, D. (2026). Prosecutorial Policy Analysis: AI-Powered Measurement of Criminal Justice Reform 
 in California. Working Paper, Center for Law and Justice, UC Berkeley School of Law.
 
-Data source: ACLU of Northern California. (2020-2025). Racial Justice Act Public Records Database.
+Data source: ACLU of Northern California. (2020-2026). Racial Justice Act Public Records Database.
 Retrieved from https://www.aclunc.org/racial-justice-act
 ```
 

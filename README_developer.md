@@ -127,7 +127,7 @@ python aclu_scraper_ultimate.py
 If you use this data in research:
 
 ```
-ACLU of Northern California. (2020-2025). Racial Justice Act Public Records Database.
+ACLU of Northern California. (2020-2026). Racial Justice Act Public Records Database.
 Retrieved from https://www.aclunc.org/racial-justice-act
 ```
 

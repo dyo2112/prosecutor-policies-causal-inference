@@ -1,7 +1,7 @@
 # Methodological Guide: Research with Coded Prosecutor Policy Data
 
 **Center for Law and Justice (CLJC), UC Berkeley School of Law**  
-**Author: Dvir Karp**
+**Author: Dvir Yogev**
 
 ## Overview
 
