@@ -470,82 +470,69 @@ The infrastructure is ready. We need your support to get there.}
 }
 
 % ---------- BACKUP: Overcoming Limitations ----------
-\begin{frame}[shrink=15]{Overcoming Pilot Limitations}
+\begin{frame}[shrink=30]{Overcoming Pilot Limitations}
 {\smalltable
-\begin{tabularx}{\textwidth}{p{2.8cm}p{3.5cm}X}
+\begin{tabular}{p{2.5cm}p{3.5cm}p{5.5cm}}
 \toprule
 \textbf{Limitation} & \textbf{Root Cause} & \textbf{Solution} \\
 \midrule
-COVID confounds DiD & All CA counties declined in 2020 & Multi-state data diversifies; synthetic control matches on pre-treatment trajectories \\
-\addlinespace
-Parallel trends violated ($p = 0.021$) & LA converging pre-Gasc\'on & Longer pre-period (pre-2015 docs) + case-level data \\
-\addlinespace
-TWFE non-significant ($N = 137$) & Only 34 counties, 9 years & Extension 1 (national) increases $N$ and DA transitions \\
-\addlinespace
-Aggregate data too coarse & Cannot distinguish mechanisms & Extension 2 (UniCourt, CJARS): mechanism decomposition \\
+COVID confounds DiD & All CA counties declined in 2020 & Multi-state data; synthetic control on pre-treatment \\[3pt]
+Parallel trends violated ($p = 0.021$) & LA converging pre-Gasc\'on & Longer pre-period + case-level data \\[3pt]
+TWFE non-significant ($N = 137$) & 34 counties, 9 years & National expansion increases $N$ \\[3pt]
+Aggregate data too coarse & Cannot distinguish mechanisms & Case-level data: mechanism decomposition \\
 \bottomrule
-\end{tabularx}}
+\end{tabular}}
 \end{frame}
 
 % ---------- BACKUP: Causal Strategies ----------
-\begin{frame}[shrink=15]{Causal Identification Strategies}
+\begin{frame}[shrink=30]{Causal Identification Strategies}
 {\smalltable
-\begin{tabularx}{\textwidth}{p{2.2cm}p{3.2cm}p{2.5cm}X}
+\begin{tabular}{p{2cm}p{3cm}p{2.8cm}p{2.8cm}}
 \toprule
 \textbf{Design} & \textbf{Current Status} & \textbf{What's Needed} & \textbf{Extension} \\
 \midrule
-RDD & \textasciitilde 5 close CA elections---underpowered & 30--50 close elections & Extension 1 (national) \\
-\addlinespace
-Stacked DiD & 9 disruptions; Vera outcomes only & Crime/sentencing outcomes + more transitions & Extensions 1 + 2 \\
-\addlinespace
-Synthetic Control & Gasc\'on pilot works; limited outcomes & Outcome data beyond jail pop & Extension 2 \\
-\addlinespace
-Event Study & Pre-period marginal (6 yrs) & Longer pre-period (pre-2015) & Extension 1 \\
-\addlinespace
-Instrumental Variables & Election margin $\to$ ideology ($r = -0.50$) & Outcome data for second stage & Extension 2 \\
+RDD & $\sim$5 close CA elections & 30--50 close elections & Ext 1 (national) \\[3pt]
+Stacked DiD & 9 disruptions; Vera only & More outcomes + transitions & Ext 1 + 2 \\[3pt]
+Synthetic Control & Gasc\'on pilot works & More outcome data & Ext 2 \\[3pt]
+Event Study & Pre-period marginal (6 yr) & Longer pre-period & Ext 1 \\[3pt]
+IV & Margin $\to$ ideology ($r = -0.50$) & Outcome data for 2nd stage & Ext 2 \\
 \bottomrule
-\end{tabularx}}
+\end{tabular}}
 \end{frame}
 
 % ---------- BACKUP: Extension 2 Detail ----------
-\begin{frame}[shrink=15]{Extension 2 Detail: Outcome Data Sources}
+\begin{frame}[shrink=30]{Extension 2 Detail: Outcome Data Sources}
 {\smalltable
-\begin{tabularx}{\textwidth}{p{2.5cm}Xp{1.4cm}rp{1.2cm}}
+\begin{tabular}{p{2.3cm}p{4cm}lrl}
 \toprule
 \textbf{Source} & \textbf{Records} & \textbf{Timeline} & \textbf{Cost} & \textbf{Priority} \\
 \midrule
-CA DOJ OpenJustice & County-year arrest, filing, incarceration & Immediate & Free & High \\
-\addlinespace
-CA Sentencing Comm. & Enhancement filings, 3-strikes by county-year & 1--2 mo & Free & High \\
-\addlinespace
-Vera (done) & Quarterly jail pop and admissions & Done & Done & Done \\
-\addlinespace
-UniCourt / PACER & Individual case dispositions, plea bargains & 2--3 mo & \textasciitilde\$30--50k & Very high \\
-\addlinespace
-CJARS & Individual arrest $\to$ parole, 24 states & 3--12 mo & \textasciitilde\$5k & Highest \\
+CA DOJ OpenJustice & County-yr arrest, filing, incarceration & Immediate & Free & High \\[3pt]
+CA Sentencing Comm. & Enhancement filings, 3-strikes & 1--2 mo & Free & High \\[3pt]
+Vera (done) & Quarterly jail pop and admissions & Done & Done & Done \\[3pt]
+UniCourt / PACER & Case dispositions, plea bargains & 2--3 mo & \$30--50k & Very high \\[3pt]
+CJARS & Arrest $\to$ parole, 24 states & 3--12 mo & \$5k & Highest \\
 \bottomrule
-\end{tabularx}}
+\end{tabular}}
 \vspace{6pt}
-\begin{exampleblock}{}
-\textbf{Case-level data is the gold standard:} it links policy documents directly to line-prosecutor behavior. Are ``minimize enhancements'' memos actually reducing enhancement filings? UniCourt and CJARS can answer that.
-\end{exampleblock}
+{\small\textbf{Case-level data is the gold standard:} it links policy documents directly to line-prosecutor behavior. Are ``minimize enhancements'' memos actually reducing enhancement filings?}
 \end{frame}
 
 % ---------- BACKUP: Disruption Detection ----------
-\begin{frame}{Policy Disruption Detection: Methodology}
+\begin{frame}[shrink=30]{Policy Disruption Detection: Methodology}
 {\tablefont
-\begin{tabularx}{\textwidth}{lrX}
+\begin{tabular}{lrp{7cm}}
 \toprule
 \textbf{Signal} & \textbf{Weight} & \textbf{Method} \\
 \midrule
-Ideology Velocity & 30\% & Rate of ideology change vs.\ prior 2-year baseline \\
-Novelty Index & 25\% & Proportion of first-time policy types \\
-Topic Shift & 20\% & Jensen-Shannon divergence of topic distributions \\
-Margin Reversal & 15\% & Flips in extensive/intensive leniency direction \\
+Ideology Velocity & 30\% & Rate of ideology change vs.\ prior 2-year baseline \\[3pt]
+Novelty Index & 25\% & Proportion of first-time policy types \\[3pt]
+Topic Shift & 20\% & Jensen-Shannon divergence of topic distributions \\[3pt]
+Margin Reversal & 15\% & Flips in extensive/intensive leniency direction \\[3pt]
 DA Transition & 10\% & New administration detection \\
 \bottomrule
-\end{tabularx}}
-\vspace{6pt}
+\end{tabular}}
+\vspace{8pt}
 \textbf{Top disruptions detected:}
 \begin{enumerate}\setlength\itemsep{1pt}
     \item San Francisco 2020 (Boudin): 0.572
@@ -555,17 +542,17 @@ DA Transition & 10\% & New administration detection \\
 \end{frame}
 
 % ---------- BACKUP: Anticipated Objections ----------
-\begin{frame}{Anticipated Objections}
-\begin{block}{``Policy documents $\neq$ practice. How do you know what's written actually happens?''}
-{\small That's exactly why Extension 2 (outcome linkage) is Priority~1. We test whether ``diversion-positive'' memos predict more diversions. We also plan stakeholder interviews to validate. But note: even the stated-policy variation is \emph{itself} a novel descriptive contribution.}
+\begin{frame}[shrink=30]{Anticipated Objections}
+\begin{block}{``Policy documents $\neq$ practice. How do you know memos change anything?''}
+{\small That's why Extension 2 is Priority 1. We test whether ``diversion-positive'' memos predict more diversions. Even the stated-policy variation is \emph{itself} a novel descriptive contribution.}
 \end{block}
 \vspace{4pt}
 \begin{block}{``You only have California. Isn't this just a Blue State story?''}
-{\small That's the point of Extension 1. CA provides internal variation (progressive Bay Area vs.\ traditional Central Valley), but external validity requires national expansion. We target the 100 largest DA offices to include red/purple jurisdictions.}
+{\small That's the point of Extension 1. CA has internal variation (Bay Area vs.\ Central Valley), but external validity requires the 100 largest DA offices nationally.}
 \end{block}
 \vspace{4pt}
 \begin{block}{``AI coding isn't reliable enough for research.''}
-{\small The face validity checks are strong ($d = 0.75$ Gasc\'on, geographic clustering). Phase~1 includes a 200-doc human validation study to establish gold-standard IRR. The \$80 cost and 2-hour runtime make iteration cheap.}
+{\small Face validity is strong ($d = 0.75$ Gasc\'on, geographic clustering). Phase 1 includes 200-doc human validation for gold-standard IRR. Cost: \$80, runtime: 2 hours.}
 \end{block}
 \end{frame}
 
