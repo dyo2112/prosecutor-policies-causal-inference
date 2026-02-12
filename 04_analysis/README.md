@@ -121,118 +121,35 @@ Comprehensive analysis of prosecutor policy documents focusing on temporal trend
 
 ---
 
-## 💡 HOW TO USE THESE RESULTS
-
-### For Your SF DA Recall Paper (Public Opinion Quarterly)
-- Use Figure 3 to show baseline RJ emphasis across counties
-- Compare SF's actual policy profile to media coverage
-- Cite statistics on RJ × progressive relationship
-
-### For Prosecutor Ideology Research
-- Figure 1 shows clear temporal trends for time series
-- Figure 5 heatmap shows county-year variation
-- Use ideology_score as continuous DV in regressions
-
-### For Media Bias Research (Bay Area Coverage)
-- Figure 2 shows actual Bay Area variation
-- SF and Santa Clara are progressive, Alameda surprisingly not
-- Use as baseline for bias detection
-
-### For Grant Applications (Arnold Ventures, etc.)
-- Clear evidence of progressive prosecutor movement (Figure 1)
-- Geographic variation justifies county-level studies (Figure 2)
-- RJ emergence supports racial justice framing (Figure 3)
-
-### For CLJC Database Papers
-- Comprehensive documentation of coding and patterns
-- Replicable analysis scripts
-- Publication-ready visualizations
-
----
-
-## 🔬 REPRODUCIBILITY
-
-### To Reproduce All Analyses:
-```bash
-cd /path/to/outputs
-python3 comprehensive_analysis.py
-python3 create_visualizations.py
-```
-
-### To Run Specific Analyses:
-```python
-import pandas as pd
-
-# Load data
-df = pd.read_csv('prosecutor_policies_CLEANED.csv')
-
-# Example: County comparison
-county_stats = df.groupby('county').agg({
-    'is_progressive': 'mean',
-    'ideology_score': 'mean'
-})
-
-# Example: Temporal trend
-yearly = df[df['year'] >= 2010].groupby('year')['ideology_score'].mean()
-```
-
----
-
-## 📈 KEY STATISTICS TO CITE
-
-### Temporal Evolution
-- **"Progressive documents increased 122% from 2019 to 2020 (18% → 40%)"**
-- **"Ideology shows statistically significant upward trend (+0.062/year, p=0.003)"**
-- **"Peak progressiveness in 2022 (56% of documents)"**
-
-### Racial Justice
-- **"Racial justice emphasis surged 30 percentage points in 2020 (12% → 42%)"**
-- **"High RJ emphasis predicts 92% probability of progressive ideology"**
-- **"RJ documents are 4.6× more likely to be progressive (χ²=421, p<0.001)"**
-
-### Geographic Variation
-- **"Sacramento County shows highest net progressive (78%)"**
-- **"Central Valley counties show net traditional orientation (Stanislaus -34%)"**
-- **"Bay Area counties average 35% progressive, but range from 18% (Alameda) to 59% (Santa Clara)"**
-
-### Leadership Effects
-- **"LA County ideology score increased 238% under Gascón (+0.73 points)"**
-- **"Progressive documents increased 59% post-Gascón (35% → 55%)"**
-- **"Large effect size (Cohen's d=0.75) indicates substantial policy shift"**
-
-### Policy Focus
-- **"Support for alternatives to incarceration doubled post-2020 (10% → 21%)"**
-- **"Racial justice became 3rd most common topic post-2020 (from 7th pre-2020)"**
-- **"Recent policies emphasize extensive margin 50% more than intensive margin"**
-
----
-
-## 🎓 IMPLICATIONS FOR YOUR RESEARCH
+## 🎓 RESEARCH IMPLICATIONS
 
 ### Progressive Prosecutor Measurement
-- Clear operational definition based on actual policies
-- Temporal and geographic variation documented
-- Multiple measures (binary, continuous, specific policies)
+- Clear operational definition based on actual policies (not campaign rhetoric or case outcomes)
+- Temporal and geographic variation documented — use `ideology_score` as continuous DV in regressions
+- Multiple measures available: binary classification, continuous score, specific policy positions
+- Figure 1 (temporal evolution) and Figure 5 (ideology heatmap) provide county-year variation
 
-### Racial Justice Integration
-- Strong empirical link between RJ and progressive orientation
-- 2020 as critical juncture
-- Geographic variation in adoption
+### Racial Justice as Policy Signal
+- Strong empirical link between RJ emphasis and progressive orientation (92% of high-RJ docs are progressive)
+- 2020 as critical juncture — 30pp surge coinciding with George Floyd protests
+- Geographic variation in adoption creates natural comparison groups
+- Figure 3 shows RJ trends and county leaders; useful for baseline policy comparisons
 
-### DA Elections Matter
-- Gascón case provides quasi-experimental evidence
-- Large, statistically significant effects
-- Suggests electoral accountability is meaningful
+### DA Elections and Accountability
+- Gascón case provides quasi-experimental evidence of leadership effects (d=0.75, p<0.001)
+- Large, statistically significant effects suggest electoral accountability is meaningful
+- Close elections data enables regression discontinuity designs
 
-### Media Bias Detection
-- Baseline policy profiles available
-- Can compare actual vs portrayed ideology
-- Geographic context for Bay Area coverage
+### Policy Strategy Patterns
+- Extensive margin (charging) reforms more common than intensive margin (sentencing) reforms
+- RJ framing associated with broader reform adoption
+- Geographic clustering suggests policy diffusion patterns across counties
+- Figure 2 shows actual county-level policy variation — useful as baseline for media coverage comparisons
 
-### Criminal Justice Reform Strategy
-- Extensive margin (charging) reforms more common
-- RJ framing associated with broader reforms
-- Geographic clustering suggests diffusion patterns
+### Grant and Funding Applications
+- Clear evidence of progressive prosecutor movement with statistical backing
+- Geographic and temporal variation justifies county-level causal designs
+- RJ emergence supports racial justice framing for criminal justice funders
 
 ---
 
