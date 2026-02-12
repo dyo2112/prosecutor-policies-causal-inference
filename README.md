@@ -81,77 +81,93 @@ Elections with ≤15pp margin produce **+31.2 percentage points** more progressi
 
 ## 🔬 Causal Inference Potential: Why This Project Merits Extension
 
-The infrastructure we've built is not just descriptive — it creates **rare opportunities for credible causal identification** in criminal justice research. The combination of rich policy measurement, electoral variation, and temporal depth enables multiple identification strategies:
+The infrastructure we've built is not just descriptive — it creates **rare opportunities for credible causal identification** in criminal justice research. We have already conducted a pilot linking our policy data to Vera Institute jail population outcomes, demonstrating both the promise and the methodological challenges.
 
-### Regression Discontinuity Design (RDD)
+### What the Pilot Already Shows
 
-DA elections provide a **sharp cutoff at 50% vote share** where the winner's identity (and thus policy orientation) changes discontinuously. Our data already shows:
+We merged our AI-coded policy scores with the Vera Institute's Incarceration Trends dataset (245,840 quarterly observations, all US counties, 1970–2024). Key results:
 
-- **Gascón (LA 2020)**: Won by 0.03 percentage points → 60.5% progressive policies in Year 1
-- **Boudin (SF 2019)**: Won by 4.63pp in a 4-candidate race → 63.6% progressive
-- Close elections produce **31.2pp more progressive policies** (p=0.010)
+| Finding | Estimate | Significance | Survives Controls? |
+|---------|----------|-------------|-------------------|
+| Ideology ↔ Jail Pop Rate | r = -0.222 | p = 0.009 | **Yes** (year-demeaned) |
+| Ideology ↔ Jail Admissions | r = -0.221 | p = 0.009 | **Yes** (year-demeaned) |
+| Progressive vs Traditional counties | -68.5 per 100k | d = -0.81, p < 0.001 | **Yes** |
+| LA pretrial rate (Gascón DiD) | -32.1 per 100k | Pre-trend flat (p = 0.90) | **Yes** (cleanest) |
 
-**What's needed:** Expanding to more states and election cycles to increase the number of close races near the cutoff. With ~30 close elections, formal RDD becomes feasible with standard CCT bandwidth selection.
+But the pilot also revealed a critical lesson: **naive pre/post comparisons are confounded by COVID**. All large CA counties saw similar jail population declines in 2020. A COVID-controlled DiD showed that the parallel trends assumption is violated for jail population rates (pre-trend p = 0.021) — LA was already converging toward control counties before Gascón took office. This is exactly why rigorous causal inference methods, applied with proper controls, are essential.
 
-### Difference-in-Differences (DiD)
+> **Bottom line:** The descriptive associations are real and robust. The causal question — *do progressive policies actually reduce incarceration?* — requires better identification, more data, or both. The infrastructure to answer it is ready.
 
-DA transitions create **natural treatment-control comparisons**:
-- **Treatment counties:** Elected a progressive DA (SF 2019, LA 2020, Sacramento, etc.)
-- **Control counties:** No DA change in the same period
-- **Pre/post comparison** with parallel trends testing
+### Three Avenues for Extension
 
-Our data already validates this design — the Gascón case shows a **large, statistically significant shift** (d=0.75) that's cleanly identified by the election date.
+---
 
-**What's needed:** Linking policy data to **downstream outcomes** (incarceration rates, charging decisions, sentence lengths) to measure whether policy documents translate into behavioral change.
+#### Avenue 1: Outcome Data Linkage (Deepening the Causal Chain)
 
-### Synthetic Control Method
+The pilot used aggregate jail populations. Linking to **case-level outcome data** would enable measurement of the specific mechanisms through which DA policy operates.
 
-For high-profile single-county studies (SF under Boudin, LA under Gascón), we can construct **synthetic counterfactual counties** from weighted combinations of untreated counties:
+| Sub-Project | Data Source | What It Enables | Time | Cost | Causal Value |
+|------------|------------|-----------------|------|------|-------------|
+| **County-level crime & incarceration** | CA DOJ OpenJustice (free) | County-year panel of arrest rates, felony filings, incarceration rates; immediate DiD/synthetic control with existing policy data | 2–3 months, PI + 1 RA | ~$15k (RA salary) | ⭐⭐⭐⭐ Enables stacked DiD across all DA transitions |
+| **Case-level charging & sentencing** | UniCourt API ($) or PACER | Individual case dispositions, charge severity, plea bargains, sentence lengths; can measure extensive margin (who gets charged) vs. intensive margin (how severely) | 4–6 months, 1 RA | ~$30–50k (API fees + RA) | ⭐⭐⭐⭐⭐ Gold standard — links policy documents directly to line-prosecutor behavior |
+| **Jail population by subgroup** | Vera (already linked) | Race-specific jail rates, pretrial vs. sentenced, admissions vs. stock; pretrial detention is the cleanest causal channel (pilot pre-trend p = 0.90) | 1 month, PI | ~$0 (done) | ⭐⭐⭐ Already piloted; pretrial focus is most credible |
+| **Enhancement & three-strikes usage** | CA Sentencing Commission | Whether "minimize enhancements" policies actually reduce enhancement filings | 3 months, 1 RA | ~$15k | ⭐⭐⭐⭐ Directly tests intensive margin policy impact |
 
-- Rich pre-treatment data (multiple years of policy scores, topics, margins)
-- Clear treatment onset (election date)
-- Multiple donor counties for constructing the synthetic unit
-- Placebo tests across untreated counties
+**Why this matters for policymakers:** Outcome linkage answers the question legislators and reform advocates most urgently need answered: *Are progressive prosecution reforms actually changing what happens in courtrooms, or are they just rhetoric?* If policy documents predict reduced charging and shorter sentences, that validates the progressive prosecutor model. If they don't, it suggests implementation gaps that can be addressed.
 
-### Event Study Design
+---
 
-Our panel structure (county × year) supports **dynamic treatment effect estimation**:
+#### Avenue 2: Geographic Expansion (More Counties, More States)
 
-```
-policy_ct = β₀ + Σₖ βₖ · Dₖ_ct + X'_ct · γ + αc + γt + εct
+California alone provides limited statistical power for causal designs. The pilot's TWFE regression was non-significant (N = 137 county-years) — we need more variation.
 
-where k = years relative to DA election (-3, -2, ..., 0, +1, +2, +3)
-```
+| Sub-Project | Scope | What It Enables | Time | Cost | Causal Value |
+|------------|-------|-----------------|------|------|-------------|
+| **Multi-state DA document collection** | TX, FL, NY, IL, PA (5 states) | 30–50× more close elections for RDD; cross-state policy diffusion analysis; tests external validity of CA findings | 8–12 months, 2 RAs | ~$80–120k (FOIA/PRA costs + RA salary + API) | ⭐⭐⭐⭐⭐ Only way to achieve sufficient power for RDD |
+| **National DA election database** | All 2,400+ elected DAs | Complete election margins for IV/RDD; currently no comprehensive source exists | 4–6 months, 1 RA | ~$25–35k | ⭐⭐⭐⭐ Critical input for any election-based identification |
+| **Urban DA deep-dive** | 20 largest US counties | High-stakes jurisdictions where policy changes affect millions; richer pre-treatment data for synthetic control | 6 months, 1 RA | ~$40–50k | ⭐⭐⭐⭐ Best ratio of effort to causal credibility |
 
-Preliminary evidence shows a **first-year effect** — progressive policies peak immediately (57%) then decline (34%, 29%, 30%), suggesting a momentum-based reform window.
+**Why this matters for policymakers:** Single-state findings are easily dismissed as California-specific. A national database would reveal whether the patterns we found — progressive policies correlating with lower jail rates — hold across legal cultures, political environments, and demographic contexts. Cross-state variation also enables policymakers to benchmark their jurisdiction against comparable ones.
 
-### Instrumental Variables
+---
 
-Close elections can serve as **instruments for prosecutorial ideology**:
-- **First stage:** Close election → progressive DA elected
-- **Second stage:** Progressive DA → policy orientation → criminal justice outcomes
-- **Exclusion restriction:** Margin of victory affects outcomes only through DA identity
+#### Avenue 3: Deeper California Coverage (Completing the Panel)
 
-### Linking Policies to Outcomes (The Critical Next Step)
+Our current CA data has gaps: 41 of 58 counties, uneven temporal coverage, and no documents from some key transition periods.
 
-The most impactful extension would **merge our policy data with case-level outcome data**:
+| Sub-Project | Scope | What It Enables | Time | Cost | Causal Value |
+|------------|-------|-----------------|------|------|-------------|
+| **Complete ACLU PRA archive** | Remaining 17 CA counties | Full 58-county panel; eliminates selection concerns about which counties responded to PRA requests | 2–3 months, 1 RA | ~$10–15k (FOIA follow-up + API) | ⭐⭐⭐ Removes selection bias; modestly increases power |
+| **Historical document request** | Pre-2015 documents for all counties | Longer pre-treatment period for DiD/event study; better pre-trend testing (pilot showed 6 pre-years is marginal) | 3–4 months, 1 RA | ~$15–20k | ⭐⭐⭐⭐ Longer pre-period dramatically improves pre-trend tests |
+| **Human validation study** | 200 documents dual-coded by law students | Gold-standard inter-rater reliability for AI coding; validates or calibrates the Claude-based pipeline | 3 months, 2 coders | ~$20k (coder stipends) | ⭐⭐⭐ Essential for publication credibility; doesn't directly improve causal ID but required for peer review |
+| **Qualitative validation** | DA office interviews (10–15 offices) | Ground-truth whether policy documents reflect actual practice; identifies implementation gaps | 4 months, 1 RA | ~$15k | ⭐⭐⭐ Validates measurement; addresses the documents-vs-practice question |
 
-| Outcome Data Source | What It Enables |
-|---------------------|-----------------|
-| **UniCourt / PACER** | Charging rates, case dispositions, sentence lengths |
-| **CA DOJ OpenJustice** | County-level incarceration, arrest, crime rates |
-| **Vera Institute** | Jail population data |
-| **Sentencing Commission** | Enhancement usage, plea bargain patterns |
+**Why this matters for policymakers:** Policymakers need to know whether the patterns we observe are artifacts of which counties responded to records requests, or genuine features of prosecutorial reform. Complete coverage removes that objection. The human validation study is also critical — electeds and judges will not trust AI-coded policy scores unless validated by legal experts.
 
-This would allow us to test: **Do progressive policy documents actually change prosecutorial behavior?** — arguably the most important open question in the progressive prosecutor literature.
+---
 
-### Multi-State Expansion
+### Identification Strategies Enabled by Extensions
 
-California is one state with one legal culture. Extending to **Texas, Florida, New York, Illinois** would:
-- Increase statistical power for RDD (more close elections)
-- Enable cross-state policy diffusion analysis
-- Test external validity of California findings
-- Create the first **national database** of prosecutorial ideology
+| Strategy | Current Feasibility | What's Needed | Priority Extension |
+|----------|-------------------|---------------|-------------------|
+| **Regression Discontinuity** | ~5 close CA elections; underpowered | 30+ close elections | Avenue 2 (multi-state) |
+| **Stacked DiD** | Viable for Gascón, Boudin; COVID-confounded | Crime/sentencing outcomes + more transitions | Avenues 1 + 2 |
+| **Synthetic Control** | Feasible for LA/SF; donor pool exists | Outcome data beyond jail pop | Avenue 1 (case-level data) |
+| **Event Study** | Panel too short for credible pre-trends | Longer pre-period (pre-2015 documents) | Avenue 3 (historical docs) |
+| **Instrumental Variables** | First stage exists (elections → ideology) | Outcome data for second stage | Avenue 1 |
+
+### Recommended Funding Package
+
+For a funder seeking **maximum causal credibility per dollar**, we recommend:
+
+| Phase | Components | Timeline | Budget | Deliverable |
+|-------|-----------|----------|--------|-------------|
+| **Phase 1** | CA DOJ outcome linkage + complete CA panel + human validation | 6 months | ~$45–50k | First causal estimates (DiD/synthetic control) with validated measurement |
+| **Phase 2** | Multi-state expansion (3 states) + national election DB | 12 months | ~$100–130k | First national prosecutorial ideology database; powered RDD estimates |
+| **Phase 3** | Case-level outcome data + stakeholder interviews | 6 months | ~$50–65k | Mechanism evidence (what specifically changes in courtrooms) |
+
+**Total for full program: ~$200–250k over 18–24 months.**
+The infrastructure is built. The marginal cost of each extension is low — the pipeline, coding schema, and analysis framework are ready to scale.
 
 ---
 
@@ -167,48 +183,31 @@ aclu_policies/
 ├── 02_llm_coding/
 │   ├── prosecutor_policy_coder.py      ← Core Claude API coding pipeline
 │   ├── validate_coding.py              ← Coding validation tools
-│   ├── METHODOLOGY_GUIDE.md            ← Research methodology documentation
-│   └── ...
+│   └── METHODOLOGY_GUIDE.md            ← Research methodology documentation
 ├── 03_data_cleaning/
-│   ├── clean_prosecutor_policies_v2.py ← Data standardization script
-│   └── README.md
+│   └── clean_prosecutor_policies_v2.py ← Data standardization script
 ├── 04_analysis/
 │   ├── disruption_detector.py          ← Policy disruption detection system
-│   ├── detect_disruptions.py           ← Disruption detection runner
 │   ├── comprehensive_analysis.py       ← Full statistical analysis
-│   ├── prosecutor_analysis_final.py    ← Election-linked analysis
-│   └── create_visualizations.py        ← Publication-ready figures
+│   ├── vera_jail_pilot.py             ← Vera jail outcome pilot analysis
+│   └── vera_covid_controlled.py       ← COVID-controlled reanalysis
 ├── 05_data/
-│   ├── intermediate/                   ← Raw LLM-coded output
 │   ├── clean/
 │   │   └── prosecutor_policies_CLEANED.csv  ← 1,865 docs × 37 columns
 │   └── results/
-│       ├── policy_disruptions.csv      ← Disruption scores by county-year
-│       ├── novel_reforms.csv           ← 347 first-time policy adoptions
-│       ├── final_post_election_analysis.csv  ← Election-linked data
-│       └── election_margins_1st_2nd.csv     ← Proper election margins
-├── 06_figures/                         ← 8 publication-ready visualizations
-└── 07_documentation/
-    ├── COMPREHENSIVE_FINDINGS.md       ← Full statistical results
-    ├── FINAL_ANALYSIS_SUMMARY.md       ← Election analysis findings
-    └── METHODOLOGY_GUIDE.md            ← Research design guidance
+│       ├── policy_disruptions.csv           ← Disruption scores by county-year
+│       ├── vera_policy_merged.csv           ← Policy × jail outcome panel
+│       └── vera_did_estimates.csv           ← COVID-controlled DiD estimates
+├── 06_figures/                              ← Publication-ready visualizations
+├── 07_documentation/
+│   ├── COMPREHENSIVE_FINDINGS.md            ← Full statistical results
+│   ├── VERA_PILOT_REPORT.md                 ← Jail outcome pilot + COVID reanalysis
+│   └── METHODOLOGY_GUIDE.md                 ← Research design guidance
+└── vera_jail/
+    └── incarceration_trends_county.csv      ← Vera Institute county-level data
 ```
 
 > **Note:** The raw PDF corpus (2,665 documents, ~6 GB) is not included in this repository. Contact the PI for access.
-
----
-
-## Funding Opportunity: What Additional Resources Would Enable
-
-| Investment Area | What It Produces | Estimated Effort |
-|----------------|-------------------|------------------|
-| **Outcome data linkage** | First causal estimates of policy → behavior | 6 months, 1 RA |
-| **Multi-state expansion** | National prosecutorial ideology database | 12 months, 2 RAs |
-| **Human validation study** | Gold-standard inter-rater reliability | 3 months, 2 coders |
-| **Real-time monitoring** | Ongoing policy tracking dashboard | 6 months, 1 developer |
-| **Stakeholder interviews** | Qualitative validation of quantitative patterns | 4 months, 1 RA |
-
-The infrastructure is built. **The marginal cost of impactful extensions is low** — the pipeline, coding schema, and analysis framework are ready to scale.
 
 ---
 
