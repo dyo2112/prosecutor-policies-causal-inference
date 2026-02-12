@@ -1,1100 +1,1728 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prosecutorial Policy Analysis — Funder Briefing</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --r-background-color: #0d1117;
-    --r-main-color: #c9d1d9;
-    --r-heading-color: #e6edf3;
-    --r-link-color: #58a6ff;
-    --r-selection-background-color: #1f6feb;
-    --accent: #58a6ff;
-    --accent2: #f0883e;
-    --accent3: #3fb950;
-    --accent4: #f778ba;
-    --accent5: #d2a8ff;
-    --caution: #d29922;
-    --danger: #f85149;
-    --card-bg: rgba(22, 27, 34, 0.85);
-    --border: #30363d;
-  }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosecutorial Policy Analysis — Funder Briefing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --r-background-color: #0d1117;
+            --r-main-color: #c9d1d9;
+            --r-heading-color: #e6edf3;
+            --r-link-color: #58a6ff;
+            --r-selection-background-color: #1f6feb;
+            --accent: #58a6ff;
+            --accent2: #f0883e;
+            --accent3: #3fb950;
+            --accent4: #f778ba;
+            --accent5: #d2a8ff;
+            --caution: #d29922;
+            --danger: #f85149;
+            --card-bg: rgba(22, 27, 34, 0.85);
+            --border: #30363d;
+        }
 
-  .reveal {
-    font-family: 'Inter', -apple-system, sans-serif;
-    font-size: 32px;
-  }
-  .reveal h1, .reveal h2, .reveal h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    text-transform: none;
-    letter-spacing: -0.02em;
-  }
-  .reveal h1 { font-size: 2.2em; line-height: 1.1; }
-  .reveal h2 { font-size: 1.5em; line-height: 1.2; }
-  .reveal h3 { font-size: 1.1em; font-weight: 600; color: var(--accent); }
+        .reveal {
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-size: 32px;
+        }
 
-  .reveal section { text-align: left; }
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: none;
+            letter-spacing: -0.02em;
+        }
 
-  /* Card styling */
-  .card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin: 12px 0;
-  }
+        .reveal h1 {
+            font-size: 2.2em;
+            line-height: 1.1;
+        }
 
-  /* Stat boxes */
-  .stats-row {
-    display: flex;
-    gap: 16px;
-    margin: 16px 0;
-  }
-  .stat-box {
-    flex: 1;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 18px;
-    text-align: center;
-  }
-  .stat-box .number {
-    font-size: 2em;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 4px;
-  }
-  .stat-box .label {
-    font-size: 0.5em;
-    color: #8b949e;
-    font-weight: 400;
-  }
-  .stat-box.blue .number { color: var(--accent); }
-  .stat-box.orange .number { color: var(--accent2); }
-  .stat-box.green .number { color: var(--accent3); }
-  .stat-box.pink .number { color: var(--accent4); }
-  .stat-box.purple .number { color: var(--accent5); }
+        .reveal h2 {
+            font-size: 1.5em;
+            line-height: 1.2;
+        }
 
-  /* Tables */
-  .reveal table {
-    font-size: 0.6em;
-    width: 100%;
-    border-collapse: collapse;
-    margin: 12px 0;
-  }
-  .reveal table th {
-    background: rgba(88, 166, 255, 0.1);
-    color: var(--accent);
-    font-weight: 600;
-    padding: 10px 12px;
-    border-bottom: 2px solid var(--accent);
-    text-align: left;
-  }
-  .reveal table td {
-    padding: 8px 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  .reveal table tr:hover td {
-    background: rgba(88, 166, 255, 0.05);
-  }
+        .reveal h3 {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--accent);
+        }
 
-  /* Lists */
-  .reveal ul { list-style: none; padding-left: 0; }
-  .reveal ul li {
-    padding: 4px 0 4px 24px;
-    position: relative;
-    font-size: 0.85em;
-  }
-  .reveal ul li::before {
-    content: '▸';
-    position: absolute;
-    left: 4px;
-    color: var(--accent);
-  }
+        .reveal section {
+            text-align: left;
+        }
 
-  /* Callout boxes */
-  .callout {
-    border-left: 4px solid var(--accent);
-    padding: 12px 20px;
-    margin: 16px 0;
-    background: rgba(88, 166, 255, 0.08);
-    border-radius: 0 8px 8px 0;
-    font-size: 0.85em;
-  }
-  .callout.warn {
-    border-left-color: var(--caution);
-    background: rgba(210, 169, 34, 0.08);
-  }
-  .callout.good {
-    border-left-color: var(--accent3);
-    background: rgba(63, 185, 80, 0.08);
-  }
-  .callout.bad {
-    border-left-color: var(--danger);
-    background: rgba(248, 81, 73, 0.08);
-  }
+        /* Card styling */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 12px 0;
+        }
 
-  /* Pipeline graphic */
-  .pipeline {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 20px 0;
-  }
-  .pipeline .step {
-    flex: 1;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px;
-    text-align: center;
-    font-size: 0.65em;
-    position: relative;
-  }
-  .pipeline .step .icon { font-size: 1.8em; display: block; margin-bottom: 6px; }
-  .pipeline .arrow {
-    font-size: 1.2em;
-    color: var(--accent);
-    flex-shrink: 0;
-  }
+        /* Stat boxes */
+        .stats-row {
+            display: flex;
+            gap: 16px;
+            margin: 16px 0;
+        }
 
-  /* Phase boxes */
-  .phase-row {
-    display: flex;
-    gap: 12px;
-    margin: 12px 0;
-  }
-  .phase-box {
-    flex: 1;
-    border-radius: 12px;
-    padding: 16px;
-    text-align: center;
-  }
-  .phase-box h4 {
-    margin: 0 0 8px 0;
-    font-size: 0.85em;
-    font-weight: 700;
-  }
-  .phase-box .cost {
-    font-size: 1.6em;
-    font-weight: 800;
-    line-height: 1.2;
-  }
-  .phase-box .time {
-    font-size: 0.65em;
-    opacity: 0.7;
-    margin-top: 4px;
-  }
-  .phase-box.p1 { background: rgba(88,166,255,0.12); border: 1px solid var(--accent); }
-  .phase-box.p1 .cost { color: var(--accent); }
-  .phase-box.p2 { background: rgba(240,136,62,0.12); border: 1px solid var(--accent2); }
-  .phase-box.p2 .cost { color: var(--accent2); }
-  .phase-box.p3 { background: rgba(63,185,80,0.12); border: 1px solid var(--accent3); }
-  .phase-box.p3 .cost { color: var(--accent3); }
+        .stat-box {
+            flex: 1;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+        }
 
-  /* Subtitle/small text */
-  .subtitle { font-size: 0.65em; color: #8b949e; font-weight: 400; }
-  .small { font-size: 0.7em; }
-  .tiny { font-size: 0.55em; color: #8b949e; }
-  .highlight { color: var(--accent); font-weight: 600; }
-  .highlight-orange { color: var(--accent2); font-weight: 600; }
-  .highlight-green { color: var(--accent3); font-weight: 600; }
+        .stat-box .number {
+            font-size: 2em;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
 
-  /* Title slide */
-  .title-slide h1 {
-    font-size: 2em;
-    margin-bottom: 0.2em;
-    background: linear-gradient(135deg, #58a6ff, #3fb950);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .title-slide .author {
-    font-size: 0.7em;
-    color: #8b949e;
-    margin-top: 30px;
-  }
-  .title-slide .institution {
-    font-size: 0.55em;
-    color: #6e7681;
-  }
+        .stat-box .label {
+            font-size: 0.5em;
+            color: #8b949e;
+            font-weight: 400;
+        }
 
-  /* Section dividers */
-  .section-divider {
-    text-align: center !important;
-  }
-  .section-divider h2 {
-    font-size: 2em;
-    background: linear-gradient(135deg, #58a6ff, #f0883e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .section-divider .subtitle {
-    font-size: 0.8em;
-    margin-top: 12px;
-  }
+        .stat-box.blue .number {
+            color: var(--accent);
+        }
 
-  /* Backup slide indicator */
-  .backup-tag {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    background: rgba(210, 168, 255, 0.15);
-    border: 1px solid var(--accent5);
-    color: var(--accent5);
-    font-size: 0.4em;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-  }
+        .stat-box.orange .number {
+            color: var(--accent2);
+        }
 
-  /* Two-column layout */
-  .two-col {
-    display: flex;
-    gap: 24px;
-  }
-  .two-col .col { flex: 1; }
+        .stat-box.green .number {
+            color: var(--accent3);
+        }
 
-  /* Image styling - fit to slide */
-  .reveal section img {
-    max-width: 100%;
-    max-height: 520px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-  }
+        .stat-box.pink .number {
+            color: var(--accent4);
+        }
 
-  /* Progress bar */
-  .reveal .progress { height: 4px; }
-  .reveal .progress span { background: var(--accent); }
+        .stat-box.purple .number {
+            color: var(--accent5);
+        }
 
-  /* Slide numbers */
-  .reveal .slide-number {
-    font-size: 14px;
-    color: #6e7681;
-    font-family: 'Inter', sans-serif;
-  }
+        /* Tables */
+        .reveal table {
+            font-size: 0.6em;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
 
-  /* Footer */
-  .slide-footer {
-    position: absolute;
-    bottom: 16px;
-    left: 30px;
-    font-size: 0.4em;
-    color: #484f58;
-  }
-</style>
+        .reveal table th {
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent);
+            font-weight: 600;
+            padding: 10px 12px;
+            border-bottom: 2px solid var(--accent);
+            text-align: left;
+        }
+
+        .reveal table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .reveal table tr:hover td {
+            background: rgba(88, 166, 255, 0.05);
+        }
+
+        /* Lists */
+        .reveal ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .reveal ul li {
+            padding: 4px 0 4px 24px;
+            position: relative;
+            font-size: 0.85em;
+        }
+
+        .reveal ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 4px;
+            color: var(--accent);
+        }
+
+        /* Callout boxes */
+        .callout {
+            border-left: 4px solid var(--accent);
+            padding: 12px 20px;
+            margin: 16px 0;
+            background: rgba(88, 166, 255, 0.08);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.85em;
+        }
+
+        .callout.warn {
+            border-left-color: var(--caution);
+            background: rgba(210, 169, 34, 0.08);
+        }
+
+        .callout.good {
+            border-left-color: var(--accent3);
+            background: rgba(63, 185, 80, 0.08);
+        }
+
+        .callout.bad {
+            border-left-color: var(--danger);
+            background: rgba(248, 81, 73, 0.08);
+        }
+
+        /* Pipeline graphic */
+        .pipeline {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 20px 0;
+        }
+
+        .pipeline .step {
+            flex: 1;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px;
+            text-align: center;
+            font-size: 0.65em;
+            position: relative;
+        }
+
+        .pipeline .step .icon {
+            font-size: 1.8em;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .pipeline .arrow {
+            font-size: 1.2em;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        /* Phase boxes */
+        .phase-row {
+            display: flex;
+            gap: 12px;
+            margin: 12px 0;
+        }
+
+        .phase-box {
+            flex: 1;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .phase-box h4 {
+            margin: 0 0 8px 0;
+            font-size: 0.85em;
+            font-weight: 700;
+        }
+
+        .phase-box .cost {
+            font-size: 1.6em;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .phase-box .time {
+            font-size: 0.65em;
+            opacity: 0.7;
+            margin-top: 4px;
+        }
+
+        .phase-box.p1 {
+            background: rgba(88, 166, 255, 0.12);
+            border: 1px solid var(--accent);
+        }
+
+        .phase-box.p1 .cost {
+            color: var(--accent);
+        }
+
+        .phase-box.p2 {
+            background: rgba(240, 136, 62, 0.12);
+            border: 1px solid var(--accent2);
+        }
+
+        .phase-box.p2 .cost {
+            color: var(--accent2);
+        }
+
+        .phase-box.p3 {
+            background: rgba(63, 185, 80, 0.12);
+            border: 1px solid var(--accent3);
+        }
+
+        .phase-box.p3 .cost {
+            color: var(--accent3);
+        }
+
+        /* Subtitle/small text */
+        .subtitle {
+            font-size: 0.65em;
+            color: #8b949e;
+            font-weight: 400;
+        }
+
+        .small {
+            font-size: 0.7em;
+        }
+
+        .tiny {
+            font-size: 0.55em;
+            color: #8b949e;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .highlight-orange {
+            color: var(--accent2);
+            font-weight: 600;
+        }
+
+        .highlight-green {
+            color: var(--accent3);
+            font-weight: 600;
+        }
+
+        /* Title slide */
+        .title-slide h1 {
+            font-size: 2em;
+            margin-bottom: 0.2em;
+            background: linear-gradient(135deg, #58a6ff, #3fb950);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .title-slide .author {
+            font-size: 0.7em;
+            color: #8b949e;
+            margin-top: 30px;
+        }
+
+        .title-slide .institution {
+            font-size: 0.55em;
+            color: #6e7681;
+        }
+
+        /* Section dividers */
+        .section-divider {
+            text-align: center !important;
+        }
+
+        .section-divider h2 {
+            font-size: 2em;
+            background: linear-gradient(135deg, #58a6ff, #f0883e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-divider .subtitle {
+            font-size: 0.8em;
+            margin-top: 12px;
+        }
+
+        /* Backup slide indicator */
+        .backup-tag {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: rgba(210, 168, 255, 0.15);
+            border: 1px solid var(--accent5);
+            color: var(--accent5);
+            font-size: 0.4em;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        /* Two-column layout */
+        .two-col {
+            display: flex;
+            gap: 24px;
+        }
+
+        .two-col .col {
+            flex: 1;
+        }
+
+        /* Image styling - fit to slide */
+        .reveal section img {
+            max-width: 100%;
+            max-height: 520px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        /* Progress bar */
+        .reveal .progress {
+            height: 4px;
+        }
+
+        .reveal .progress span {
+            background: var(--accent);
+        }
+
+        /* Slide numbers */
+        .reveal .slide-number {
+            font-size: 14px;
+            color: #6e7681;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Footer */
+        .slide-footer {
+            position: absolute;
+            bottom: 16px;
+            left: 30px;
+            font-size: 0.4em;
+            color: #484f58;
+        }
+    </style>
 </head>
+
 <body>
-<div class="reveal">
-<div class="slides">
+    <div class="reveal">
+        <div class="slides">
 
-<!-- ========== SLIDE 1: TITLE ========== -->
-<section class="title-slide" data-background-color="#0d1117" style="text-align:center">
-  <h1>Prosecutorial Policy Analysis</h1>
-  <p style="font-size:0.7em; color:#c9d1d9; margin-top:8px;">
-    AI-Powered Measurement of Criminal Justice Reform in California
-  </p>
-  <div class="author">
-    <strong>Dvir Yogev</strong><br>
-    Post-Doctoral Researcher
-  </div>
-  <div class="institution">
-    Center for Law and Justice (CLJC) · UC Berkeley School of Law<br>
-    <span style="color:#484f58">dyo@berkeley.edu · February 2026</span>
-  </div>
-</section>
+            <!-- ========== SLIDE 1: TITLE ========== -->
+            <section class="title-slide" data-background-color="#0d1117" style="text-align:center">
+                <h1>Prosecutorial Policy Analysis</h1>
+                <p style="font-size:0.7em; color:#c9d1d9; margin-top:8px;">
+                    AI-Powered Measurement of Criminal Justice Reform in California
+                </p>
+                <div class="author">
+                    <strong>Dvir Yogev</strong><br>
+                    Post-Doctoral Researcher
+                </div>
+                <div class="institution">
+                    Center for Law and Justice (CLJC) · UC Berkeley School of Law<br>
+                    <span style="color:#484f58">dyo@berkeley.edu · February 2026</span>
+                </div>
+            </section>
 
-<!-- ========== SLIDE 2: THE PROBLEM ========== -->
-<section>
-  <h2>The Measurement Gap</h2>
-  <div class="card">
-    DAs are among the <span class="highlight">most powerful actors</span> in the criminal justice system — yet we have <span class="highlight-orange">no systematic data</span> on what their policies actually say.
-  </div>
-  <div class="two-col" style="margin-top:16px;">
-    <div class="col">
-      <h3>What Exists Today</h3>
-      <ul>
-        <li>Case outcome data (too downstream)</li>
-        <li>Campaign rhetoric (often dishonest)</li>
-        <li>Media coverage (filtered, biased)</li>
-        <li>Anecdotal comparisons</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>What's Missing</h3>
-      <ul>
-        <li>Actual internal policy documents</li>
-        <li>Systematic coding across offices</li>
-        <li>Temporal tracking of policy change</li>
-        <li>Linkage to outcomes for causal ID</li>
-      </ul>
-    </div>
-  </div>
-  <div class="callout" style="margin-top:12px;">
-    <strong>Our contribution:</strong> The first large-scale, AI-coded dataset of internal DA policy documents — creating infrastructure for rigorous causal inference.
-  </div>
-</section>
+            <!-- ========== SLIDE 2: THE PROBLEM ========== -->
+            <section>
+                <h2>The Measurement Gap</h2>
+                <div class="card">
+                    DAs are among the <span class="highlight">most powerful actors</span> in the criminal justice system
+                    — yet we have <span class="highlight-orange">no systematic data</span> on what their policies
+                    actually say.
+                </div>
+                <div class="two-col" style="margin-top:16px;">
+                    <div class="col">
+                        <h3>What Exists Today</h3>
+                        <ul>
+                            <li>Case outcome data (too downstream)</li>
+                            <li>Campaign rhetoric (often dishonest)</li>
+                            <li>Media coverage (filtered, biased)</li>
+                            <li>Anecdotal comparisons</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>What's Missing</h3>
+                        <ul>
+                            <li>Actual internal policy documents</li>
+                            <li>Systematic coding across offices</li>
+                            <li>Temporal tracking of policy change</li>
+                            <li>Linkage to outcomes for causal ID</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>Our contribution:</strong> The first large-scale, AI-coded dataset of internal DA policy
+                    documents — creating infrastructure for rigorous causal inference.
+                </div>
+            </section>
 
-<!-- ========== SLIDE 3: DATA SOURCE ========== -->
-<section>
-  <h2>The Data: A Unique Natural Resource</h2>
-  <p class="small">California's <strong>Racial Justice Act (AB 2542)</strong> required DA offices to produce internal policy and training documents via public records requests. The ACLU of Northern California collected and published these.</p>
+            <!-- ========== SLIDE 3: DATA SOURCE ========== -->
+            <section>
+                <h2>The Data: A Unique Natural Resource</h2>
+                <p class="small">California's <strong>Racial Justice Act (AB 2542)</strong> required DA offices to
+                    produce internal policy and training documents via public records requests. The ACLU of Northern
+                    California collected and published these.</p>
 
-  <div class="stats-row">
-    <div class="stat-box blue">
-      <div class="number">2,665</div>
-      <div class="label">PDF documents scraped</div>
-    </div>
-    <div class="stat-box orange">
-      <div class="number">41</div>
-      <div class="label">CA counties represented</div>
-    </div>
-    <div class="stat-box green">
-      <div class="number">10 yrs</div>
-      <div class="label">2015–2024 coverage</div>
-    </div>
-  </div>
+                <div class="stats-row">
+                    <div class="stat-box blue">
+                        <div class="number">2,665</div>
+                        <div class="label">PDF documents scraped</div>
+                    </div>
+                    <div class="stat-box orange">
+                        <div class="number">41</div>
+                        <div class="label">CA counties represented</div>
+                    </div>
+                    <div class="stat-box green">
+                        <div class="number">10 yrs</div>
+                        <div class="label">2015–2024 coverage</div>
+                    </div>
+                </div>
 
-  <p class="small" style="margin-top:12px;">
-    Source: <a href="https://www.aclunorcal.org/collections/racial-justice-act/?doc_type=policy-or-training-materials" style="color:var(--accent)">ACLU NorCal Racial Justice Act Archives</a> — policy memos, training materials, charging directives, diversion protocols, sentencing guidelines.
-  </p>
+                <p class="small" style="margin-top:12px;">
+                    Source: <a
+                        href="https://www.aclunorcal.org/collections/racial-justice-act/?doc_type=policy-or-training-materials"
+                        style="color:var(--accent)">ACLU NorCal Racial Justice Act Archives</a> — policy memos, training
+                    materials, charging directives, diversion protocols, sentencing guidelines.
+                </p>
 
-  <div class="callout good">
-    <strong>Why this matters:</strong> These are the actual documents that guide line prosecutors daily — not campaign promises, not media spin, not downstream case outcomes.
-  </div>
-</section>
+                <div class="callout good">
+                    <strong>Why this matters:</strong> These are the actual documents that guide line prosecutors daily
+                    — not campaign promises, not media spin, not downstream case outcomes.
+                </div>
+            </section>
 
-<!-- ========== SLIDE 4: THE PIPELINE ========== -->
-<section>
-  <h2>What We Built</h2>
-  <div class="pipeline">
-    <div class="step">
-      <span class="icon">📄</span>
-      <strong>2,665 PDFs</strong><br>scraped from ACLU
-    </div>
-    <span class="arrow">→</span>
-    <div class="step">
-      <span class="icon">🤖</span>
-      <strong>AI Coding</strong><br>Claude API<br>30+ vars/doc
-    </div>
-    <span class="arrow">→</span>
-    <div class="step">
-      <span class="icon">🧹</span>
-      <strong>Clean Data</strong><br>1,865 docs<br>37 columns
-    </div>
-    <span class="arrow">→</span>
-    <div class="step">
-      <span class="icon">📊</span>
-      <strong>Analysis</strong><br>inference-ready<br>panel data
-    </div>
-  </div>
+            <!-- ========== SLIDE 4: THE PIPELINE ========== -->
+            <section>
+                <h2>What We Built</h2>
+                <div class="pipeline">
+                    <div class="step">
+                        <span class="icon" style="font-size:1.4em;">PDF</span>
+                        <strong>2,665 PDFs</strong><br>from ACLU NorCal
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="step">
+                        <span class="icon" style="font-size:1.4em;">AI</span>
+                        <strong>AI Coding</strong><br>Claude API<br>30+ vars/doc
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="step">
+                        <span class="icon" style="font-size:1.4em;">ETL</span>
+                        <strong>Clean Data</strong><br>1,865 docs<br>37 columns
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="step">
+                        <span class="icon" style="font-size:1.4em;">CI</span>
+                        <strong>Analysis</strong><br>inference-ready<br>panel data
+                    </div>
+                </div>
 
-  <table style="margin-top:12px;">
-    <thead><tr><th>Dimension Coded</th><th>What's Measured</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Ideological Orientation</strong></td><td>7-point scale: clearly progressive → clearly traditional</td></tr>
-      <tr><td><strong>Extensive Margin</strong></td><td>Impact on <em>who enters</em> the system (charging, diversion)</td></tr>
-      <tr><td><strong>Intensive Margin</strong></td><td>Impact on <em>how severely</em> people are treated (sentencing)</td></tr>
-      <tr><td><strong>Specific Policies</strong></td><td>Bail reform, three strikes, racial justice, enhancements</td></tr>
-      <tr><td><strong>Administrative Context</strong></td><td>New policy vs. continuation, DA administration</td></tr>
-    </tbody>
-  </table>
-  <p class="tiny">Total API cost for 2,665 documents: ~$80 · Processing time: ~2 hours</p>
-</section>
+                <table style="margin-top:12px;">
+                    <thead>
+                        <tr>
+                            <th>Dimension Coded</th>
+                            <th>What's Measured</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ideological Orientation</strong></td>
+                            <td>7-point scale: clearly progressive → clearly traditional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Extensive Margin</strong></td>
+                            <td>Impact on <em>who enters</em> the system (charging, diversion)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Intensive Margin</strong></td>
+                            <td>Impact on <em>how severely</em> people are treated (sentencing)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Specific Policies</strong></td>
+                            <td>Bail reform, three strikes, racial justice, enhancements</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Administrative Context</strong></td>
+                            <td>New policy vs. continuation, DA administration</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="tiny">Total API cost for 2,665 documents: ~$80 · Processing time: ~2 hours</p>
+            </section>
 
-<!-- ========== SLIDE 5: KEY FINDINGS ========== -->
-<section>
-  <h2>Key Findings: The Progressive Surge</h2>
+            <!-- ========== SLIDE 5: FACE VALIDITY ========== -->
+            <section>
+                <h2>Face Validity: The Pipeline Recovers Known Patterns</h2>
+                <p class="small" style="color:#8b949e;">These findings align with common wisdom and build confidence
+                    that the AI coding is measuring real variation.</p>
 
-  <div class="stats-row">
-    <div class="stat-box blue">
-      <div class="number">+122%</div>
-      <div class="label">Progressive docs 2019→2020</div>
-    </div>
-    <div class="stat-box orange">
-      <div class="number">+30pp</div>
-      <div class="label">Racial justice in 2020</div>
-    </div>
-    <div class="stat-box green">
-      <div class="number">p=0.003</div>
-      <div class="label">Ideology trend significance</div>
-    </div>
-  </div>
+                <div class="stats-row">
+                    <div class="stat-box blue">
+                        <div class="number">d=0.75</div>
+                        <div class="label">Gascón transformation<br>(p&lt;0.001)</div>
+                    </div>
+                    <div class="stat-box orange">
+                        <div class="number">+30pp</div>
+                        <div class="label">Racial justice surge<br>in 2020</div>
+                    </div>
+                    <div class="stat-box green">
+                        <div class="number">4.6×</div>
+                        <div class="label">RJ docs more likely<br>progressive (χ²=421)</div>
+                    </div>
+                </div>
 
-  <div class="two-col" style="margin-top:12px;">
-    <div class="col">
-      <h3>Temporal Patterns</h3>
-      <ul>
-        <li>Progressive docs: 18% → 56% (2016–2022)</li>
-        <li>Racial justice emphasis: 12% → 42% in one year</li>
-        <li>9 significant policy disruptions detected</li>
-        <li>347 novel reforms tracked</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>Geographic Clusters</h3>
-      <ul>
-        <li><span class="highlight-green">Progressive:</span> Sacramento +78%, Yolo +56%</li>
-        <li><span class="highlight-orange">Traditional:</span> Stanislaus -34%, Placer -21%</li>
-        <li>Bay Area: Santa Clara +0.84 vs Alameda -0.15</li>
-        <li>Close elections → +31pp more progressive (p=0.01)</li>
-      </ul>
-    </div>
-  </div>
-</section>
+                <div class="two-col" style="margin-top:12px;">
+                    <div class="col">
+                        <h3>Geographic Clustering</h3>
+                        <ul>
+                            <li><span class="highlight-green">Progressive:</span> Sacramento +78%, Yolo +56%, San Diego
+                                +50%</li>
+                            <li><span class="highlight-orange">Traditional:</span> Stanislaus -34%, Placer -21%</li>
+                            <li>Bay Area internal variation: Santa Clara +0.84 vs Alameda -0.15</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Why This Matters</h3>
+                        <ul>
+                            <li>Gascón ran on most progressive platform — pipeline confirms it</li>
+                            <li>2020 racial justice surge tracks George Floyd moment precisely</li>
+                            <li>Geographic patterns match known political landscapes</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-<!-- ========== SLIDE 6: PILOT RESULTS ========== -->
-<section>
-  <h2>Pilot: Do Policies Predict Jail Outcomes?</h2>
-  <p class="small">We linked our AI-coded ideology scores to the <strong>Vera Institute's Incarceration Trends</strong> dataset (245,840 quarterly observations, all US counties).</p>
+            <!-- ========== SLIDE 6: DESCRIPTIVE ANALYSIS ========== -->
+            <section>
+                <h2>Descriptive Analysis: Theory-Grounded Patterns</h2>
 
-  <table>
-    <thead><tr><th>Finding</th><th>Estimate</th><th>Significance</th><th>Survives Controls?</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Ideology ↔ Jail Pop Rate</strong></td><td>r = -0.222</td><td>p = 0.009</td><td style="color:var(--accent3)"><strong>✓ Yes</strong> (year-demeaned)</td></tr>
-      <tr><td><strong>Ideology ↔ Jail Admissions</strong></td><td>r = -0.221</td><td>p = 0.009</td><td style="color:var(--accent3)"><strong>✓ Yes</strong> (year-demeaned)</td></tr>
-      <tr><td><strong>Progressive vs Traditional</strong></td><td>-68.5 per 100k</td><td>d=-0.81, p&lt;0.001</td><td style="color:var(--accent3)"><strong>✓ Yes</strong></td></tr>
-      <tr><td><strong>LA pretrial (Gascón DiD)</strong></td><td>-32.1 per 100k</td><td>Pre-trend p=0.90</td><td style="color:var(--accent3)"><strong>✓ Cleanest</strong></td></tr>
-    </tbody>
-  </table>
+                <div class="two-col">
+                    <div class="col">
+                        <h3>Extensive &gt; Intensive Margin Strategy</h3>
+                        <div class="card" style="margin:8px 0;">
+                            <p style="font-size:0.7em; margin:0;">
+                                Recent reforms disproportionately emphasize <strong>who enters</strong> the system
+                                (<span class="highlight">33.9%</span> extensive lenient) over <strong>how
+                                    severely</strong> people are treated (<span class="highlight-orange">22.6%</span>
+                                intensive lenient).
+                            </p>
+                            <p style="font-size:0.6em; margin:8px 0 0; color:#8b949e;">
+                                Political economy logic: diversion/declination less visible to voters than sentencing
+                                leniency — safer reforms for DAs facing reelection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Close Elections → Progressive Policy</h3>
+                        <div class="card" style="margin:8px 0;">
+                            <p style="font-size:0.7em; margin:0;">
+                                Elections with margins ≤15pp produce <strong
+                                    style="color:var(--accent3);">+31.2pp</strong> more progressive policies (p=0.010).
+                            </p>
+                            <p style="font-size:0.7em; margin:6px 0 0;">
+                                Continuous: r=<strong>-0.50</strong> between margin and ideology (p=0.009)
+                            </p>
+                            <p style="font-size:0.6em; margin:8px 0 0; color:#8b949e;">
+                                Tighter races select for DAs who implement progressive agendas — provides first stage
+                                for IV designs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="callout good" style="margin-top:12px;">
-    <strong>Bottom line:</strong> More progressive counties jail <strong>68.5 fewer people per 100k</strong>. The association is <strong>robust to temporal controls</strong> — not driven by COVID or shared trends.
-  </div>
-</section>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>Novel contribution:</strong> The extensive-over-intensive pattern has not been documented at
+                    this scale. The election-ideology link provides the credible first stage needed for causal designs.
+                </div>
+            </section>
 
-<!-- ========== SLIDE 7: HONEST ABOUT LIMITS ========== -->
-<section>
-  <h2>What We Learned: Honesty About Causality</h2>
+            <!-- ========== SLIDE 7: POLICY SHOCKS ========== -->
+            <section>
+                <h2>In the Service of Causal Inference: Policy Shocks</h2>
+                <p class="small">The pipeline detects sharp policy transitions — the quasi-experimental variation that
+                    causal designs require.</p>
 
-  <div class="two-col">
-    <div class="col">
-      <div class="callout good">
-        <h3 style="margin-top:0;">✓ What Holds Up</h3>
-        <ul>
-          <li>Cross-sectional correlations <strong>survive year controls</strong> (r=-0.22, p=0.009)</li>
-          <li>Progressive counties jail 68.5 fewer per 100k (d=-0.81)</li>
-          <li>Pretrial detention shows <strong>cleanest causal signal</strong> (pre-trend p=0.90)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col">
-      <div class="callout bad">
-        <h3 style="margin-top:0;">✗ What Doesn't</h3>
-        <ul>
-          <li>Naive Gascón pre/post is <strong>confounded by COVID</strong> — all CA counties declined</li>
-          <li>Parallel trends violated for jail pop rate (p=0.021)</li>
-          <li>TWFE non-significant (N=137) — need more power</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+                <div class="stats-row">
+                    <div class="stat-box blue">
+                        <div class="number">9</div>
+                        <div class="label">Significant policy<br>disruptions (2020–23)</div>
+                    </div>
+                    <div class="stat-box orange">
+                        <div class="number">0.572</div>
+                        <div class="label">SF 2020 (Boudin)<br>highest disruption score</div>
+                    </div>
+                    <div class="stat-box green">
+                        <div class="number">347</div>
+                        <div class="label">Novel reform<br>adoptions tracked</div>
+                    </div>
+                </div>
 
-  <div class="callout warn" style="margin-top:16px;">
-    <strong>The causal question remains open:</strong> Do progressive policies <em>cause</em> lower incarceration, or do progressive DAs get elected in places that were already declining? Answering this requires <strong>better identification, more data, or both</strong>. The infrastructure to answer it is ready.
-  </div>
-</section>
+                <div class="two-col" style="margin-top:12px;">
+                    <div class="col">
+                        <h3>Progressive Surge (2019–2022)</h3>
+                        <ul>
+                            <li>Progressive docs: 18% → 40% → 56%</li>
+                            <li>Linear trend: +0.062/yr (p=0.003, R²=0.52)</li>
+                            <li>Gradual trend + sharp county disruptions</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Why Funders Should Care</h3>
+                        <ul>
+                            <li>Each disruption = potential "natural experiment"</li>
+                            <li>Staggered adoption → modern DiD/event study designs</li>
+                            <li>Combined with outcome data → credible causal estimates</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-<!-- ========== SLIDE 8: THE ASK — THREE AVENUES ========== -->
-<section>
-  <h2>Three Avenues for Extension</h2>
+            <!-- ========== SLIDE 8: JAIL DATA PILOT ========== -->
+            <section>
+                <h2>Jail Data Pilot: First Steps Toward Causal Evidence</h2>
+                <p class="small">We linked AI-coded policy scores to the <strong>Vera Institute's Incarceration
+                        Trends</strong> dataset (245,840 quarterly observations, all US counties).</p>
 
-  <div class="stats-row" style="margin-bottom:8px;">
-    <div class="stat-box blue" style="text-align:left;">
-      <h3 style="margin:0 0 6px 0; font-size:0.9em;">1. Outcome Data Linkage</h3>
-      <p style="font-size:0.7em; margin:0; color:#c9d1d9;">Connect policy docs to case-level outcomes: charging decisions, sentence lengths, enhancement usage</p>
-      <p class="tiny" style="margin:8px 0 0 0;">CA DOJ OpenJustice (free) · UniCourt API · Sentencing Commission</p>
-    </div>
-  </div>
+                <div class="two-col">
+                    <div class="col">
+                        <div class="callout good">
+                            <h3 style="margin-top:0;">What Holds Up</h3>
+                            <ul>
+                                <li>Ideology ↔ jail rates: <strong>r=-0.22, p=0.009</strong> (survives year controls)
+                                </li>
+                                <li>Progressive counties jail <strong>68.5 fewer per 100k</strong> (d=-0.81)</li>
+                                <li>Pretrial: <strong>cleanest causal signal</strong> (pre-trend p=0.90)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="callout bad">
+                            <h3 style="margin-top:0;">What The Pilot Exposes</h3>
+                            <ul>
+                                <li>Naive pre/post <strong>confounded by COVID</strong></li>
+                                <li>Parallel trends violated for jail pop (p=0.021)</li>
+                                <li>TWFE non-significant (N=137)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="stats-row" style="margin-bottom:8px;">
-    <div class="stat-box orange" style="text-align:left; border-color:var(--accent2);">
-      <h3 style="margin:0 0 6px 0; font-size:0.9em; color:var(--accent2);">2. Geographic Expansion</h3>
-      <p style="font-size:0.7em; margin:0; color:#c9d1d9;">Expand to TX, FL, NY, IL, PA — 30-50× more close elections for regression discontinuity</p>
-      <p class="tiny" style="margin:8px 0 0 0;">Multi-state FOIA · National DA election database · Urban DA deep-dive</p>
-    </div>
-  </div>
+                <div class="callout warn" style="margin-top:12px;">
+                    <strong>The causal question — <em>do progressive policies actually reduce incarceration?</em> —
+                        remains open and answerable.</strong> These diagnostics tell us precisely what data and designs
+                    are needed to move from robust descriptive associations to credible causal claims.
+                </div>
+            </section>
 
-  <div class="stats-row">
-    <div class="stat-box green" style="text-align:left; border-color:var(--accent3);">
-      <h3 style="margin:0 0 6px 0; font-size:0.9em; color:var(--accent3);">3. Deeper California Coverage</h3>
-      <p style="font-size:0.7em; margin:0; color:#c9d1d9;">Complete 58-county panel, extend to pre-2015, human validation of AI coding</p>
-      <p class="tiny" style="margin:8px 0 0 0;">Remaining 17 counties · Historical PRA · Law student coding · DA interviews</p>
-    </div>
-  </div>
+            <!-- ========== SLIDE 9: EXTENSION 1 — POLICY COVERAGE ========== -->
+            <section>
+                <h2>Extension 1: Expanding Policy Coverage</h2>
 
-  <p class="tiny" style="text-align:center; margin-top:8px;">Each avenue maps to specific causal identification strategies — see backup slide for details</p>
-</section>
+                <div class="two-col">
+                    <div class="col">
+                        <h3 style="color:var(--accent);">Within California</h3>
+                        <div class="card" style="margin:8px 0;">
+                            <ul style="font-size:0.85em;">
+                                <li>Complete remaining <strong>17 counties</strong> via PRA requests</li>
+                                <li><strong>Pre-2015 historical</strong> documents for longer pre-periods</li>
+                                <li><strong>200-doc human validation</strong> for publication credibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 style="color:var(--accent2);">100 Largest DA Offices Nationwide</h3>
+                        <div class="card" style="margin:8px 0;">
+                            <ul style="font-size:0.85em;">
+                                <li>~65% of US population covered</li>
+                                <li><strong>30–50 close elections</strong> for RDD (vs ~5 in CA)</li>
+                                <li>Tests whether CA findings hold across <strong>different legal cultures</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-<!-- ========== SLIDE 9: FUNDING PHASES ========== -->
-<section>
-  <h2>Recommended Funding Package</h2>
+                <table style="margin-top:12px;">
+                    <thead>
+                        <tr>
+                            <th>Scope</th>
+                            <th>Scale</th>
+                            <th>Enables</th>
+                            <th>Time</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Complete CA + historical</td>
+                            <td>~500 new docs</td>
+                            <td>Full panel; longer pre-periods</td>
+                            <td>4–6 mo</td>
+                            <td>~$25–35k</td>
+                        </tr>
+                        <tr>
+                            <td><strong>100 largest US DA offices</strong></td>
+                            <td>5,000–10,000 docs</td>
+                            <td>Powered RDD; national benchmarking</td>
+                            <td>12–18 mo</td>
+                            <td>~$100–150k</td>
+                        </tr>
+                        <tr>
+                            <td>Human validation (200 docs)</td>
+                            <td>200 dual-coded</td>
+                            <td>IRR; publication credibility</td>
+                            <td>3 mo</td>
+                            <td>~$20k</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-  <div class="phase-row">
-    <div class="phase-box p1">
-      <h4>Phase 1</h4>
-      <div class="cost">$45–50k</div>
-      <div class="time">6 months</div>
-      <p style="font-size:0.55em; margin-top:10px; text-align:left;">
-        CA DOJ outcome linkage<br>
-        Complete 58-county panel<br>
-        Human validation study
-      </p>
-      <p style="font-size:0.5em; color:var(--accent); margin-top:6px;">
-        → First causal estimates (DiD/SC)
-      </p>
-    </div>
-    <div class="phase-box p2">
-      <h4>Phase 2</h4>
-      <div class="cost">$100–130k</div>
-      <div class="time">12 months</div>
-      <p style="font-size:0.55em; margin-top:10px; text-align:left;">
-        Multi-state expansion (3 states)<br>
-        National DA election database<br>
-        Urban DA deep-dive (20 jurisdictions)
-      </p>
-      <p style="font-size:0.5em; color:var(--accent2); margin-top:6px;">
-        → First national database; RDD
-      </p>
-    </div>
-    <div class="phase-box p3">
-      <h4>Phase 3</h4>
-      <div class="cost">$50–65k</div>
-      <div class="time">6 months</div>
-      <p style="font-size:0.55em; margin-top:10px; text-align:left;">
-        Case-level outcome data (UniCourt)<br>
-        DA office interviews (10-15)<br>
-        Mechanism analysis
-      </p>
-      <p style="font-size:0.5em; color:var(--accent3); margin-top:6px;">
-        → What changes in courtrooms
-      </p>
-    </div>
-  </div>
+            <!-- ========== SLIDE 10: EXTENSION 2 — OUTCOME DATA ========== -->
+            <section>
+                <h2>Extension 2: Merging with Outcome Data</h2>
 
-  <div class="card" style="text-align:center; margin-top:16px;">
-    <span style="font-size:1.4em; font-weight:800; color:var(--accent);">$200–250k</span>
-    <span style="font-size:0.8em; color:#8b949e;"> over 18–24 months</span>
-    <p class="tiny" style="margin:6px 0 0 0;">The infrastructure is built. The marginal cost of each extension is low — pipeline, coding schema, and analysis framework are ready to scale.</p>
-  </div>
-</section>
+                <div class="two-col">
+                    <div class="col">
+                        <h3 style="color:var(--accent);">Administrative Data (Available Now)</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>CA DOJ OpenJustice</strong></td>
+                                    <td>County-year arrest, filing, incarceration</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CA Sentencing Commission</strong></td>
+                                    <td>Enhancement filings, three-strikes usage</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vera Incarceration Trends</strong></td>
+                                    <td>Quarterly jail pop by county (done)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <h3 style="color:var(--accent2);">Case-Level Data (Higher Return)</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>UniCourt / PACER</strong></td>
+                                    <td>Individual case dispositions, plea bargains</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>CJARS</strong></td>
+                                    <td>Individual-level records: arrest → parole, 24 states</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-<!-- ========== SLIDE 10: WHY NOW, WHY US ========== -->
-<section>
-  <h2>Why Fund This Now</h2>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>CJARS</strong> (Census Bureau + U. Michigan): harmonized individual-level criminal justice
+                    records across 24 states — tracks people from arrest through parole. Enables testing whether a
+                    progressive DA's diversion memo actually reduces the probability an arrested individual proceeds to
+                    prosecution. Accessible via FSRDC (3–12 month application).
+                </div>
+            </section>
 
-  <div class="two-col">
-    <div class="col">
-      <h3>Unique Advantages</h3>
-      <ul>
-        <li><strong>Infrastructure is built</strong> — pipeline, schema, analysis framework all operational</li>
-        <li><strong>Data window is closing</strong> — ACLU PRA archive may not persist indefinitely</li>
-        <li><strong>No competitor</strong> — no other systematic, AI-coded DA policy database exists anywhere</li>
-        <li><strong>Pilot-tested</strong> — we've demonstrated linkage to outcomes and identified the right methods</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>Policy Impact Potential</h3>
-      <ul>
-        <li>Answers the question <strong>funders care about most</strong>: do progressive reforms actually work?</li>
-        <li>Enables <strong>evidence-based evaluation</strong> of DA accountability efforts</li>
-        <li>Creates <strong>benchmarking tool</strong> for jurisdictions to compare policies</li>
-        <li>First <strong>causal estimates</strong> of prosecutorial policy effects on incarceration</li>
-      </ul>
-    </div>
-  </div>
+            <!-- ========== SLIDE 11: POLICYMAKER VALUE + FUNDING ========== -->
+            <section>
+                <h2>Value for Policymakers</h2>
 
-  <div class="card" style="margin-top:16px; text-align:center;">
-    <p style="margin:0; font-size:0.9em;">
-      <strong>What we're offering:</strong> Take a working research pipeline from <span class="highlight">descriptive</span> to <span class="highlight-green">causal</span> — answering whether DA policy reforms actually change what happens in courtrooms.
-    </p>
-  </div>
-</section>
+                <div class="two-col">
+                    <div class="col">
+                        <ul>
+                            <li><strong>DA accountability scorecards</strong> — comparable measures of how each office's
+                                stated policies align with its goals</li>
+                            <li><strong>Rhetoric vs. practice</strong> — does a "decline low-level drugs" memo actually
+                                reduce drug prosecutions?</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><strong>Benchmarking tools</strong> — a DA considering bail reform can see how similar
+                                policies performed elsewhere</li>
+                            <li><strong>Causal evidence on the progressive prosecutor model</strong> — answering the
+                                central question: does it work?</li>
+                        </ul>
+                    </div>
+                </div>
 
-<!-- ========== SLIDE 11: CTA ========== -->
-<section class="section-divider" data-background-color="#0d1117">
-  <h2>Let's Talk</h2>
-  <p style="font-size:0.7em; color:#c9d1d9; max-width:600px; margin:20px auto;">
-    The descriptive associations are real. The causal question is answerable.<br>The infrastructure is ready. We need your support to get there.
-  </p>
-  <div style="margin-top:40px;">
-    <p style="font-size:0.7em; color:#8b949e;">
-      <strong style="color:#c9d1d9;">Dvir Yogev</strong><br>
-      Post-Doctoral Researcher · UC Berkeley School of Law<br>
-      <span style="color:var(--accent);">dyo@berkeley.edu</span>
-    </p>
-    <p class="tiny" style="margin-top:20px;">
-      🔗 <a href="https://github.com/dyo2112/prosecutor-policies-causal-inference" style="color:var(--accent);">github.com/dyo2112/prosecutor-policies-causal-inference</a><br>
-      📊 Full pilot report, figures, and replication code available in repository
-    </p>
-  </div>
-</section>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>Related work:</strong> Felix Owusu's AV-funded project exploits two specific internal DA
+                    memos for a causal design estimating their effects. Our contribution scales this logic: systematic
+                    measurement across <strong>41+ offices and 1,865 documents</strong>, creating variation needed for
+                    average causal effects and heterogeneity analysis. <em>[Details to be discussed verbally.]</em>
+                </div>
+            </section>
 
-<!-- ================================================================ -->
-<!-- BACKUP SLIDES FOR Q&A -->
-<!-- ================================================================ -->
+            <!-- ========== SLIDE 12: FUNDING PHASES ========== -->
+            <section>
+                <h2>Recommended Funding Package</h2>
 
-<section class="section-divider" data-background-color="#161b22">
-  <h2 style="background: linear-gradient(135deg, #d2a8ff, #f778ba); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Backup Slides</h2>
-  <p class="subtitle">For Q&A and Detailed Discussion</p>
-</section>
+                <div class="phase-row">
+                    <div class="phase-box p1">
+                        <h4>Phase 1</h4>
+                        <div class="cost">$45–50k</div>
+                        <div class="time">6 months</div>
+                        <p style="font-size:0.55em; margin-top:10px; text-align:left;">
+                            CA DOJ outcome linkage<br>
+                            Complete 58-county panel<br>
+                            Human validation study
+                        </p>
+                        <p style="font-size:0.5em; color:var(--accent); margin-top:6px;">
+                            → First causal estimates (DiD/SC)
+                        </p>
+                    </div>
+                    <div class="phase-box p2">
+                        <h4>Phase 2</h4>
+                        <div class="cost">$100–150k</div>
+                        <div class="time">12–18 months</div>
+                        <p style="font-size:0.55em; margin-top:10px; text-align:left;">
+                            100 largest US DA offices<br>
+                            National election DB<br>
+                            CJARS FSRDC application
+                        </p>
+                        <p style="font-size:0.5em; color:var(--accent2); margin-top:6px;">
+                            → National ideology DB; powered RDD
+                        </p>
+                    </div>
+                    <div class="phase-box p3">
+                        <h4>Phase 3</h4>
+                        <div class="cost">$50–65k</div>
+                        <div class="time">6–12 months</div>
+                        <p style="font-size:0.55em; margin-top:10px; text-align:left;">
+                            Case-level data (UniCourt/CJARS)<br>
+                            Stakeholder interviews<br>
+                            Mechanism analysis
+                        </p>
+                        <p style="font-size:0.5em; color:var(--accent3); margin-top:6px;">
+                            → What changes in courtrooms
+                        </p>
+                    </div>
+                </div>
 
-<!-- ========== BACKUP: METHODOLOGY DETAIL ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>AI Coding Methodology</h2>
-  <div class="two-col">
-    <div class="col">
-      <h3>How It Works</h3>
-      <ul>
-        <li>Each PDF extracted → sent to Claude (Anthropic) with structured prompt</li>
-        <li>Returns JSON with 30+ coded variables per document</li>
-        <li>Temperature = 0.1 for consistency</li>
-        <li>Automatic rate limiting, checkpointing, error handling</li>
-        <li>Cost: ~$0.03/document ($80 total)</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>Validation Strategy</h3>
-      <ul>
-        <li>Face validity on 30 random documents</li>
-        <li>Known-case validation (SF/LA under progressive DAs vs. traditional)</li>
-        <li>Distribution checks for coding consistency</li>
-        <li><strong>Proposed:</strong> 200-doc dual-coding by law students for gold-standard IRR</li>
-      </ul>
-    </div>
-  </div>
-  <div class="callout warn" style="margin-top:12px;">
-    <strong>Anticipated pushback:</strong> "Can you trust AI coding?" We treat it as a first-pass instrument. The human validation study (Phase 1, ~$20k) directly addresses this. Known-case validation is already encouraging — Gascón/Boudin offices code as expected.
-  </div>
-</section>
+                <div class="card" style="text-align:center; margin-top:16px;">
+                    <span style="font-size:1.4em; font-weight:800; color:var(--accent);">$200–265k</span>
+                    <span style="font-size:0.8em; color:#8b949e;"> over 24–36 months</span>
+                    <p class="tiny" style="margin:6px 0 0 0;">The infrastructure is built. The marginal cost of each
+                        extension is low — pipeline, coding schema, and analysis framework are ready to scale.</p>
+                </div>
+            </section>
 
-<!-- ========== BACKUP: FULL PILOT STATS ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Full Pilot Statistical Results</h2>
+            <!-- ========== SLIDE 13: WHY NOW ========== -->
+            <section>
+                <h2>Why Fund This Now</h2>
 
-  <h3>Cross-Sectional Correlations (Year-Controlled)</h3>
-  <table>
-    <thead><tr><th>Outcome</th><th>Raw r</th><th>Raw p</th><th>Year-Controlled r</th><th>Year-Controlled p</th></tr></thead>
-    <tbody>
-      <tr><td>Jail Pop Rate</td><td>-0.233</td><td>0.006</td><td><strong>-0.222</strong></td><td><strong>0.009</strong></td></tr>
-      <tr><td>Jail Admission Rate</td><td>-0.236</td><td>0.006</td><td><strong>-0.221</strong></td><td><strong>0.009</strong></td></tr>
-      <tr><td>Pretrial Share (%)</td><td>+0.004</td><td>0.964</td><td>-0.040</td><td>0.664</td></tr>
-      <tr><td>B/W Jail Rate Ratio</td><td>+0.104</td><td>0.262</td><td>+0.110</td><td>0.235</td></tr>
-    </tbody>
-  </table>
+                <div class="two-col">
+                    <div class="col">
+                        <h3>Unique Advantages</h3>
+                        <ul>
+                            <li><strong>Infrastructure is built</strong> — pipeline, schema, analysis framework all
+                                operational</li>
+                            <li><strong>Data window is closing</strong> — ACLU PRA archive may not persist indefinitely
+                            </li>
+                            <li><strong>No competitor</strong> — no other systematic, AI-coded DA policy database exists
+                                anywhere</li>
+                            <li><strong>Pilot-tested</strong> — demonstrated linkage to outcomes and identified the
+                                right methods</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Policy Impact Potential</h3>
+                        <ul>
+                            <li>Answers the question <strong>funders care about most</strong>: do progressive reforms
+                                actually work?</li>
+                            <li>Enables <strong>evidence-based evaluation</strong> of DA accountability efforts</li>
+                            <li>Creates <strong>benchmarking tool</strong> for jurisdictions to compare policies</li>
+                            <li>First <strong>causal estimates</strong> of prosecutorial policy effects on incarceration
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-  <h3>COVID-Controlled DiD (LA vs Large Urban CA Counties)</h3>
-  <table>
-    <thead><tr><th>Outcome</th><th>DiD Estimate</th><th>Pre-Trend Slope</th><th>Pre-Trend p</th><th>Parallel Trends?</th></tr></thead>
-    <tbody>
-      <tr><td>Jail Pop Rate</td><td>+11.4</td><td>+4.6/yr</td><td style="color:var(--danger);">0.021</td><td style="color:var(--danger);">✗ Violated</td></tr>
-      <tr><td>Admission Rate</td><td>+399.5</td><td>-53.6/yr</td><td>0.211</td><td style="color:var(--caution);">~ Holds</td></tr>
-      <tr><td><strong>Pretrial Rate</strong></td><td><strong>-32.1</strong></td><td>-0.4/yr</td><td style="color:var(--accent3);">0.897</td><td style="color:var(--accent3);"><strong>✓ Clean</strong></td></tr>
-      <tr><td>B/W Disparity</td><td>+0.4</td><td>+0.21/yr</td><td style="color:var(--danger);">0.035</td><td style="color:var(--danger);">✗ Violated</td></tr>
-    </tbody>
-  </table>
-</section>
+                <div class="card" style="margin-top:16px; text-align:center;">
+                    <p style="margin:0; font-size:0.9em;">
+                        <strong>What we're offering:</strong> Take a working research pipeline from <span
+                            class="highlight">descriptive</span> to <span class="highlight-green">causal</span> —
+                        answering whether DA policy reforms actually change what happens in courtrooms.
+                    </p>
+                </div>
+            </section>
 
-<!-- ========== BACKUP: PROGRESSIVE VS TRADITIONAL ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Progressive vs Traditional Counties</h2>
+            <!-- ========== SLIDE 14: CTA ========== -->
+            <section class="section-divider" data-background-color="#0d1117">
+                <h2>Let's Talk</h2>
+                <p style="font-size:0.7em; color:#c9d1d9; max-width:600px; margin:20px auto;">
+                    The descriptive associations are real. The causal question is answerable.<br>The infrastructure is
+                    ready. We need your support to get there.
+                </p>
+                <div style="margin-top:40px;">
+                    <p style="font-size:0.7em; color:#8b949e;">
+                        <strong style="color:#c9d1d9;">Dvir Yogev</strong><br>
+                        Post-Doctoral Researcher · UC Berkeley School of Law<br>
+                        <span style="color:var(--accent);">dyo@berkeley.edu</span>
+                    </p>
+                    <p class="tiny" style="margin-top:20px;">
+                        <a href="https://github.com/dyo2112/prosecutor-policies-causal-inference"
+                            style="color:var(--accent);">github.com/dyo2112/prosecutor-policies-causal-inference</a><br>
+                        Full pilot report, figures, and replication code available in repository
+                    </p>
+                </div>
+            </section>
 
-  <table>
-    <thead><tr><th>Outcome</th><th>Progressive</th><th>Traditional</th><th>Difference</th><th>Cohen's d</th><th>p-value</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Jail Pop Rate</strong> (per 100k)</td><td>244.4</td><td>312.8</td><td style="color:var(--accent3);"><strong>-68.5</strong></td><td>-0.81</td><td><strong>&lt;0.001</strong></td></tr>
-      <tr><td>Jail Admission Rate</td><td>3,896.7</td><td>4,543.3</td><td>-646.5</td><td>-0.32</td><td>0.169</td></tr>
-      <tr><td><strong>Pretrial Share</strong> (%)</td><td>71.0%</td><td>76.8%</td><td style="color:var(--accent3);"><strong>-5.8pp</strong></td><td>-0.48</td><td><strong>0.044</strong></td></tr>
-      <tr><td>B/W Jail Rate Ratio</td><td>6.9</td><td>5.0</td><td style="color:var(--caution);">+2.0</td><td>+0.57</td><td>0.014</td></tr>
-    </tbody>
-  </table>
+            <!-- ================================================================ -->
+            <!-- BACKUP SLIDES FOR Q&A -->
+            <!-- ================================================================ -->
 
-  <div class="callout warn" style="margin-top:16px;">
-    <strong>On the racial disparity finding:</strong> Progressive counties show <em>higher</em> B/W ratios. This is likely compositional — progressive DAs tend to be in urban counties where structural racial disparities are larger regardless of policy. Case-level data (Avenue 1) would test whether progressive <em>policies</em> reduce disparity within the same county over time.
-  </div>
-</section>
+            <section class="section-divider" data-background-color="#161b22">
+                <h2
+                    style="background: linear-gradient(135deg, #d2a8ff, #f778ba); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    Backup Slides</h2>
+                <p class="subtitle">For Q&A and Detailed Discussion</p>
+            </section>
 
-<!-- ========== BACKUP: CAUSAL IDENTIFICATION STRATEGIES ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Causal Identification Strategies</h2>
-  <table>
-    <thead><tr><th>Strategy</th><th>Current Status</th><th>What's Needed</th><th>Priority Extension</th></tr></thead>
-    <tbody>
-      <tr>
-        <td><strong>Regression Discontinuity</strong></td>
-        <td style="color:var(--caution);">~5 close CA elections — underpowered</td>
-        <td>30+ close elections</td>
-        <td>Avenue 2 (multi-state)</td>
-      </tr>
-      <tr>
-        <td><strong>Stacked DiD</strong></td>
-        <td style="color:var(--caution);">Viable for 2 transitions; COVID-confounded</td>
-        <td>Crime/sentencing outcomes + more transitions</td>
-        <td>Avenues 1 + 2</td>
-      </tr>
-      <tr>
-        <td><strong>Synthetic Control</strong></td>
-        <td style="color:var(--accent3);">Feasible for LA/SF</td>
-        <td>Outcome data beyond jail pop</td>
-        <td>Avenue 1 (case-level)</td>
-      </tr>
-      <tr>
-        <td><strong>Event Study</strong></td>
-        <td style="color:var(--caution);">Panel too short for credible pre-trends</td>
-        <td>Longer pre-period (pre-2015)</td>
-        <td>Avenue 3 (historical)</td>
-      </tr>
-      <tr>
-        <td><strong>Instrumental Variables</strong></td>
-        <td style="color:var(--accent3);">First stage exists (elections → ideology)</td>
-        <td>Outcome data for second stage</td>
-        <td>Avenue 1</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+            <!-- ========== BACKUP: METHODOLOGY DETAIL ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>AI Coding Methodology</h2>
+                <div class="two-col">
+                    <div class="col">
+                        <h3>How It Works</h3>
+                        <ul>
+                            <li>Each PDF extracted → sent to Claude (Anthropic) with structured prompt</li>
+                            <li>Returns JSON with 30+ coded variables per document</li>
+                            <li>Temperature = 0.1 for consistency</li>
+                            <li>Automatic rate limiting, checkpointing, error handling</li>
+                            <li>Cost: ~$0.03/document ($80 total)</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Validation Strategy</h3>
+                        <ul>
+                            <li>Face validity on 30 random documents</li>
+                            <li>Known-case validation (SF/LA under progressive DAs vs. traditional)</li>
+                            <li>Distribution checks for coding consistency</li>
+                            <li><strong>Proposed:</strong> 200-doc dual-coding by law students for gold-standard IRR
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout warn" style="margin-top:12px;">
+                    <strong>Anticipated pushback:</strong> "Can you trust AI coding?" We treat it as a first-pass
+                    instrument. The human validation study (Phase 1, ~$20k) directly addresses this. Known-case
+                    validation is already encouraging — Gascón/Boudin offices code as expected.
+                </div>
+            </section>
 
-<!-- ========== BACKUP: OUTCOME LINKAGE DETAIL ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Avenue 1 Detail: Outcome Data Linkage</h2>
-  <table>
-    <thead><tr><th>Sub-Project</th><th>Data Source</th><th>Time</th><th>Cost</th><th>Causal Value</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>County-level crime & incarceration</td>
-        <td>CA DOJ OpenJustice (free)</td>
-        <td>2–3 mo</td>
-        <td>~$15k</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td><strong>Case-level charging & sentencing</strong></td>
-        <td>UniCourt API ($)</td>
-        <td>4–6 mo</td>
-        <td>~$30–50k</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Jail subgroup populations</td>
-        <td>Vera Institute (done)</td>
-        <td>1 mo</td>
-        <td>~$0</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Enhancement & three-strikes usage</td>
-        <td>CA Sentencing Commission</td>
-        <td>3 mo</td>
-        <td>~$15k</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="callout" style="margin-top:12px;">
-    <strong>Why this matters:</strong> Case-level data is the gold standard — it links policy documents directly to line-prosecutor behavior. Are "minimize enhancements" memos actually reducing enhancement filings? UniCourt can answer that.
-  </div>
-</section>
+            <!-- ========== BACKUP: FULL PILOT STATS ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Full Pilot Statistical Results</h2>
 
-<!-- ========== BACKUP: GEOGRAPHIC EXPANSION DETAIL ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Avenue 2 Detail: Geographic Expansion</h2>
-  <table>
-    <thead><tr><th>Sub-Project</th><th>Scope</th><th>Time</th><th>Cost</th><th>Causal Value</th></tr></thead>
-    <tbody>
-      <tr>
-        <td><strong>Multi-state FOIA collection</strong></td>
-        <td>TX, FL, NY, IL, PA</td>
-        <td>8–12 mo</td>
-        <td>~$80–120k</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>National DA election database</td>
-        <td>All 2,400+ elected DAs</td>
-        <td>4–6 mo</td>
-        <td>~$25–35k</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Urban DA deep-dive</td>
-        <td>20 largest US counties</td>
-        <td>6 mo</td>
-        <td>~$40–50k</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="callout" style="margin-top:12px;">
-    <strong>Why this matters:</strong> California findings could be dismissed as California-specific. A national database tests external validity and — crucially — provides enough close elections (30+) to power a regression discontinuity design, the cleanest available causal identification.
-  </div>
-</section>
+                <h3>Cross-Sectional Correlations (Year-Controlled)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>Raw r</th>
+                            <th>Raw p</th>
+                            <th>Year-Controlled r</th>
+                            <th>Year-Controlled p</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jail Pop Rate</td>
+                            <td>-0.233</td>
+                            <td>0.006</td>
+                            <td><strong>-0.222</strong></td>
+                            <td><strong>0.009</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Jail Admission Rate</td>
+                            <td>-0.236</td>
+                            <td>0.006</td>
+                            <td><strong>-0.221</strong></td>
+                            <td><strong>0.009</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Pretrial Share (%)</td>
+                            <td>+0.004</td>
+                            <td>0.964</td>
+                            <td>-0.040</td>
+                            <td>0.664</td>
+                        </tr>
+                        <tr>
+                            <td>B/W Jail Rate Ratio</td>
+                            <td>+0.104</td>
+                            <td>0.262</td>
+                            <td>+0.110</td>
+                            <td>0.235</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-<!-- ========== BACKUP: CALIFORNIA DETAIL ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Avenue 3 Detail: Deeper California Coverage</h2>
-  <table>
-    <thead><tr><th>Sub-Project</th><th>What It Fixes</th><th>Time</th><th>Cost</th><th>Causal Value</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Complete ACLU PRA archive (17 counties)</td>
-        <td>Selection bias from non-response</td>
-        <td>2–3 mo</td>
-        <td>~$10–15k</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Historical documents (pre-2015)</td>
-        <td>Short pre-period for event studies</td>
-        <td>3–4 mo</td>
-        <td>~$15–20k</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td><strong>Human validation (200 docs)</strong></td>
-        <td>AI coding credibility for peer review</td>
-        <td>3 mo</td>
-        <td>~$20k</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>DA office interviews (10–15)</td>
-        <td>Documents vs. practice gap</td>
-        <td>4 mo</td>
-        <td>~$15k</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="callout" style="margin-top:12px;">
-    <strong>Why the human validation matters for funders:</strong> Legislators and judges will not trust AI-coded policy scores unless validated by legal experts. The $20k validation study is a small investment that makes the entire project publishable and policy-relevant.
-  </div>
-</section>
+                <h3>COVID-Controlled DiD (LA vs Large Urban CA Counties)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>DiD Estimate</th>
+                            <th>Pre-Trend Slope</th>
+                            <th>Pre-Trend p</th>
+                            <th>Parallel Trends?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jail Pop Rate</td>
+                            <td>+11.4</td>
+                            <td>+4.6/yr</td>
+                            <td style="color:var(--danger);">0.021</td>
+                            <td style="color:var(--danger);">✗ Violated</td>
+                        </tr>
+                        <tr>
+                            <td>Admission Rate</td>
+                            <td>+399.5</td>
+                            <td>-53.6/yr</td>
+                            <td>0.211</td>
+                            <td style="color:var(--caution);">~ Holds</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pretrial Rate</strong></td>
+                            <td><strong>-32.1</strong></td>
+                            <td>-0.4/yr</td>
+                            <td style="color:var(--accent3);">0.897</td>
+                            <td style="color:var(--accent3);"><strong>✓ Clean</strong></td>
+                        </tr>
+                        <tr>
+                            <td>B/W Disparity</td>
+                            <td>+0.4</td>
+                            <td>+0.21/yr</td>
+                            <td style="color:var(--danger);">0.035</td>
+                            <td style="color:var(--danger);">✗ Violated</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-<!-- ========== BACKUP: ANTICIPATED PUSHBACKS ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Anticipated Questions & Responses</h2>
+            <!-- ========== BACKUP: PROGRESSIVE VS TRADITIONAL ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Progressive vs Traditional Counties</h2>
 
-  <div class="card" style="margin-bottom:10px;">
-    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"Policy documents ≠ practice. How do you know what's written actually happens?"</h3>
-    <p style="font-size:0.65em; margin:6px 0 0 0;">You're right — that's exactly why Avenue 1 (outcome linkage) is Priority 1. We test whether "diversion-positive" memos predict more diversions. Avenue 3 includes DA interviews to validate. But note: even the stated-policy variation we found is <em>itself</em> a novel descriptive contribution — nobody has systematically measured this before.</p>
-  </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outcome</th>
+                            <th>Progressive</th>
+                            <th>Traditional</th>
+                            <th>Difference</th>
+                            <th>Cohen's d</th>
+                            <th>p-value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Jail Pop Rate</strong> (per 100k)</td>
+                            <td>244.4</td>
+                            <td>312.8</td>
+                            <td style="color:var(--accent3);"><strong>-68.5</strong></td>
+                            <td>-0.81</td>
+                            <td><strong>&lt;0.001</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Jail Admission Rate</td>
+                            <td>3,896.7</td>
+                            <td>4,543.3</td>
+                            <td>-646.5</td>
+                            <td>-0.32</td>
+                            <td>0.169</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pretrial Share</strong> (%)</td>
+                            <td>71.0%</td>
+                            <td>76.8%</td>
+                            <td style="color:var(--accent3);"><strong>-5.8pp</strong></td>
+                            <td>-0.48</td>
+                            <td><strong>0.044</strong></td>
+                        </tr>
+                        <tr>
+                            <td>B/W Jail Rate Ratio</td>
+                            <td>6.9</td>
+                            <td>5.0</td>
+                            <td style="color:var(--caution);">+2.0</td>
+                            <td>+0.57</td>
+                            <td>0.014</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-  <div class="card" style="margin-bottom:10px;">
-    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"AI coding seems unreliable. How do you validate it?"</h3>
-    <p style="font-size:0.65em; margin:6px 0 0 0;">Phase 1 includes a 200-document dual-coding study with trained law students (~$20k). Known-case validation already works: Gascón/Boudin offices score as expected. The AI is a first-pass instrument — the validation study calibrates and benchmarks it. LLM-based coding is increasingly accepted in political science (see Argyle et al. 2023, Ornstein et al. 2024).</p>
-  </div>
+                <div class="callout warn" style="margin-top:16px;">
+                    <strong>On the racial disparity finding:</strong> Progressive counties show <em>higher</em> B/W
+                    ratios. This is likely compositional — progressive DAs tend to be in urban counties where structural
+                    racial disparities are larger regardless of policy. Case-level data (Avenue 1) would test whether
+                    progressive <em>policies</em> reduce disparity within the same county over time.
+                </div>
+            </section>
 
-  <div class="card" style="margin-bottom:10px;">
-    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"You only have California. Isn't this just a Blue State story?"</h3>
-    <p style="font-size:0.65em; margin:6px 0 0 0;">That's the point of Avenue 2. CA provides internal variation (progressive Bay Area vs. traditional Central Valley), but external validity requires multi-state expansion. We specifically target TX, FL, PA to include red/purple jurisdictions. The pipeline already works — scaling to new states is the marginal cost, not the fixed cost.</p>
-  </div>
+            <!-- ========== BACKUP: CAUSAL IDENTIFICATION STRATEGIES ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Causal Identification Strategies</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Strategy</th>
+                            <th>Current Status</th>
+                            <th>What's Needed</th>
+                            <th>Priority Extension</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Regression Discontinuity</strong></td>
+                            <td style="color:var(--caution);">~5 close CA elections — underpowered</td>
+                            <td>30–50 close elections</td>
+                            <td>Extension 1 (national)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Stacked DiD</strong></td>
+                            <td style="color:var(--caution);">Viable for 2 transitions; COVID-confounded</td>
+                            <td>Crime/sentencing outcomes + more transitions</td>
+                            <td>Extensions 1 + 2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Synthetic Control</strong></td>
+                            <td style="color:var(--accent3);">Feasible for LA/SF</td>
+                            <td>Outcome data beyond jail pop</td>
+                            <td>Extension 2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Event Study</strong></td>
+                            <td style="color:var(--caution);">Panel too short for credible pre-trends</td>
+                            <td>Longer pre-period (pre-2015)</td>
+                            <td>Extension 3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Instrumental Variables</strong></td>
+                            <td style="color:var(--accent3);">First stage exists (elections → ideology)</td>
+                            <td>Outcome data for second stage</td>
+                            <td>Extension 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-  <div class="card">
-    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"Your pilot DiD didn't work. Why should I fund more?"</h3>
-    <p style="font-size:0.65em; margin:6px 0 0 0;">The pilot DiD <em>did</em> work for pretrial detention (pre-trend p=0.90). The honest reporting of failures is the feature, not the bug — it showed exactly what's needed (more power, better controls). Cross-sectional correlations are robust (p=0.009 with year controls). The funded extensions address each limitation the pilot identified.</p>
-  </div>
-</section>
+            <!-- ========== BACKUP: OUTCOME LINKAGE DETAIL ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Extension 2 Detail: Outcome Data Linkage</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sub-Project</th>
+                            <th>Data Source</th>
+                            <th>Time</th>
+                            <th>Cost</th>
+                            <th>Causal Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>County-level crime & incarceration</td>
+                            <td>CA DOJ OpenJustice (free)</td>
+                            <td>2–3 mo</td>
+                            <td>~$15k</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Case-level charging & sentencing</strong></td>
+                            <td>UniCourt API ($)</td>
+                            <td>4–6 mo</td>
+                            <td>~$30–50k</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Jail subgroup populations</td>
+                            <td>Vera Institute (done)</td>
+                            <td>1 mo</td>
+                            <td>~$0</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Enhancement & three-strikes usage</td>
+                            <td>CA Sentencing Commission</td>
+                            <td>3 mo</td>
+                            <td>~$15k</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CJARS</strong> (Census + Michigan)</td>
+                            <td>Individual arrest → parole, 24 states</td>
+                            <td>3–12 mo (application)</td>
+                            <td>~$5k (FSRDC fees)</td>
+                            <td>★★★★★</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>Why case-level data is the gold standard:</strong> It links policy documents directly to
+                    line-prosecutor behavior. Are "minimize enhancements" memos actually reducing enhancement filings?
+                    UniCourt and CJARS can answer that. CJARS additionally tracks individuals across jurisdictions and
+                    system stages.
+                </div>
+            </section>
 
-<!-- ========== BACKUP: DISRUPTION DETECTION ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Policy Disruption Detection System</h2>
+            <!-- ========== BACKUP: GEOGRAPHIC EXPANSION DETAIL ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Extension 1 Detail: Geographic Expansion</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sub-Project</th>
+                            <th>Scope</th>
+                            <th>Time</th>
+                            <th>Cost</th>
+                            <th>Causal Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Multi-state FOIA collection</strong></td>
+                            <td><strong>100 largest DA offices</strong></td>
+                            <td>8–12 mo</td>
+                            <td>~$80–120k</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>National DA election database</td>
+                            <td>All 2,400+ elected DAs</td>
+                            <td>4–6 mo</td>
+                            <td>~$25–35k</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Urban DA deep-dive</td>
+                            <td>20 largest US counties</td>
+                            <td>6 mo</td>
+                            <td>~$40–50k</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>Why this matters:</strong> California findings could be dismissed as California-specific. A
+                    national database tests external validity and — crucially — provides enough close elections (30–50)
+                    to
+                    power a regression discontinuity design, the cleanest available causal identification.
+                </div>
+            </section>
 
-  <table>
-    <thead><tr><th>Signal</th><th>Weight</th><th>Method</th></tr></thead>
-    <tbody>
-      <tr><td>Ideology Velocity</td><td>30%</td><td>Rate of ideology change vs. prior 2-year baseline</td></tr>
-      <tr><td>Novelty Index</td><td>25%</td><td>Proportion of first-time policy adoptions</td></tr>
-      <tr><td>Topic Shift</td><td>20%</td><td>Jensen-Shannon divergence of topic distributions</td></tr>
-      <tr><td>Margin Reversal</td><td>15%</td><td>Flips in extensive/intensive leniency direction</td></tr>
-      <tr><td>DA Transition</td><td>10%</td><td>New administration detection from metadata</td></tr>
-    </tbody>
-  </table>
+            <!-- ========== BACKUP: CALIFORNIA DETAIL ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Deeper California Coverage</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sub-Project</th>
+                            <th>What It Fixes</th>
+                            <th>Time</th>
+                            <th>Cost</th>
+                            <th>Causal Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Complete ACLU PRA archive (17 counties)</td>
+                            <td>Selection bias from non-response</td>
+                            <td>2–3 mo</td>
+                            <td>~$10–15k</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Historical documents (pre-2015)</td>
+                            <td>Short pre-period for event studies</td>
+                            <td>3–4 mo</td>
+                            <td>~$15–20k</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Human validation (200 docs)</strong></td>
+                            <td>AI coding credibility for peer review</td>
+                            <td>3 mo</td>
+                            <td>~$20k</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>DA office interviews (10–15)</td>
+                            <td>Documents vs. practice gap</td>
+                            <td>4 mo</td>
+                            <td>~$15k</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="callout" style="margin-top:12px;">
+                    <strong>Why the human validation matters for funders:</strong> Legislators and judges will not trust
+                    AI-coded policy scores unless validated by legal experts. The $20k validation study is a small
+                    investment that makes the entire project publishable and policy-relevant.
+                </div>
+            </section>
 
-  <div class="stats-row" style="margin-top:16px;">
-    <div class="stat-box blue">
-      <div class="number">9</div>
-      <div class="label">Significant disruptions detected</div>
-    </div>
-    <div class="stat-box orange">
-      <div class="number">0.572</div>
-      <div class="label">SF 2020 (Boudin) — highest score</div>
-    </div>
-    <div class="stat-box green">
-      <div class="number">347</div>
-      <div class="label">Novel reforms tracked</div>
-    </div>
-  </div>
-  <p class="tiny" style="margin-top:8px;">Classification thresholds: Major ≥0.75 · Significant 0.50–0.74 · Moderate 0.25–0.49 · Minor 0.10–0.24 · Stable &lt;0.10</p>
-</section>
+            <!-- ========== BACKUP: ANTICIPATED PUSHBACKS ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Anticipated Questions & Responses</h2>
 
-<!-- ========== BACKUP: ELECTION FINDING ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Close Elections → Progressive Policies</h2>
-  <div class="two-col">
-    <div class="col">
-      <h3>Key Statistics</h3>
-      <table>
-        <tbody>
-          <tr><td>Close elections (≤15pp margin)</td><td><strong>50.7%</strong> progressive</td></tr>
-          <tr><td>Non-close elections</td><td><strong>19.5%</strong> progressive</td></tr>
-          <tr><td>Difference</td><td><strong>+31.2pp</strong> (p=0.010)</td></tr>
-          <tr><td>Cohen's d</td><td><strong>≈1.1</strong> (very large)</td></tr>
-          <tr><td>Margin ↔ Ideology correlation</td><td>r=-0.50, p=0.009</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col">
-      <h3>Implications for RDD</h3>
-      <ul>
-        <li>Elections create exogenous variation in DA ideology</li>
-        <li>Close races approximate random assignment</li>
-        <li>Currently ~5 close elections in CA — too few for RDD</li>
-        <li>Multi-state expansion would yield 30+ close elections</li>
-        <li>This is the most credible causal design available</li>
-      </ul>
-    </div>
-  </div>
-  <div class="callout">
-    <strong>First stage proven:</strong> Close elections → more progressive DA policies (d≈1.1). What we need is the second stage: close elections → changed outcomes. That requires outcome data (Avenue 1) + more elections (Avenue 2).
-  </div>
-</section>
+                <div class="card" style="margin-bottom:10px;">
+                    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"Policy documents ≠ practice. How
+                        do you know what's written actually happens?"</h3>
+                    <p style="font-size:0.65em; margin:6px 0 0 0;">You're right — that's exactly why Extension 2
+                        (outcome linkage) is Priority 1. We test whether "diversion-positive" memos predict more
+                        diversions. We also plan stakeholder interviews to validate. But note: even the stated-policy
+                        variation we found is <em>itself</em> a novel descriptive contribution — nobody has
+                        systematically measured this before.</p>
+                </div>
 
-<!-- ========== BACKUP: COMPARABLE WORK ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>How This Compares to Existing Work</h2>
-  <table>
-    <thead><tr><th>Study</th><th>Approach</th><th>Limitation We Address</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Pfaff (2017) <em>Locked In</em></td>
-        <td>Aggregate charging data</td>
-        <td>No measurement of DA <em>policies</em> — just outcomes. Ours codes the policies themselves.</td>
-      </tr>
-      <tr>
-        <td>Krumholz et al. (2023)</td>
-        <td>Progressive DA campaign promises</td>
-        <td>Campaign rhetoric ≠ actual office policies. We use internal documents.</td>
-      </tr>
-      <tr>
-        <td>Baxter & Wright (2022)</td>
-        <td>LA County case outcomes pre/post Gascón</td>
-        <td>Single-county, no policy measurement. We have 41 counties + systematic coding.</td>
-      </tr>
-      <tr>
-        <td>Agan et al. (2021)</td>
-        <td>Suffolk County RDD</td>
-        <td>Single-county RDD. We're building toward multi-state RDD with 30+ close elections.</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="callout">
-    <strong>Our unique contribution:</strong> We connect the "supply side" (what DA offices say their policies are) to the "demand side" (what actually happens in outcomes). Nobody has done this at scale.
-  </div>
-</section>
+                <div class="card" style="margin-bottom:10px;">
+                    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"AI coding seems unreliable. How do
+                        you validate it?"</h3>
+                    <p style="font-size:0.65em; margin:6px 0 0 0;">Phase 1 includes a 200-document dual-coding study
+                        with trained law students (~$20k). Known-case validation already works: Gascón/Boudin offices
+                        score as expected. The AI is a first-pass instrument — the validation study calibrates and
+                        benchmarks it. LLM-based coding is increasingly accepted in political science (see Argyle et al.
+                        2023, Ornstein et al. 2024).</p>
+                </div>
 
-<!-- ========== BACKUP: TIMELINE GANTT ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Detailed Timeline</h2>
-  <table>
-    <thead><tr><th>Month</th><th>Activity</th><th>Deliverable</th></tr></thead>
-    <tbody>
-      <tr style="color:var(--accent);"><td colspan="3"><strong>Phase 1 (Months 1–6): $45–50k</strong></td></tr>
-      <tr><td>1–2</td><td>CA DOJ OpenJustice data acquisition & merge</td><td>County-year outcome panel</td></tr>
-      <tr><td>2–4</td><td>Complete 17 remaining CA counties FOIA + AI coding</td><td>Full 58-county panel</td></tr>
-      <tr><td>3–6</td><td>Human validation study (200 docs × 2 coders)</td><td>IRR report; coding calibration</td></tr>
-      <tr><td>5–6</td><td>First causal estimates (DiD, synthetic control for LA/SF)</td><td>Working paper draft</td></tr>
-      <tr style="color:var(--accent2);"><td colspan="3"><strong>Phase 2 (Months 7–18): $100–130k</strong></td></tr>
-      <tr><td>7–10</td><td>Multi-state FOIA filing + document collection (TX, FL, NY)</td><td>Cross-state policy corpus</td></tr>
-      <tr><td>8–14</td><td>National DA election DB construction</td><td>2,400+ DA election records</td></tr>
-      <tr><td>12–18</td><td>AI coding of new states + RDD analysis</td><td>First RDD estimates; national database</td></tr>
-      <tr style="color:var(--accent3);"><td colspan="3"><strong>Phase 3 (Months 19–24): $50–65k</strong></td></tr>
-      <tr><td>19–22</td><td>UniCourt case-level data acquisition</td><td>Individual case outcomes panel</td></tr>
-      <tr><td>20–23</td><td>DA office interviews (10–15 offices)</td><td>Qualitative validation report</td></tr>
-      <tr><td>22–24</td><td>Mechanism analysis (policy → courtroom behavior)</td><td>Final paper submissions</td></tr>
-    </tbody>
-  </table>
-</section>
+                <div class="card" style="margin-bottom:10px;">
+                    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"You only have California. Isn't
+                        this just a Blue State story?"</h3>
+                    <p style="font-size:0.65em; margin:6px 0 0 0;">That's the point of Extension 1 (geographic
+                        expansion). CA provides internal variation (progressive Bay Area vs. traditional Central
+                        Valley), but external validity requires national expansion. We specifically target the 100
+                        largest DA offices to include red/purple jurisdictions. The pipeline already works — scaling to
+                        new states is the marginal cost, not the fixed cost.</p>
+                </div>
 
-<!-- ========== BACKUP: LIMITATIONS ========== -->
-<section>
-  <div class="backup-tag">BACKUP</div>
-  <h2>Known Limitations & Mitigation</h2>
-  <table>
-    <thead><tr><th>Limitation</th><th>Severity</th><th>How We Mitigate</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Policy ≠ Practice</td>
-        <td style="color:var(--caution);">Medium</td>
-        <td>Outcome linkage (Ave 1) + DA interviews (Ave 3) directly test implementation</td>
-      </tr>
-      <tr>
-        <td>Selection bias (which counties responded to PRA)</td>
-        <td style="color:var(--caution);">Medium</td>
-        <td>Complete 58-county panel (Ave 3) eliminates non-response bias</td>
-      </tr>
-      <tr>
-        <td>Short time panel (2015–2024)</td>
-        <td style="color:var(--caution);">Medium</td>
-        <td>Historical doc requests pre-2015 (Ave 3) extend pre-period</td>
-      </tr>
-      <tr>
-        <td>AI coding accuracy unknown</td>
-        <td style="color:var(--danger);">High</td>
-        <td>200-doc human validation study in Phase 1 (~$20k)</td>
-      </tr>
-      <tr>
-        <td>CA-only, limited external validity</td>
-        <td style="color:var(--danger);">High</td>
-        <td>Multi-state expansion (Ave 2) is the core fix</td>
-      </tr>
-      <tr>
-        <td>COVID confounding in DiD</td>
-        <td style="color:var(--caution);">Medium</td>
-        <td>Already addressed in pilot; SC/event study + multi-state diversifies away from CA-COVID</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+                <div class="card">
+                    <h3 style="margin-top:0; font-size:0.8em; color:var(--accent2);">"Your pilot DiD didn't work. Why
+                        should I fund more?"</h3>
+                    <p style="font-size:0.65em; margin:6px 0 0 0;">The pilot DiD <em>did</em> work for pretrial
+                        detention (pre-trend p=0.90). The honest reporting of failures is the feature, not the bug — it
+                        showed exactly what's needed (more power, better controls). Cross-sectional correlations are
+                        robust (p=0.009 with year controls). The funded extensions address each limitation the pilot
+                        identified.</p>
+                </div>
+            </section>
 
-</div><!-- end slides -->
-</div><!-- end reveal -->
+            <!-- ========== BACKUP: DISRUPTION DETECTION ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Policy Disruption Detection System</h2>
 
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
-<script>
-Reveal.initialize({
-  hash: true,
-  slideNumber: 'c/t',
-  width: 1200,
-  height: 700,
-  margin: 0.06,
-  transition: 'fade',
-  transitionSpeed: 'fast',
-  controls: true,
-  controlsTutorial: false,
-  progress: true,
-  center: false,
-  pdfMaxPagesPerSlide: 1,
-});
-</script>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Signal</th>
+                            <th>Weight</th>
+                            <th>Method</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ideology Velocity</td>
+                            <td>30%</td>
+                            <td>Rate of ideology change vs. prior 2-year baseline</td>
+                        </tr>
+                        <tr>
+                            <td>Novelty Index</td>
+                            <td>25%</td>
+                            <td>Proportion of first-time policy adoptions</td>
+                        </tr>
+                        <tr>
+                            <td>Topic Shift</td>
+                            <td>20%</td>
+                            <td>Jensen-Shannon divergence of topic distributions</td>
+                        </tr>
+                        <tr>
+                            <td>Margin Reversal</td>
+                            <td>15%</td>
+                            <td>Flips in extensive/intensive leniency direction</td>
+                        </tr>
+                        <tr>
+                            <td>DA Transition</td>
+                            <td>10%</td>
+                            <td>New administration detection from metadata</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="stats-row" style="margin-top:16px;">
+                    <div class="stat-box blue">
+                        <div class="number">9</div>
+                        <div class="label">Significant disruptions detected</div>
+                    </div>
+                    <div class="stat-box orange">
+                        <div class="number">0.572</div>
+                        <div class="label">SF 2020 (Boudin) — highest score</div>
+                    </div>
+                    <div class="stat-box green">
+                        <div class="number">347</div>
+                        <div class="label">Novel reforms tracked</div>
+                    </div>
+                </div>
+                <p class="tiny" style="margin-top:8px;">Classification thresholds: Major ≥0.75 · Significant 0.50–0.74 ·
+                    Moderate 0.25–0.49 · Minor 0.10–0.24 · Stable &lt;0.10</p>
+            </section>
+
+            <!-- ========== BACKUP: ELECTION FINDING ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Close Elections → Progressive Policies</h2>
+                <div class="two-col">
+                    <div class="col">
+                        <h3>Key Statistics</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Close elections (≤15pp margin)</td>
+                                    <td><strong>50.7%</strong> progressive</td>
+                                </tr>
+                                <tr>
+                                    <td>Non-close elections</td>
+                                    <td><strong>19.5%</strong> progressive</td>
+                                </tr>
+                                <tr>
+                                    <td>Difference</td>
+                                    <td><strong>+31.2pp</strong> (p=0.010)</td>
+                                </tr>
+                                <tr>
+                                    <td>Cohen's d</td>
+                                    <td><strong>≈1.1</strong> (very large)</td>
+                                </tr>
+                                <tr>
+                                    <td>Margin ↔ Ideology correlation</td>
+                                    <td>r=-0.50, p=0.009</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <h3>Implications for RDD</h3>
+                        <ul>
+                            <li>Elections create exogenous variation in DA ideology</li>
+                            <li>Close races approximate random assignment</li>
+                            <li>Currently ~5 close elections in CA — too few for RDD</li>
+                            <li>Multi-state expansion would yield 30+ close elections</li>
+                            <li>This is the most credible causal design available</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="callout">
+                    <strong>First stage proven:</strong> Close elections → more progressive DA policies (d≈1.1). What we
+                    need is the second stage: close elections → changed outcomes. That requires outcome data (Avenue 1)
+                    + more elections (Avenue 2).
+                </div>
+            </section>
+
+            <!-- ========== BACKUP: COMPARABLE WORK ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>How This Compares to Existing Work</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Study</th>
+                            <th>Approach</th>
+                            <th>Limitation We Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pfaff (2017) <em>Locked In</em></td>
+                            <td>Aggregate charging data</td>
+                            <td>No measurement of DA <em>policies</em> — just outcomes. Ours codes the policies
+                                themselves.</td>
+                        </tr>
+                        <tr>
+                            <td>Krumholz et al. (2023)</td>
+                            <td>Progressive DA campaign promises</td>
+                            <td>Campaign rhetoric ≠ actual office policies. We use internal documents.</td>
+                        </tr>
+                        <tr>
+                            <td>Baxter & Wright (2022)</td>
+                            <td>LA County case outcomes pre/post Gascón</td>
+                            <td>Single-county, no policy measurement. We have 41 counties + systematic coding.</td>
+                        </tr>
+                        <tr>
+                            <td>Agan et al. (2021)</td>
+                            <td>Suffolk County RDD</td>
+                            <td>Single-county RDD. We're building toward multi-state RDD with 30+ close elections.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="callout">
+                    <strong>Our unique contribution:</strong> We connect the "supply side" (what DA offices say their
+                    policies are) to the "demand side" (what actually happens in outcomes). Nobody has done this at
+                    scale.
+                </div>
+            </section>
+
+            <!-- ========== BACKUP: TIMELINE GANTT ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Detailed Timeline</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Activity</th>
+                            <th>Deliverable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="color:var(--accent);">
+                            <td colspan="3"><strong>Phase 1 (Months 1–6): $45–50k</strong></td>
+                        </tr>
+                        <tr>
+                            <td>1–2</td>
+                            <td>CA DOJ OpenJustice data acquisition & merge</td>
+                            <td>County-year outcome panel</td>
+                        </tr>
+                        <tr>
+                            <td>2–4</td>
+                            <td>Complete 17 remaining CA counties FOIA + AI coding</td>
+                            <td>Full 58-county panel</td>
+                        </tr>
+                        <tr>
+                            <td>3–6</td>
+                            <td>Human validation study (200 docs × 2 coders)</td>
+                            <td>IRR report; coding calibration</td>
+                        </tr>
+                        <tr>
+                            <td>5–6</td>
+                            <td>First causal estimates (DiD, synthetic control for LA/SF)</td>
+                            <td>Working paper draft</td>
+                        </tr>
+                        <tr style="color:var(--accent2);">
+                            <td colspan="3"><strong>Phase 2 (Months 7–18): $100–130k</strong></td>
+                        </tr>
+                        <tr>
+                            <td>7–10</td>
+                            <td>Multi-state FOIA filing + document collection (TX, FL, NY)</td>
+                            <td>Cross-state policy corpus</td>
+                        </tr>
+                        <tr>
+                            <td>8–14</td>
+                            <td>National DA election DB construction</td>
+                            <td>2,400+ DA election records</td>
+                        </tr>
+                        <tr>
+                            <td>12–18</td>
+                            <td>AI coding of new states + RDD analysis</td>
+                            <td>First RDD estimates; national database</td>
+                        </tr>
+                        <tr style="color:var(--accent3);">
+                            <td colspan="3"><strong>Phase 3 (Months 19–24): $50–65k</strong></td>
+                        </tr>
+                        <tr>
+                            <td>19–22</td>
+                            <td>UniCourt case-level data acquisition</td>
+                            <td>Individual case outcomes panel</td>
+                        </tr>
+                        <tr>
+                            <td>20–23</td>
+                            <td>DA office interviews (10–15 offices)</td>
+                            <td>Qualitative validation report</td>
+                        </tr>
+                        <tr>
+                            <td>22–24</td>
+                            <td>Mechanism analysis (policy → courtroom behavior)</td>
+                            <td>Final paper submissions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- ========== BACKUP: LIMITATIONS ========== -->
+            <section>
+                <div class="backup-tag">BACKUP</div>
+                <h2>Known Limitations & Mitigation</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Limitation</th>
+                            <th>Severity</th>
+                            <th>How We Mitigate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Policy ≠ Practice</td>
+                            <td style="color:var(--caution);">Medium</td>
+                            <td>Outcome linkage (Ext 2) + stakeholder interviews directly test implementation</td>
+                        </tr>
+                        <tr>
+                            <td>Selection bias (which counties responded to PRA)</td>
+                            <td style="color:var(--caution);">Medium</td>
+                            <td>Complete 58-county panel (Extension 1) eliminates non-response bias</td>
+                        </tr>
+                        <tr>
+                            <td>Short time panel (2015–2024)</td>
+                            <td style="color:var(--caution);">Medium</td>
+                            <td>Historical doc requests pre-2015 (Extension 1) extend pre-period</td>
+                        </tr>
+                        <tr>
+                            <td>AI coding accuracy unknown</td>
+                            <td style="color:var(--danger);">High</td>
+                            <td>200-doc human validation study in Phase 1 (~$20k)</td>
+                        </tr>
+                        <tr>
+                            <td>CA-only, limited external validity</td>
+                            <td style="color:var(--danger);">High</td>
+                            <td>Extension 1 (national) is the core fix</td>
+                        </tr>
+                        <tr>
+                            <td>COVID confounding in DiD</td>
+                            <td style="color:var(--caution);">Medium</td>
+                            <td>Already addressed in pilot; SC/event study + multi-state diversifies away from CA-COVID
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div><!-- end slides -->
+    </div><!-- end reveal -->
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            width: 1200,
+            height: 700,
+            margin: 0.06,
+            transition: 'fade',
+            transitionSpeed: 'fast',
+            controls: true,
+            controlsTutorial: false,
+            progress: true,
+            center: false,
+            pdfMaxPagesPerSlide: 1,
+        });
+    </script>
 </body>
+
 </html>
