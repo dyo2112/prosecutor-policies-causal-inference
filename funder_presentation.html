@@ -843,47 +843,47 @@
                         <tr>
                             <th>DA Policy (Already Coded)</th>
                             <th>Measurable Outcome</th>
-                            <th>Causal Design</th>
+                            <th>Data Required</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>Bail/pretrial reform directives</strong></td>
                             <td>Pretrial detention rates, FTA, pretrial crime</td>
-                            <td>DiD at memo adoption; RDD at election threshold</td>
+                            <td>Vera (done); CA DOJ pretrial filings; CJARS</td>
                         </tr>
                         <tr>
                             <td><strong>Diversion program creation</strong></td>
                             <td>Case dismissals, recidivism (1–3 yr)</td>
-                            <td>Event study at program launch; stacked DiD</td>
+                            <td>UniCourt case dispositions; CJARS recidivism</td>
                         </tr>
                         <tr>
                             <td><strong>"Decline to prosecute" charging memos</strong></td>
                             <td>Filing rates: drugs, property, quality-of-life</td>
-                            <td>Interrupted time series; synthetic control</td>
+                            <td>CA DOJ OpenJustice (free, public API)</td>
                         </tr>
                         <tr>
                             <td><strong>Enhancement/three-strikes reform</strong></td>
                             <td>Sentence lengths, enhancement filings, plea terms</td>
-                            <td>DiD; CJARS individual trajectories</td>
+                            <td>CA Sentencing Commission; UniCourt; CJARS</td>
                         </tr>
                         <tr>
                             <td><strong>Racial equity directives</strong></td>
                             <td>B/W disparities in charging, detention, sentencing</td>
-                            <td>Triple-diff (policy × race × time)</td>
+                            <td>CA DOJ by-race breakdowns; CJARS demographics</td>
                         </tr>
                         <tr>
                             <td><strong>Extensive margin (who enters)</strong></td>
                             <td>System contact per capita, jail admissions</td>
-                            <td>Panel FE; IV using close elections</td>
+                            <td>CA DOJ arrest/filing rates; Vera (done)</td>
                         </tr>
                     </tbody>
                 </table>
 
                 <div class="callout" style="margin-top:10px;">
-                    <strong>These align directly with AV's investment portfolio:</strong> pretrial justice ($48M+),
-                    prosecutorial accountability ($7.4M+), racial equity, and diversion/recidivism. The policy variation
-                    exists — we need outcome linkage and geographic scale to power the designs.
+                    <strong>The policy variation already exists in our coded data.</strong> What's needed: outcome
+                    linkage (Extension 2) and geographic scale (Extension 1) to power DiD, RDD, event study, and
+                    synthetic control designs across these questions.
                 </div>
             </section>
 

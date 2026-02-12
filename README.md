@@ -121,14 +121,14 @@ The infrastructure above creates **rare opportunities for credible causal identi
 
 The policies coded in our database map directly onto the causal questions that matter most for criminal justice reform. Each row below is a testable hypothesis — once outcome data and sufficient policy variation exist:
 
-| DA Policy (Already Coded) | Measurable Outcome | Causal Design | Why It Matters |
-|---------------------------|-------------------|---------------|----------------|
-| **Bail/pretrial reform directives** | Pretrial detention rates, FTA rates, pretrial crime | DiD around memo adoption; RDD at election threshold | AV's largest CJ investment ($48M+); no causal link exists between DA *policy* and pretrial outcomes |
-| **Diversion program creation** | Case dismissal rates, recidivism at 1–3 years | Event study at program launch; stacked DiD across counties | Tests whether diversion *policies* (not just programs) reduce reoffending |
-| **"Decline to prosecute" charging memos** | Filing rates for drug, property, quality-of-life offenses | Interrupted time series; SC for single-county adoptions | Directly tests prosecutorial discretion — AV's core accountability question |
-| **Enhancement/three-strikes reform** | Sentence lengths, enhancement filing rates, plea bargain terms | DiD; CJARS individual trajectories | Tests intensive margin — do sentencing reform memos shorten actual incarceration spells? |
-| **Racial equity directives** | Black/white disparities in charging, detention, sentencing | Triple-difference (policy × race × time); decomposition | AV has funded $7.4M+ specifically on prosecutorial racial equity |
-| **Extensive margin (who enters system)** | Total system contact per capita; jail admission rates | Panel regression with county + year FE; IV using elections | Our data uniquely separates gateway vs. severity — enabling the first test of which margin moves outcomes |
+| DA Policy (Already Coded) | Measurable Outcome | Causal Design | Data Required |
+|---------------------------|-------------------|---------------|---------------|
+| **Bail/pretrial reform directives** | Pretrial detention rates, FTA rates, pretrial crime | DiD around memo adoption; RDD at election threshold | Vera (done); CA DOJ pretrial filings; CJARS individual detention spells |
+| **Diversion program creation** | Case dismissal rates, recidivism at 1–3 years | Event study at program launch; stacked DiD across counties | UniCourt case dispositions; CJARS recidivism tracking (24 states) |
+| **"Decline to prosecute" charging memos** | Filing rates for drug, property, quality-of-life offenses | Interrupted time series; SC for single-county adoptions | CA DOJ OpenJustice filing rates (free, public API) |
+| **Enhancement/three-strikes reform** | Sentence lengths, enhancement filing rates, plea bargain terms | DiD; CJARS individual trajectories | CA Sentencing Commission; UniCourt plea/sentence records; CJARS |
+| **Racial equity directives** | Black/white disparities in charging, detention, sentencing | Triple-difference (policy × race × time); decomposition | CA DOJ by-race breakdowns; CJARS demographic-linked records |
+| **Extensive margin (who enters system)** | Total system contact per capita; jail admission rates | Panel regression with county + year FE; IV using elections | CA DOJ arrest/filing rates; Vera jail admissions (done) |
 
 > These are not aspirations — the policy variation already exists in our coded data. What's missing is the outcome linkage (Extension 2) and sufficient geographic coverage (Extension 1) to power the designs.
 
