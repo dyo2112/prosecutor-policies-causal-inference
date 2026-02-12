@@ -40,6 +40,8 @@ Each document is processed through Claude with a structured prompt that extracts
 | **Administrative Context** | New policy vs. continuation, mandatory vs. guidance, DA administration |
 | **Key Quotes & Summary** | Illustrative excerpts and document summary |
 
+> For details on the LLM coding system, prompts, and pipeline: [02_llm_coding/README.md](02_llm_coding/README.md) | For methodology and research design guidance: [METHODOLOGY_GUIDE.md](02_llm_coding/METHODOLOGY_GUIDE.md) | For getting started with the pipeline: [GETTING_STARTED.md](02_llm_coding/GETTING_STARTED.md)
+
 ### Policy Disruption Detection
 
 A weighted composite score identifies when DA offices adopted new directions:
@@ -51,6 +53,8 @@ A weighted composite score identifies when DA offices adopted new directions:
 | Topic Shift | 20% | Jensen-Shannon divergence of topic distributions |
 | Margin Reversal | 15% | Flips in extensive/intensive leniency direction |
 | DA Transition | 10% | New administration detection |
+
+> For detailed disruption detection results and methodology: [05_data/results/README.md](05_data/results/README.md)
 
 ---
 
@@ -74,6 +78,8 @@ Beyond validating the pipeline, the data reveals patterns grounded in theories o
 
 **Close Elections and Progressive Policy.** Elections with margins of 15pp or less produce **+31.2 percentage points** more progressive policies than non-close elections (p=0.010). The continuous relationship is strong: r=-0.50 between margin and ideology (p=0.009). Tighter races appear to select for or empower DAs who implement more progressive agendas — consistent with models where electoral competition disciplines incumbents (or attracts challengers) around policy substance rather than just partisanship. This election-ideology link also provides the first stage for potential instrumental variables designs.
 
+> For complete election analysis with case studies and robustness checks: [FINAL_ANALYSIS_SUMMARY.md](07_documentation/FINAL_ANALYSIS_SUMMARY.md) | For the full election output guide: [ELECTION_ANALYSIS_README.md](07_documentation/ELECTION_ANALYSIS_README.md)
+
 ### In the Service of Causal Inference: Policy Shocks
 
 The pipeline enables detection and measurement of sharp policy transitions — critical inputs for event-study and difference-in-differences designs.
@@ -81,6 +87,8 @@ The pipeline enables detection and measurement of sharp policy transitions — c
 **Policy Disruptions Detected.** Our disruption detection system identified **9 significant policy disruptions** (2020–2023). San Francisco 2020 (Boudin) scored highest (0.572), followed by LA County 2021 (Gascón). The system tracked **347 novel reform adoptions** across counties. These discontinuities are exactly the quasi-experimental variation that causal designs require — each transition represents a potential "natural experiment" where a DA office sharply changed course.
 
 **Progressive Surge (2019–2022).** Progressive documents increased from 18% (2016) to 40% (2020) to 56% (2022), a statistically significant linear trend (+0.062 points/year, p=0.003, R-squared=0.52). The temporal pattern — gradual trend punctuated by sharp county-level disruptions — creates the kind of staggered adoption variation that powers modern stacked DiD and event study designs.
+
+> For full statistical results (6 major findings with statistical tests, effect sizes, and geographic breakdowns): [COMPREHENSIVE_FINDINGS.md](07_documentation/COMPREHENSIVE_FINDINGS.md)
 
 ### Jail Data Pilot: First Steps Toward Causal Evidence
 
@@ -100,6 +108,8 @@ The cross-sectional correlations **hold after controlling for year fixed effects
 **What the pilot exposes honestly:** Naive pre/post comparisons are **confounded by COVID** — all large CA counties saw similar jail population declines in 2020. A COVID-controlled DiD showed that the parallel trends assumption is violated for jail population rates (pre-trend p = 0.021). The TWFE panel regression was non-significant (N = 137 county-years). These are not failures — they are precisely the diagnostics that tell us what data and designs are needed to move from robust descriptive associations to credible causal claims.
 
 **Why this matters for policy:** The descriptive associations are real. The causal question — *do progressive policies actually reduce incarceration?* — remains open and answerable with the right extensions. This is a gap that, if filled, would provide the first evidence base for evaluating the progressive prosecutor model on its own terms.
+
+> For complete Vera pilot methodology, COVID-controlled reanalysis, and figures: [VERA_PILOT_REPORT.md](07_documentation/VERA_PILOT_REPORT.md)
 
 ---
 
@@ -215,6 +225,8 @@ aclu_policies/
 └── vera_jail/
     └── incarceration_trends_county.csv      ← Vera Institute county-level data
 ```
+
+**Additional documentation** (not shown in tree): [Data cleaning documentation](03_data_cleaning/README.md) | [Analysis deliverables overview](04_analysis/README.md) | [Data cleaning summary](07_documentation/PROJECT_SUMMARY.md)
 
 > **Note:** The raw PDF corpus (2,665 documents, ~6 GB) is not included in this repository. Contact the PI for access.
 

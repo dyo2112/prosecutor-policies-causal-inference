@@ -3,7 +3,7 @@
 
 ---
 
-## 🎯 **Critical Methodological Improvement**
+## Critical Methodological Improvement
 
 ### **The Problem with Absolute Vote Percentages**
 
@@ -32,7 +32,7 @@ This correctly identifies close races regardless of number of candidates:
 
 ---
 
-## 📊 **KEY FINDINGS WITH PROPER MARGINS**
+## Key Findings With Proper Margins
 
 ### **Finding 1: Very Close Elections (≤5pp) → Highly Progressive**
 
@@ -122,7 +122,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## 🔬 **ROBUSTNESS CHECKS**
+## Robustness Checks
 
 ### **Multiple Threshold Analysis**
 
@@ -145,7 +145,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## 📈 **CASE STUDIES**
+## Case Studies
 
 ### **Case 1: Los Angeles 2020 - George Gascón**
 
@@ -205,7 +205,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## 🎓 **INTERPRETATION & MECHANISMS**
+## Interpretation and Mechanisms
 
 ### **Why Do Close Elections Produce Progressive Policies?**
 
@@ -241,7 +241,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## ⚠️ **LIMITATIONS**
+## Limitations
 
 ### **1. Sample Size**
 - Only **28 county-year observations**
@@ -281,7 +281,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## 💡 **KEY TAKEAWAYS**
+## Key Takeaways
 
 ### **For Researchers:**
 
@@ -331,7 +331,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## 📁 **DATA FILES**
+## Data Files
 
 **Main Analysis:**
 - `05_data/results/final_post_election_analysis.csv` - 28 county-year observations
@@ -348,7 +348,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## 📊 **STATISTICAL SUMMARY**
+## Statistical Summary
 
 **Sample:**
 - 28 county-year observations
@@ -372,7 +372,7 @@ Close elections produce dramatically more emphasis on:
 
 ---
 
-## ✅ **CONCLUSION**
+## Conclusion
 
 This analysis provides **strong evidence** that close DA elections, properly measured using 1st-2nd place margins, predict substantially more progressive prosecutorial policies.
 

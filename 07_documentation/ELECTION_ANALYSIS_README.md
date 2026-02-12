@@ -3,10 +3,10 @@
 
 ---
 
-## 🎯 **START HERE**
+## Start Here
 
 **Main findings document:**
-📄 [FINAL_ANALYSIS_SUMMARY.md](FINAL_ANALYSIS_SUMMARY.md) - **READ THIS FIRST**
+[FINAL_ANALYSIS_SUMMARY.md](FINAL_ANALYSIS_SUMMARY.md) - **READ THIS FIRST**
 
 This comprehensive document explains:
 - Why we use 1st-2nd place margins (not absolute vote %)
@@ -17,10 +17,10 @@ This comprehensive document explains:
 
 ---
 
-## 📊 **KEY VISUALIZATIONS**
+## Key Visualizations
 
 ### **Final Analysis (Proper Margins)**
-🖼️ [final_analysis_visualizations.png](final_analysis_visualizations.png)
+[final_analysis_visualizations.png](final_analysis_visualizations.png)
 - 9-panel figure showing all main results
 - Progressive policies by margin threshold
 - Scatter plot: margin vs policies
@@ -28,54 +28,54 @@ This comprehensive document explains:
 - Very close elections (≤5pp)
 - Ideology distributions
 
-🖼️ [final_analysis_elections_detail.png](final_analysis_elections_detail.png)
+[final_analysis_elections_detail.png](final_analysis_elections_detail.png)
 - Election margins with policy outcomes
 - Winner % vs actual margin
 - Case studies of multi-candidate races
 - Threshold comparison
 
 ### **Earlier Analysis Figures**
-🖼️ [improved_analysis_visualizations.png](improved_analysis_visualizations.png)
-🖼️ [improved_analysis_detailed.png](improved_analysis_detailed.png)
+[improved_analysis_visualizations.png](improved_analysis_visualizations.png)
+[improved_analysis_detailed.png](improved_analysis_detailed.png)
 
 ---
 
-## 📁 **DATA FILES**
+## Data Files
 
 ### **Main Analysis Datasets**
 
 **Final post-election analysis:**
-📊 [final_post_election_analysis.csv](final_post_election_analysis.csv)
+[final_post_election_analysis.csv](final_post_election_analysis.csv)
 - 28 county-year observations
 - All policy measures aggregated
 - Includes proper 1st-2nd place margins
 - **Primary dataset for analysis**
 
 **Election margins:**
-📊 [election_margins_1st_2nd.csv](election_margins_1st_2nd.csv)
+[election_margins_1st_2nd.csv](election_margins_1st_2nd.csv)
 - 16 elections with proper margins calculated
 - Shows 1st vs 2nd place, number of candidates
 - Includes close election indicators at multiple thresholds
 
 **Individual policies matched to DAs:**
-📊 [policies_with_incumbent_da.csv](policies_with_incumbent_da.csv)
+[policies_with_incumbent_da.csv](policies_with_incumbent_da.csv)
 - 1,865 policy documents
 - 185 matched to incumbent DAs (9.9%)
 - Raw data before aggregation
 
 ### **Supporting Datasets**
 
-📊 [da_tenures.csv](da_tenures.csv) - DA tenures from election data
-📊 [close_election_thresholds_comparison.csv](close_election_thresholds_comparison.csv) - Comparison of ≤5pp, ≤10pp, ≤15pp
-📊 [margin_correlations_proper.csv](margin_correlations_proper.csv) - Correlation table
-📊 [county_year_policies_matched.csv](county_year_policies_matched.csv) - County-year aggregates
+[da_tenures.csv](da_tenures.csv) - DA tenures from election data
+[close_election_thresholds_comparison.csv](close_election_thresholds_comparison.csv) - Comparison of ≤5pp, ≤10pp, ≤15pp
+[margin_correlations_proper.csv](margin_correlations_proper.csv) - Correlation table
+[county_year_policies_matched.csv](county_year_policies_matched.csv) - County-year aggregates
 
 ---
 
-## 💻 **CODE**
+## Code
 
 ### **Main Analysis Script**
-🐍 [prosecutor_analysis_final.py](prosecutor_analysis_final.py)
+[prosecutor_analysis_final.py](prosecutor_analysis_final.py)
 - **Use this for replication**
 - Calculates proper 1st-2nd place margins
 - Matches policies to incumbent DAs
@@ -83,12 +83,12 @@ This comprehensive document explains:
 - Generates all output files
 
 ### **Earlier Versions**
-🐍 [prosecutor_analysis_improved.py](prosecutor_analysis_improved.py) - Used winner vote % (incorrect for multi-candidate)
-🐍 [prosecutor_analysis.py](prosecutor_analysis.py) - Original version
+[prosecutor_analysis_improved.py](prosecutor_analysis_improved.py) - Used winner vote % (incorrect for multi-candidate)
+[prosecutor_analysis.py](prosecutor_analysis.py) - Original version
 
 ---
 
-## 🔍 **KEY FINDINGS SUMMARY**
+## Key Findings Summary
 
 ### **1. Close Elections (≤15pp margin) → +31.2pp More Progressive**
 - Close: 50.7% progressive policies
@@ -115,7 +115,7 @@ This comprehensive document explains:
 
 ---
 
-## 📈 **STATISTICAL RESULTS**
+## Statistical Results
 
 **Correlation: Margin ↔ Ideology**
 - r = -0.50 (p = 0.009**)
@@ -130,7 +130,7 @@ This comprehensive document explains:
 
 ---
 
-## ⚠️ **IMPORTANT METHODOLOGICAL NOTE**
+## Important Methodological Note
 
 ### **Why Proper Margins Matter**
 
@@ -151,7 +151,7 @@ This comprehensive document explains:
 
 ---
 
-## 🎓 **FOR RESEARCHERS**
+## For Researchers
 
 **Replication:**
 1. Run `prosecutor_analysis_final.py`
@@ -167,7 +167,7 @@ This comprehensive document explains:
 
 ---
 
-## 📝 **CITATION**
+## Citation
 
 If using this analysis, please note:
 - Data: CA prosecutor internal documents + election results
@@ -177,7 +177,7 @@ If using this analysis, please note:
 
 ---
 
-## ❓ **QUESTIONS ANSWERED**
+## Questions Answered
 
 1. **How often do prosecutors switch ideology?**
    - 44.5% of county-years show ideological changes
@@ -202,7 +202,7 @@ If using this analysis, please note:
 
 ---
 
-## 📞 **QUESTIONS OR ISSUES?**
+## Questions or Issues?
 
 Check:
 1. FINAL_ANALYSIS_SUMMARY.md for complete explanations
@@ -211,7 +211,7 @@ Check:
 
 ---
 
-**Analysis completed:** October 22, 2025
+**Analysis completed:** February 2026
 **Total output files:** 25+
 **Primary files for publication:** 
 - FINAL_ANALYSIS_SUMMARY.md

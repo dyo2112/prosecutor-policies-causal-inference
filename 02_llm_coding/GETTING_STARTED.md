@@ -253,12 +253,11 @@ Contact: dyo@berkeley.edu
 ## Citation
 
 ```bibtex
-@software{karp2025prosecutor,
-  author = {Karp, Dvir},
+@software{yogev2026prosecutor,
+  author = {Yogev, Dvir},
   title = {Prosecutor Policy Document Coding System},
-  year = {2025},
-  publisher = {Berkeley Empirical Research in Quantitative Justice},
-  institution = {UC Berkeley School of Law}
+  year = {2026},
+  institution = {Center for Law and Justice, UC Berkeley School of Law}
 }
 ```
 
@@ -266,4 +265,3 @@ Contact: dyo@berkeley.edu
 
 **You're all set!** Run `python quickstart.py` to begin.
 
-Good luck with your research! 🚀
