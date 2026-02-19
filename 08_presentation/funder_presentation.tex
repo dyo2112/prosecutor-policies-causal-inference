@@ -56,6 +56,22 @@
 % ---------- TITLE ----------
 \maketitle
 
+% ---------- SLIDE: Framing — Addressing AV Feedback ----------
+\begin{frame}{Thank You for the Second Look}
+Last time, you raised two concerns: whether \textbf{outcome data} could support the causal questions, and whether the project was \textbf{targeted enough} toward specific causal research questions.
+\vspace{6pt}
+
+Those concerns were fair. Here is what has changed:
+\vspace{6pt}
+\begin{enumerate}\setlength\itemsep{6pt}
+    \item \textbf{We linked outcome data and found a real signal} --- pilot results survive year fixed effects; pretrial detention shows a clean causal signal ($p_{\text{pre-trend}} = 0.90$)
+    \item \textbf{We identified 6 specific causal designs} aligned to specific research questions --- each one mapped to the exact outcome data source it requires
+    \item \textbf{We restructured the ask} so that each funded phase directly unlocks a specific causal study, not just more infrastructure
+\end{enumerate}
+\vspace{6pt}
+{\small The next 15 minutes will walk you through the evidence.}
+\end{frame}
+
 % ---------- SLIDE: The Research Problem ----------
 \begin{frame}{The Measurement Gap}
 \begin{columns}[T]
@@ -135,6 +151,30 @@ Administrative Context & New policy vs.\ continuation, DA administration \\
 \begin{center}\scriptsize Total API cost: \textasciitilde\$80 \quad$\cdot$\quad Processing time: \textasciitilde 2 hours\end{center}
 \end{frame}
 
+% ---------- SLIDE: Specific Policy Coding ----------
+\begin{frame}{Not Just ``Progressive/Traditional'' --- We Code Specific Policies}
+{\small Every document is coded on \textbf{7 specific policy dimensions}, not just a blanket ideology score.}
+\vspace{3pt}
+{\footnotesize
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+\textbf{Dimension} & \textbf{Values} & \textbf{Example from Our Data} \\
+\midrule
+Bail position & reform / high bail & Placer: reform-oriented bail memo; SLO: bail guideline update \\
+Diversion & yes / no & Sacramento, Santa Clara: explicit diversion program support \\
+Enhancements & minimize / maximize & SF, LA: minimize enhancements; 6 counties maximize \\
+Three strikes & restrictive / expansive & Tracked per-document across all counties \\
+Racial justice & high / moderate / low & 9 counties high (post-2020 surge), 16 moderate, 10 low \\
+Juvenile transfer & restrictive / expansive & 4 documents with explicit positions \\
+Alt.\ to incarceration & yes / no & Whether doc endorses treatment, community service, etc. \\
+\bottomrule
+\end{tabularx}}
+\vspace{4pt}
+\begin{alertblock}{}
+\textbf{This is v1.0.} Adding new dimensions (gun policy, DV protocols, immigration detainers) requires only a prompt update, not a pipeline rebuild.
+\end{alertblock}
+\end{frame}
+
 % ---------- SLIDE: Face Validity ----------
 \begin{frame}{Face Validity: The Pipeline Recovers Known Patterns}
 {\small\color{gray} These findings build confidence that the AI coding measures real variation.}
@@ -195,41 +235,42 @@ Continuous: $r = -0.50$ between margin and ideology ($p = 0.009$).
 \end{frame}
 
 % ---------- SLIDE: Policy Shocks ----------
-\begin{frame}{In the Service of Causal Inference: Policy Shocks}
-{\small The pipeline detects sharp policy transitions---the quasi-experimental variation causal designs require.}
+\begin{frame}{The Variation Exists: Policy Shocks = Natural Experiments}
+{\small The pipeline detects sharp policy transitions---exactly the quasi-experimental variation causal designs require.}
 \vspace{6pt}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
-\begin{block}{Disruptions Detected}
+\begin{block}{What We Found}
 \begin{itemize}\setlength\itemsep{2pt}
-    \item \textbf{9} significant policy disruptions (2020--23)
-    \item SF 2020 (Boudin): highest score (0.572)
+    \item \textbf{9} sharp policy disruptions (2020--23)
     \item \textbf{347} novel reform adoptions tracked
+    \item Progressive docs: 18\% $\to$ 56\% in 4 years
 \end{itemize}
 \end{block}
 \vspace{4pt}
-\begin{block}{Progressive Surge (2019--2022)}
+\begin{block}{Each Feature $\to$ a Causal Design}
 \begin{itemize}\setlength\itemsep{2pt}
-    \item Progressive docs: 18\% $\to$ 40\% $\to$ 56\%
-    \item Linear trend: $+0.062$/yr ($p = 0.003$, $R^2 = 0.52$)
-    \item Gradual trend + sharp county disruptions
+    \item 9 disruptions $\to$ \textbf{staggered DiD / event study}
+    \item $\sim$5 close elections $\to$ \textbf{RDD first stage}
+    \item DA transitions $\to$ \textbf{synthetic control}
+    \item Margin $\to$ ideology ($r = -0.50$) $\to$ \textbf{IV}
 \end{itemize}
 \end{block}
 \end{column}
 \begin{column}{0.48\textwidth}
-\begin{exampleblock}{Why Funders Should Care}
-\begin{itemize}\setlength\itemsep{3pt}
-    \item Each disruption $=$ potential ``natural experiment''
-    \item Staggered adoption $\to$ modern DiD/event study designs
-    \item Combined with outcome data $\to$ credible causal estimates
-\end{itemize}
+\begin{alertblock}{The Key Insight}
+\textbf{All four pillars of modern causal inference}---DiD, RDD, synthetic control, and instrumental variables---are available in this data. No other prosecutorial dataset offers this.
+\end{alertblock}
+\vspace{4pt}
+\begin{exampleblock}{What's Missing}
+Outcome linkage (Extension 2) and geographic scale (Extension 1) to power these designs. The policy variation is already in hand.
 \end{exampleblock}
 \end{column}
 \end{columns}
 \end{frame}
 
 % ---------- SLIDE: Jail Data Pilot ----------
-\begin{frame}{Jail Data Pilot: First Steps Toward Causal Evidence}
+\begin{frame}{Pilot Results: The Signal Is Real}
 {\small Linked AI-coded policy scores to \textbf{Vera Institute Incarceration Trends} (245,840 quarterly obs., all US counties).}
 \vspace{4pt}
 {\tablefont
@@ -246,111 +287,142 @@ LA Pretrial (Gasc\'on DiD) & $-32.1$/100k & Pre-trend $p = 0.90$ & \textcolor{me
 \vspace{4pt}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
-\begin{exampleblock}{What Holds Up}
-{\small Associations \textbf{survive year controls}. Pretrial detention shows cleanest causal signal (pre-trend $p = 0.90$).}
+\begin{exampleblock}{What Works}
+{\small All associations \textbf{survive year fixed effects}---not a COVID artifact. Pretrial detention shows the cleanest causal signal (pre-trend $p = 0.90$). These results motivate the full-scale designs on the next slides.}
 \end{exampleblock}
 \end{column}
 \begin{column}{0.48\textwidth}
-\begin{alertblock}{What the Pilot Exposes}
-{\small Naive pre/post \textbf{confounded by COVID}. Parallel trends violated ($p = 0.021$). TWFE non-significant ($N = 137$).}
-\end{alertblock}
+\begin{block}{What Extensions Will Solve}
+{\small Pilot $N$ is small (34 CA counties, 9 years). National expansion + case-level outcome data will power the causal designs this variation makes possible.}
+\end{block}
 \end{column}
 \end{columns}
 \end{frame}
 
 % ---------- SLIDE: What This Can Test ----------
-\begin{frame}{What This Infrastructure Can Test}
-{\small Each row is a testable causal question---the policy variation already exists in our data.}
+\begin{frame}{The Payoff: 6+ Credible Causal Studies, Ready to Run}
+{\small Each row is a testable causal hypothesis. The policy variation already exists. Fund the outcome linkage.}
 \vspace{4pt}
 {\smalltable
-\begin{tabularx}{\textwidth}{p{3.2cm}Xp{4.2cm}}
+\begin{tabularx}{\textwidth}{p{2.2cm}Xp{2.8cm}p{2.8cm}}
 \toprule
-\textbf{DA Policy (Coded)} & \textbf{Measurable Outcome} & \textbf{Data Required} \\
+\textbf{Policy Coded} & \textbf{Causal Question} & \textbf{Design} & \textbf{Outcome Data} \\
 \midrule
-Bail/pretrial reform & Pretrial detention, FTA, pretrial crime & Vera (done); CA DOJ; CJARS \\
-Diversion programs & Case dismissals, recidivism (1--3 yr) & UniCourt; CJARS recidivism \\
-``Decline to prosecute'' memos & Filing rates: drugs, property, QOL & CA DOJ OpenJustice (free) \\
-Enhancement/3-strikes reform & Sentence lengths, enhancement filings & CA Sentencing Comm.; CJARS \\
-Racial equity directives & B/W disparities: charging, sentencing & CA DOJ by-race; CJARS \\
-Extensive margin (who enters system) & System contact per capita; jail admissions & CA DOJ filings; Vera (done) \\
+Bail reform & Does reform reduce pretrial detention without increasing FTA? & Event study; DiD & Vera (\textcolor{medalistgreen}{done}); CA DOJ \\
+Diversion & Do diversion memos lower recidivism? & Staggered DiD & UniCourt; CJARS \\
+Declination memos & Do ``decline to prosecute'' orders lower filings? & Synthetic control & CA DOJ (\textcolor{medalistgreen}{free}) \\
+Enhancement reform & Does curbing 3-strikes reduce sentence lengths? & Event study & CA Sentencing Comm. \\
+Racial equity & Do equity directives reduce B/W disparities? & DiD; IV & CA DOJ by-race; CJARS \\
+Close elections & Does a progressive DA \emph{cause} lower incarceration? & RDD & Vera (\textcolor{medalistgreen}{done}) \\
 \bottomrule
 \end{tabularx}}
 \vspace{4pt}
-\begin{block}{}
-\textbf{The policy variation exists.} What's needed: outcome linkage (Extension 2) and geographic scale (Extension 1) to power DiD, RDD, event study, and synthetic control designs.
+\begin{alertblock}{}
+\textbf{6 designs $\times$ multiple outcomes = a research agenda.} The policy variation is in hand. Outcome linkage (Phase 1--2) unlocks all of them.
+\end{alertblock}
+\end{frame}
+
+% ---------- SLIDE: Diversion Deep Dive ----------
+\begin{frame}{Deep Dive: Identifying the Causal Effect of Diversion Policies}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{The Question}
+{\small Does adopting a diversion program \textbf{reduce recidivism} and \textbf{lower case volumes} without increasing public safety risk?}
 \end{block}
+\vspace{3pt}
+\begin{block}{Identification Strategy}
+{\small
+\begin{itemize}\setlength\itemsep{2pt}
+    \item \textbf{Treatment:} date a DA issues an internal diversion directive (coded by our pipeline)
+    \item \textbf{Design:} staggered DiD across counties adopting at different times
+    \item \textbf{Robustness:} synthetic control for Sacramento, Santa Clara
+\end{itemize}}
+\end{block}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{block}{Outcome Data Needed}
+{\small
+\begin{itemize}\setlength\itemsep{2pt}
+    \item \textbf{CJARS:} individual trajectories---does diversion reduce $P$(re-arrest)?
+    \item \textbf{UniCourt:} case outcomes---do filing rates drop? Do plea rates change?
+    \item \textbf{CA DOJ:} county-level prosecution counts (free, immediate)
+\end{itemize}}
+\end{block}
+\vspace{3pt}
+\begin{exampleblock}{Why Both}
+{\small CJARS = \textbf{individual mechanism}. UniCourt = \textbf{case-level detail}. Together: ``what happens to diverted people \emph{and} to case flow.''}
+\end{exampleblock}
+\end{column}
+\end{columns}
 \end{frame}
 
 % ---------- SLIDE: Extension 1 ----------
-\begin{frame}{Extension 1: Expanding Policy Coverage}
+\begin{frame}{Extension 1: Scale $\to$ Statistical Power for Causal Designs}
+{\small \textbf{Right now:} 41 CA counties, $\sim$5 close elections, 6-year pre-periods. Suggestive---but underpowered for publication-quality causal inference.}
+\vspace{4pt}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
-\begin{block}{Within California}
+\begin{block}{Complete California}
 \begin{itemize}\setlength\itemsep{2pt}
-    \item Complete remaining \textbf{17 counties} via PRA
-    \item \textbf{Pre-2015 historical} documents for longer pre-periods
-    \item \textbf{200-doc human validation} for publication credibility
+    \item Add \textbf{17 remaining counties} $\to$ full 58-county panel
+    \item \textbf{Pre-2015 docs} $\to$ 10+ year pre-periods for event study
+    \item \textbf{200-doc human validation} $\to$ publication-ready IRR
 \end{itemize}
 \end{block}
 \end{column}
 \begin{column}{0.48\textwidth}
-\begin{block}{100 Largest DA Offices Nationwide}
+\begin{block}{100 Largest US DA Offices}
 \begin{itemize}\setlength\itemsep{2pt}
-    \item \textasciitilde 65\% of US population covered
-    \item \textbf{30--50 close elections} for RDD (vs \textasciitilde 5 in CA)
-    \item Tests external validity across \textbf{different legal cultures}
+    \item \textbf{30--50 close elections} $\to$ statistically powered RDD
+    \item Staggered treatment across states $\to$ robust DiD
+    \item Cross-state variation $\to$ external validity
 \end{itemize}
 \end{block}
 \end{column}
 \end{columns}
 \vspace{6pt}
-{\tablefont
-\begin{tabularx}{\textwidth}{p{3.8cm}lXlr}
-\toprule
-\textbf{Scope} & \textbf{Scale} & \textbf{Enables} & \textbf{Time} & \textbf{Cost} \\
-\midrule
-Complete CA + historical & \textasciitilde 500 docs & Full panel; longer pre-periods & 4--6 mo & \textasciitilde\$25--35k \\
-100 largest US DA offices & 5--10k docs & Powered RDD; national benchmarking & 12--18 mo & \textasciitilde\$100--150k \\
-Human validation (200 docs) & 200 dual-coded & IRR; publication credibility & 3 mo & \textasciitilde\$20k \\
-\bottomrule
-\end{tabularx}}
+\begin{alertblock}{What Funding Unlocks}
+CA alone: $\sim$5 close elections (underpowered RDD). National expansion: \textbf{30--50 close elections}---enough for a credible regression discontinuity that can answer ``does electing a progressive DA \emph{cause} lower incarceration?''
+\end{alertblock}
 \end{frame}
 
 % ---------- SLIDE: Extension 2 ----------
-\begin{frame}{Extension 2: Merging with Outcome Data}
+\begin{frame}{Extension 2: Outcome Linkage $\to$ True Causal Estimates}
+{\small \textbf{Right now:} policy variation exists but is linked only to aggregate jail data (Vera). We see correlations. To make \emph{causal claims}, we need outcome data at the right resolution.}
+\vspace{4pt}
 \begin{columns}[T]
 \begin{column}{0.48\textwidth}
-\begin{block}{Administrative Data (Available Now)}
+\begin{block}{Aggregate $\to$ County-Level Causal}
 {\tablefont
 \begin{tabularx}{\columnwidth}{lX}
 \toprule
-\textbf{Source} & \textbf{Records} \\
+\textbf{Source} & \textbf{Causal Question It Answers} \\
 \midrule
-CA DOJ OpenJustice & County-year arrest, filing, incarceration \\
-CA Sentencing Comm. & Enhancement filings, 3-strikes usage \\
-Vera (done) & Quarterly jail pop by county \\
+CA DOJ & Do filing rates drop after ``decline to prosecute'' memos? \\
+Sentencing Comm. & Do enhancement filings fall after reform? \\
+Vera (\textcolor{medalistgreen}{done}) & DiD/event study on jail populations \\
 \bottomrule
 \end{tabularx}}
 \end{block}
 \end{column}
 \begin{column}{0.48\textwidth}
-\begin{block}{Case-Level Data (Higher Return)}
+\begin{block}{Case-Level $\to$ Mechanism Evidence}
 {\tablefont
 \begin{tabularx}{\columnwidth}{lX}
 \toprule
-\textbf{Source} & \textbf{Records} \\
+\textbf{Source} & \textbf{Causal Question It Answers} \\
 \midrule
-UniCourt / PACER & Case dispositions, plea bargains \\
-CJARS & Arrest $\to$ parole, 24 states \\
+UniCourt & Do diversion memos change plea bargaining? \\
+CJARS & Does a diversion memo reduce $P$(prosecution $|$ arrest)? \\
 \bottomrule
 \end{tabularx}}
 \end{block}
 \end{column}
 \end{columns}
 \vspace{6pt}
-\begin{exampleblock}{CJARS (Census Bureau + U.\ Michigan)}
-Harmonized individual-level criminal justice records across 24 states. Tracks people from arrest through parole. Enables testing whether a progressive DA's diversion memo actually reduces the probability an arrested individual proceeds to prosecution. Accessible via FSRDC (3--12 month application).
-\end{exampleblock}
+\begin{alertblock}{What Funding Unlocks}
+Without outcome linkage, we have \textbf{policy variation without a dependent variable}. Each data source above converts one row of the ``6+ causal studies'' table from potential into a publishable result.
+\end{alertblock}
 \end{frame}
 
 % ---------- SLIDE: Policymaker Value ----------
@@ -376,26 +448,24 @@ Felix Owusu's AV-funded project exploits two specific internal DA memos for a ca
 \end{frame}
 
 % ---------- SLIDE: Funding ----------
-\begin{frame}{Recommended Funding Package}
-{\tablefont
-\begin{tabularx}{\textwidth}{p{1.2cm}Xp{1.4cm}rX}
+\begin{frame}[t]{Potential Funding Package}
+{\small Each phase converts \textbf{potential} into \textbf{published causal evidence}. The infrastructure is built---funding buys the data and scale.}
+\vspace{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}p{0.8cm}p{3.5cm}p{1.5cm}p{1.5cm}p{3.2cm}p{3.5cm}@{}}
 \toprule
-\textbf{Phase} & \textbf{Components} & \textbf{Timeline} & \textbf{Budget} & \textbf{Deliverable}\\
+\textbf{Phase} & \textbf{Components} & \textbf{Time} & \textbf{Budget} & \textbf{Causal Unlock} & \textbf{Deliverable}\\
 \midrule
-\textbf{1} & CA DOJ outcome linkage; complete CA panel; human validation & 6 mo & \$45--50k & First causal estimates (DiD/SC) with validated measurement \\
-\addlinespace
-\textbf{2} & 100 largest US DA offices; national election DB; CJARS application & 12--18 mo & \$100--150k & National DA ideology DB; powered RDD \\
-\addlinespace
-\textbf{3} & Case-level data (UniCourt/CJARS); stakeholder interviews & 6--12 mo & \$50--65k & Mechanism evidence: what changes in courtrooms \\
+\textbf{1} & CA DOJ linkage; complete CA panel; human validation & 6 mo & \$45--50k & DiD + synthetic control with validated measurement & First causal estimates of DA policy effects \\[5pt]
+\textbf{2} & 100 US DA offices; national election DB; CJARS app & 12--18 mo & \$100--150k & Powered RDD (30--50 elections); robust staggered DiD & National DA ideology database \\[5pt]
+\textbf{3} & Case-level data (UniCourt/CJARS) & 6--12 mo & \$50--65k & IV + mechanism decomposition & Evidence of \emph{how} policy changes courtrooms \\
 \bottomrule
-\end{tabularx}}
-\vspace{10pt}
-\begin{center}
-{\Large\textbf{\textcolor{berkeleyblue}{\$200--265k}} over 24--36 months}
+\end{tabular}}
 \vspace{4pt}
 
-{\small The infrastructure is built. The marginal cost of each extension is low---the pipeline, coding schema, and analysis framework are ready to scale.}
-\end{center}
+{\small \textbf{Today:} suggestive correlations (34-county pilot) $\to$ \textbf{Phase 1:} first credible causal estimates $\to$ \textbf{Phase 3:} full research program.}
+
+{\small\textcolor{foundersrock}{\textbf{Flexible entry point:}} Phases can be combined or reordered based on priorities. For example, start with CA completion \emph{plus} CA DOJ outcome linkage (Phase 1) to test a specific causal question like diversion, while the CJARS application (Phase 2--3) proceeds in parallel.}
 \end{frame}
 
 % ---------- SLIDE: Why Now ----------
@@ -433,16 +503,19 @@ Felix Owusu's AV-funded project exploits two specific internal DA memos for a ca
 \vfill
 \begin{center}
 {\LARGE\textbf{Let's Talk}}
-\vspace{16pt}
+\vspace{12pt}
 
-{\normalsize The descriptive associations are real. The causal question is answerable.\\
-The infrastructure is ready. We need your support to get there.}
-\vspace{24pt}
+{\normalsize \textbf{41 counties $\cdot$ 1,865 documents $\cdot$ 6+ causal designs ready to run}}
+\vspace{8pt}
+
+{\normalsize The policy variation exists. The causal signal is real.\\
+Fund the outcome linkage, and this becomes a research program.}
+\vspace{20pt}
 
 {\normalsize\textbf{Dvir Yogev}}\\
 {\small Post-Doctoral Researcher $\cdot$ UC Berkeley School of Law}\\
 {\small\textcolor{californiagold}{dyo@berkeley.edu}}
-\vspace{16pt}
+\vspace{12pt}
 
 {\scriptsize\textcolor{californiagold}{github.com/dyo2112/prosecutor-policies-causal-inference}}\\
 {\scriptsize Full pilot report, figures, and replication code available in repository}
@@ -463,96 +536,100 @@ The infrastructure is ready. We need your support to get there.}
 \begin{frame}[plain]
 \vfill
 \begin{center}
-{\Large\textbf{Backup Slides}}
+{\Large\textbf{Additional Detail}}
 \end{center}
 \vfill
 \end{frame}
 }
 
 % ---------- BACKUP: Overcoming Limitations ----------
-\begin{frame}[shrink=30]{Overcoming Pilot Limitations}
-{\smalltable
-\begin{tabular}{p{2.5cm}p{3.5cm}p{5.5cm}}
+\begin{frame}{Overcoming Pilot Limitations}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{3.5cm}p{4.5cm}p{6cm}}
 \toprule
 \textbf{Limitation} & \textbf{Root Cause} & \textbf{Solution} \\
 \midrule
-COVID confounds DiD & All CA counties declined in 2020 & Multi-state data; synthetic control on pre-treatment \\[3pt]
-Parallel trends violated ($p = 0.021$) & LA converging pre-Gasc\'on & Longer pre-period + case-level data \\[3pt]
-TWFE non-significant ($N = 137$) & 34 counties, 9 years & National expansion increases $N$ \\[3pt]
-Aggregate data too coarse & Cannot distinguish mechanisms & Case-level data: mechanism decomposition \\
+COVID confounds DiD & All CA counties declined in 2020 & Multi-state data; synthetic control \\[6pt]
+Parallel trends violated & LA converging pre-Gasc\'on & Longer pre-period + case-level data \\[6pt]
+TWFE non-significant & 34 counties, 9 years & National expansion increases $N$ \\[6pt]
+Aggregate data too coarse & Cannot distinguish mechanisms & Case-level data from CJARS \\
 \bottomrule
 \end{tabular}}
 \end{frame}
 
 % ---------- BACKUP: Causal Strategies ----------
-\begin{frame}[shrink=30]{Causal Identification Strategies}
-{\smalltable
-\begin{tabular}{p{2cm}p{3cm}p{2.8cm}p{2.8cm}}
+\begin{frame}{Causal Identification Strategies}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{3cm}p{4cm}p{4cm}p{3cm}}
 \toprule
 \textbf{Design} & \textbf{Current Status} & \textbf{What's Needed} & \textbf{Extension} \\
 \midrule
-RDD & $\sim$5 close CA elections & 30--50 close elections & Ext 1 (national) \\[3pt]
-Stacked DiD & 9 disruptions; Vera only & More outcomes + transitions & Ext 1 + 2 \\[3pt]
-Synthetic Control & Gasc\'on pilot works & More outcome data & Ext 2 \\[3pt]
-Event Study & Pre-period marginal (6 yr) & Longer pre-period & Ext 1 \\[3pt]
+RDD & $\sim$5 close CA elections & 30--50 close elections & Ext 1 (national) \\[6pt]
+Stacked DiD & 9 disruptions; Vera only & More outcomes + transitions & Ext 1 + 2 \\[6pt]
+Synthetic Control & Gasc\'on pilot works & More outcome data & Ext 2 \\[6pt]
+Event Study & 6-year pre-period & Longer pre-period & Ext 1 \\[6pt]
 IV & Margin $\to$ ideology ($r = -0.50$) & Outcome data for 2nd stage & Ext 2 \\
 \bottomrule
 \end{tabular}}
 \end{frame}
 
 % ---------- BACKUP: Extension 2 Detail ----------
-\begin{frame}[shrink=30]{Extension 2 Detail: Outcome Data Sources}
-{\smalltable
-\begin{tabular}{p{2.3cm}p{4cm}lrl}
+\begin{frame}{Outcome Data Sources (Detail)}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{3cm}p{5cm}lrl}
 \toprule
 \textbf{Source} & \textbf{Records} & \textbf{Timeline} & \textbf{Cost} & \textbf{Priority} \\
 \midrule
-CA DOJ OpenJustice & County-yr arrest, filing, incarceration & Immediate & Free & High \\[3pt]
-CA Sentencing Comm. & Enhancement filings, 3-strikes & 1--2 mo & Free & High \\[3pt]
-Vera (done) & Quarterly jail pop and admissions & Done & Done & Done \\[3pt]
-UniCourt / PACER & Case dispositions, plea bargains & 2--3 mo & \$30--50k & Very high \\[3pt]
+CA DOJ OpenJustice & County-yr arrest, filing, incarceration & Immediate & Free & High \\[6pt]
+CA Sentencing Comm. & Enhancement filings, 3-strikes & 1--2 mo & Free & High \\[6pt]
+Vera (done) & Quarterly jail pop and admissions & Done & Done & Done \\[6pt]
+UniCourt / PACER & Case dispositions, plea bargains & 2--3 mo & \$30--50k & Very high \\[6pt]
 CJARS & Arrest $\to$ parole, 24 states & 3--12 mo & \$5k & Highest \\
 \bottomrule
 \end{tabular}}
-\vspace{6pt}
-{\small\textbf{Case-level data is the gold standard:} it links policy documents directly to line-prosecutor behavior. Are ``minimize enhancements'' memos actually reducing enhancement filings?}
+\vspace{8pt}
+
+{\small\textbf{Case-level data is the gold standard:} it links policy documents directly to line-prosecutor behavior.}
 \end{frame}
 
 % ---------- BACKUP: Disruption Detection ----------
-\begin{frame}[shrink=30]{Policy Disruption Detection: Methodology}
-{\tablefont
-\begin{tabular}{lrp{7cm}}
+\begin{frame}{Policy Disruption Detection: Methodology}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrp{8cm}}
 \toprule
 \textbf{Signal} & \textbf{Weight} & \textbf{Method} \\
 \midrule
-Ideology Velocity & 30\% & Rate of ideology change vs.\ prior 2-year baseline \\[3pt]
-Novelty Index & 25\% & Proportion of first-time policy types \\[3pt]
-Topic Shift & 20\% & Jensen-Shannon divergence of topic distributions \\[3pt]
-Margin Reversal & 15\% & Flips in extensive/intensive leniency direction \\[3pt]
+Ideology Velocity & 30\% & Rate of ideology change vs.\ prior 2-year baseline \\[6pt]
+Novelty Index & 25\% & Proportion of first-time policy types \\[6pt]
+Topic Shift & 20\% & Jensen-Shannon divergence of topic distributions \\[6pt]
+Margin Reversal & 15\% & Flips in extensive/intensive leniency direction \\[6pt]
 DA Transition & 10\% & New administration detection \\
 \bottomrule
 \end{tabular}}
 \vspace{8pt}
-\textbf{Top disruptions detected:}
-\begin{enumerate}\setlength\itemsep{1pt}
-    \item San Francisco 2020 (Boudin): 0.572
-    \item LA County 2021 (Gasc\'on): 0.549
-    \item Sacramento 2022: 0.412
-\end{enumerate}
+
+{\small\textbf{Top disruptions:} SF 2020 (Boudin, 0.572), LA 2021 (Gasc\'on, 0.549), Sacramento 2022 (0.412)}
 \end{frame}
 
-% ---------- BACKUP: Anticipated Objections ----------
-\begin{frame}[shrink=30]{Anticipated Objections}
+% ---------- BACKUP: Anticipated Objections (1/2) ----------
+\begin{frame}{Anticipated Objections (1/2)}
+\begin{block}{``Policy changes aren't random. Where's the identification strategy?''}
+{\small (1)~\textbf{Close elections are as-good-as-random}---RDD at 50\% cutoff; national expansion gives 30--50 races. (2)~\textbf{Election margin is an IV}---$r = -0.50$ with ideology. (3)~\textbf{Memo timing is plausibly exogenous}---the exact date a DA issues a specific memo has quasi-random administrative variation; staggered DiD exploits this. (4)~\textbf{Synthetic control} needs parallel trends, not randomization---LA pilot: $p_{\text{pre-trend}} = 0.90$. (5)~\textbf{Triangulation}: when all four designs agree, combined evidence is strong.}
+\end{block}
+\vspace{6pt}
 \begin{block}{``Policy documents $\neq$ practice. How do you know memos change anything?''}
 {\small That's why Extension 2 is Priority 1. We test whether ``diversion-positive'' memos predict more diversions. Even the stated-policy variation is \emph{itself} a novel descriptive contribution.}
 \end{block}
-\vspace{4pt}
+\end{frame}
+
+% ---------- BACKUP: Anticipated Objections (2/2) ----------
+\begin{frame}{Anticipated Objections (2/2)}
 \begin{block}{``You only have California. Isn't this just a Blue State story?''}
 {\small That's the point of Extension 1. CA has internal variation (Bay Area vs.\ Central Valley), but external validity requires the 100 largest DA offices nationally.}
 \end{block}
-\vspace{4pt}
+\vspace{6pt}
 \begin{block}{``AI coding isn't reliable enough for research.''}
-{\small Face validity is strong ($d = 0.75$ Gasc\'on, geographic clustering). Phase 1 includes 200-doc human validation for gold-standard IRR. Cost: \$80, runtime: 2 hours.}
+{\small Face validity is strong ($d = 0.75$ on Gasc\'on, geographic clustering matches expectations). Phase 1 includes 200-doc human validation for gold-standard IRR. Pipeline cost: \$80, runtime: 2 hours.}
 \end{block}
 \end{frame}
 

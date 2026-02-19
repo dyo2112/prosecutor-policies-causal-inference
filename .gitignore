@@ -1,5 +1,6 @@
 # Raw PDF documents (6.2 GB)
 aclu_prosecutor_policies/
+01_raw_data/aclu_prosecutor_policies/
 
 # Python virtual environment
 venv/
@@ -15,6 +16,17 @@ __pycache__/
 # Logs and temp files
 *.log
 page_source.html
+
+# LaTeX build artifacts
+*.aux
+*.nav
+*.out
+*.snm
+*.toc
+*.html
+
+# Debug output files
+05_data/results/_debug_*.txt
 
 # Archive of old/duplicate files
 archive/
