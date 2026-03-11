@@ -826,6 +826,140 @@ Los Angeles County was the first in California to adopt 17 reform types, includi
 
 ---
 
+## Policy Shock Calendar (Precisely-Dated Enforcement Relaxation Events)
+
+### Purpose
+
+While the disruption detection system above identifies policy shifts at **county-year** granularity, event-study and difference-in-differences designs require **exact implementation dates**. The policy shock calendar provides precisely-dated entries for every California criminal justice policy that significantly shifted enforcement toward a more relaxed environment — changes that could, in theory, alter public behavior (e.g., avoidance of places perceived as less safe).
+
+### Output Files
+
+| File | Records | Description |
+|------|---------|-------------|
+| `policy_shock_calendar.csv` | 24 | Precisely-dated policy shocks with enforcement and behavioral channels |
+| `shocks_with_disruptions.csv` | — | Shocks linked to existing county-year disruption scores |
+| `shock_document_links.csv` | 350 | Shocks matched to internal ACLU policy documents within ±1 year |
+
+### Column Definitions (`policy_shock_calendar.csv`)
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `shock_id` | string | Unique identifier (e.g., `prop_47`, `gascon_la_sd_20_08_enhancements`) |
+| `date` | date | Precise implementation/effective date (YYYY-MM-DD) |
+| `end_date` | date | When the policy was reversed or DA left office (if applicable) |
+| `level` | string | `statewide` or `county` |
+| `county` | string | County name, or `All` for statewide shocks |
+| `policy_name` | string | Short human-readable name |
+| `policy_type` | string | `proposition`, `legislation`, `da_directive`, `judicial_order` |
+| `description` | string | One-line summary of what changed |
+| `enforcement_channel` | string | What enforcement dimension relaxed (`charging`, `bail`, `sentencing`, `enhancements`, `diversion`, `incarceration`, `supervision`) |
+| `behavioral_channel` | string | Hypothesized behavioral impact category (`public_safety_perception`, `retail_crime_perception`, `quality_of_life_enforcement`) |
+| `severity` | string | `major`, `significant`, or `moderate` |
+| `source` | string | Legal citation or source reference |
+| `notes` | string | Implementation details, phasing, or reversal info |
+
+### Shocks Cataloged
+
+**Statewide (13):**
+
+| Date | Policy | Severity | Channel |
+|------|--------|----------|---------|
+| 2011-10-01 | AB 109 (Realignment) | major | incarceration |
+| 2012-11-07 | Prop 36 (Three Strikes Reform) | significant | sentencing |
+| 2014-11-05 | Prop 47 (Safe Neighborhoods & Schools) | major | charging |
+| 2016-11-09 | Prop 57 (Public Safety & Rehabilitation) | significant | sentencing |
+| 2018-01-01 | SB 180 (Drug Prior Enhancement Elimination) | moderate | enhancements |
+| 2018-01-01 | SB 620 (Firearm Enhancement Discretion) | significant | enhancements |
+| 2019-01-01 | SB 1391 (Juvenile Transfer Ban, 14-15 yr olds) | moderate | charging |
+| 2019-01-01 | SB 1393 (Enhancement Discretion) | moderate | enhancements |
+| 2019-01-01 | SB 1437 (Felony Murder Reform) | significant | charging |
+| 2020-04-13 | Zero-Bail Emergency Order | major | bail |
+| 2021-01-01 | AB 3234 (Misdemeanor Diversion) | significant | diversion |
+| 2021-01-01 | AB 1950 (Probation Reform) | moderate | supervision |
+| 2022-01-01 | SB 81 (Enhancement Presumption) | significant | enhancements |
+
+**County-Level (11):**
+
+| Date | County | Policy | Severity |
+|------|--------|--------|----------|
+| 2011-01-09 | San Francisco | Gascón appointed SF DA | significant |
+| 2017-09-18 | Contra Costa | Becton sworn in | significant |
+| 2020-01-08 | San Francisco | Boudin sworn in | major |
+| 2020-06-20 | Los Angeles | Zero-bail extension | significant |
+| 2020-12-07 | Los Angeles | Gascón day-one directives | major |
+| 2020-12-07 | Los Angeles | SD 20-07: Pretrial release | major |
+| 2020-12-08 | Los Angeles | SD 20-08: Enhancement ban | major |
+| 2020-12-18 | Los Angeles | Amended enhancement directive | significant |
+| 2023-01-10 | Alameda | Pamela Price sworn in | significant |
+| 2023-04-14 | Alameda | Racial-impact sentencing directive | significant |
+| 2023-05-24 | Los Angeles | Zero-bail reinstated (court order) | significant |
+
+### Document-Level Shocks (`document_shocks.csv`)
+
+While the external shock calendar above captures known events (legislation, DA inaugurations), `document_shocks.csv` works **bottom-up** from the internal DA document corpus. It surfaces individual documents that represent clear policy breaks — the actual memos instructing ADAs to change enforcement behavior.
+
+**Detection criteria** (all must hold):
+1. `policy_change_clean == 'clearly_new_policy'`
+2. `office_wide_policy_clean == 'yes'`
+3. `mandates_vs_guidance_clean` is `mandatory` or `strong_guidance`
+4. `|ideology_score| >= 1.5`
+5. Document has a valid date
+
+| Statistic | Value |
+|-----------|-------|
+| Total document shocks | 122 |
+| Counties represented | 24 |
+| Progressive direction | 119 |
+| Traditional direction | 3 |
+| Matched to external shocks | 95 |
+| Novel (no external match) | 27 |
+
+**Key columns:**
+
+| Column | Description |
+|--------|-------------|
+| `shock_id` | Generated from filename |
+| `date` | Document date |
+| `county` | County |
+| `policy_name` | Cleaned from filename |
+| `ideology_score` | ±2.0 (clearly progressive/traditional) or ±1.5 |
+| `direction` | `progressive` or `traditional` |
+| `enforcement_channel` | `charging`, `sentencing`, `bail`, `enhancements`, `diversion` |
+| `severity` | `significant` (ideology=±2.0, mandatory) or `moderate` |
+| `summary` | LLM-generated summary of what the document directs |
+| `nearest_external_shock_id` | Closest external shock (or NaN if novel) |
+| `nearest_external_shock_name` | Name of matched external shock |
+| `days_from_external_shock` | Signed days between document and external shock |
+| `external_shock_match_type` | `statewide_legislation`, `county_da_directive`, or NaN |
+
+### Code Location
+
+- Module: `04_analysis/policy_shock_calendar.py`
+
+To regenerate all outputs:
+```bash
+cd 04_analysis
+python policy_shock_calendar.py --link-documents --detect-document-shocks
+```
+
+### Usage for Event Studies
+
+The script provides helper functions:
+
+```python
+from policy_shock_calendar import build_shock_calendar, get_shocks_for_event_study
+
+shocks = build_shock_calendar()
+
+# Get major+ shocks affecting LA County
+la_shocks = get_shocks_for_event_study(shocks, county="Los Angeles County", min_severity="major")
+
+# Get all bail-related shocks
+bail_shocks = get_shocks_for_event_study(shocks, channels=["bail"])
+```
+
+---
+
 ## Contact
 
 For questions about this analysis, see the main project documentation in `analysis_of_cleaned/` or the methodology guide in `prosecutor_policy_coding_system/METHODOLOGY_GUIDE.md`.

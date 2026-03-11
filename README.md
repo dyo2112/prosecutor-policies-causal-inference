@@ -88,7 +88,9 @@ The pipeline enables detection and measurement of sharp policy transitions — c
 
 **Progressive Surge (2019–2022).** Progressive documents increased from 18% (2016) to 40% (2020) to 56% (2022), a statistically significant linear trend (+0.062 points/year, p=0.003, R-squared=0.52). The temporal pattern — gradual trend punctuated by sharp county-level disruptions — creates the kind of staggered adoption variation that powers modern stacked DiD and event study designs.
 
-> For full statistical results (6 major findings with statistical tests, effect sizes, and geographic breakdowns): [COMPREHENSIVE_FINDINGS.md](07_documentation/COMPREHENSIVE_FINDINGS.md)
+**Precisely-Dated Policy Shock Calendar.** For event-study designs requiring exact treatment dates, we curated a calendar of **24 precisely-dated policy shocks** (2011–2023) — statewide legislation (Prop 47, Prop 57, AB 109, zero-bail orders) and county-level DA directives (Gascón LA, Boudin SF, Becton Contra Costa, Price Alameda) — each with the most precise implementation date available. The calendar links to **350 internal DA documents** that directly reference or implement these shocks, providing both the treatment timing and the documentary evidence of enforcement-channel effects.
+
+> For full statistical results (6 major findings with statistical tests, effect sizes, and geographic breakdowns): [COMPREHENSIVE_FINDINGS.md](07_documentation/COMPREHENSIVE_FINDINGS.md) | For the policy shock calendar methodology and complete listing: [05_data/results/README.md](05_data/results/README.md#policy-shock-calendar-precisely-dated-enforcement-relaxation-events)
 
 ### Jail Data Pilot: First Steps Toward Causal Evidence
 
@@ -222,6 +224,7 @@ aclu_policies/
 │   └── clean_prosecutor_policies_v2.py ← Data standardization script
 ├── 04_analysis/
 │   ├── disruption_detector.py          ← Policy disruption detection system
+│   ├── policy_shock_calendar.py        ← Precisely-dated enforcement relaxation events
 │   ├── comprehensive_analysis.py       ← Full statistical analysis
 │   ├── vera_jail_pilot.py             ← Vera jail outcome pilot analysis
 │   └── vera_covid_controlled.py       ← COVID-controlled reanalysis
@@ -230,6 +233,8 @@ aclu_policies/
 │   │   └── prosecutor_policies_CLEANED.csv  ← 1,865 docs × 37 columns
 │   └── results/
 │       ├── policy_disruptions.csv           ← Disruption scores by county-year
+│       ├── policy_shock_calendar.csv        ← 24 precisely-dated enforcement relaxation events
+│       ├── shock_document_links.csv         ← 350 internal docs matched to shocks
 │       ├── vera_policy_merged.csv           ← Policy × jail outcome panel
 │       └── vera_did_estimates.csv           ← COVID-controlled DiD estimates
 ├── 06_figures/                              ← Publication-ready visualizations

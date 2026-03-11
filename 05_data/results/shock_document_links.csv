@@ -1,0 +1,351 @@
+shock_id,shock_date,document_filename,document_date,document_county,days_from_shock
+ab_1950_probation_reform,2021-01-01,2020.08.23_San Diego County_BHC Diversion and BHC Probation-Program Summary.pdf,2020-08-23,San Diego County,-131
+ab_1950_probation_reform,2021-01-01,2020.09.08_Los Angeles County_Parole Periods and Prison Closures (with CDCR Demographics Data).pdf,2020-09-08,Los Angeles County,-115
+ab_1950_probation_reform,2021-01-01,2021.03_Napa County_Memo re AB 1950 and Humphreys.pdf,2021-01-01,Napa County,0
+ab_1950_probation_reform,2021-01-01,2021.02.01_Alameda County_Probation Retroactivty and the Williamson Rule.pdf,2021-02-01,Alameda County,31
+ab_1950_probation_reform,2021-01-01,2021.02.01_Alameda County_Williamson and Probation Retroactivity.mp4,2021-02-01,Alameda County,31
+ab_1950_probation_reform,2021-01-01,2021.03.21_LA County_AB 1950-New Limits on Probation Terms.pdf,2021-03-21,Los Angeles County,79
+ab_1950_probation_reform,2021-01-01,2021.06.23_Ventura County_Handling Lifer Letters & Parole Hearings (MCLE Rec. of Att.).pdf,2021-06-23,Ventura County,173
+ab_1950_probation_reform,2021-01-01,2021.12.06_Sutter County_Email re Judge Couzens Memo on Release of Probationers.msg,2021-12-06,Sutter County,339
+ab_1950_probation_reform,2021-01-01,2021.12.07_Sutter County_ Email re Judge Couzens Prehearing Release of Probationers and 2022 Sentencing Law Changes.msg,2021-12-07,Sutter County,340
+ab_1950_probation_reform,2021-01-01,2021.12.17_Inyo County_Board of Parole Hearings Letter.pdf,2021-12-17,Inyo County,350
+ab_1950_probation_reform,2021-01-01,2022_Merced County_Exhibit C 2022 Parole Hearings.pdf,2022-01-01,Merced County,365
+ab_3234_misdemeanor_diversion,2021-01-01,2020.01.09_San Luis Obispo County_Agenda Mental Health Diversion.pdf,2020-01-09,San Luis Obispo County,-358
+ab_3234_misdemeanor_diversion,2021-01-01,2020.01.09_San Luis Obispo County_MCLE Eval Mental Health Diversion.pdf,2020-01-09,San Luis Obispo County,-358
+ab_3234_misdemeanor_diversion,2021-01-01,2020.01.09_San Luis Obispo County_MCLE Recd of Attendance Mental Health Diversion.pdf,2020-01-09,San Luis Obispo County,-358
+ab_3234_misdemeanor_diversion,2021-01-01,2020.01.09_San Luis Obispo County_Presenter Bios MH Diversion.pdf,2020-01-09,San Luis Obispo County,-358
+ab_3234_misdemeanor_diversion,2021-01-01,2020.01.31_Fresno County_Proposed Fresno DA Misdemeanor Diversion Fee Assessment Determination Procedures.pdf,2020-01-31,Fresno County,-336
+ab_3234_misdemeanor_diversion,2021-01-01,2020.03.09_San Francisco County_Primary Caregiver Diversion.pdf,2020-03-09,San Francisco County,-298
+ab_3234_misdemeanor_diversion,2021-01-01,2020.07.09_Santa Barbara County_Misdo Diversion Eligibility Criteria with MEC and SB comments.doc,2020-07-09,Santa Barbara County,-176
+ab_3234_misdemeanor_diversion,2021-01-01,2020.07.28_Napa County_Internal Email re Pre-filing Diversion.pdf,2020-07-28,Napa County,-157
+ab_3234_misdemeanor_diversion,2021-01-01,2020.08.23_San Diego County_BHC Diversion and BHC Probation-Program Summary.pdf,2020-08-23,San Diego County,-131
+ab_3234_misdemeanor_diversion,2021-01-01,2020.11.12_LA County_LPM Ch. 6 Alternatives to Charging.pdf,2020-11-12,Los Angeles County,-50
+ab_3234_misdemeanor_diversion,2021-01-01,2020.12.31_Fresno County_AB 3234 Going Forward.pdf,2020-12-31,Fresno County,-1
+ab_3234_misdemeanor_diversion,2021-01-01,2021_San Diego County_Juvenile Diversion Initiative Info.pdf,2021-01-01,San Diego County,0
+ab_3234_misdemeanor_diversion,2021-01-01,Misdemeanor Sentencing and Diversion Guidelines (color) with Key.pdf,2021-01-01,San Luis Obispo County,0
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.01_Santa Clara County_Misdemeanor Diversion Guidelines.pdf,2021-01-01,Santa Clara County,0
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.04_Santa Clara County_Email RE Misdemeanor Diversion.pdf,2021-01-04,Santa Clara County,3
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.04_Santa Clara County_Misdemeanor Diversion.pdf,2021-01-04,Santa Clara County,3
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.08_Marin County_Behavioral Health Diversion Implementation Plan - Pilot.pdf,2021-01-08,Marin County,7
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.29_San Luis Obispo County_Court Misdemeanor Diversion Guidelines.pdf,2021-01-29,San Luis Obispo County,28
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.29_San Luis Obispo County_Court Misdemeanor Diversion Protocol.pdf,2021-01-29,San Luis Obispo County,28
+ab_3234_misdemeanor_diversion,2021-01-01,2021.01.29_San Luis Obispo County_Misdemeanor Diversion Agreement.pdf,2021-01-29,San Luis Obispo County,28
+ab_3234_misdemeanor_diversion,2021-01-01,2021.02.01_San Luis Obispo County_Email re Restitution in Court Misd. Diversion cases.pdf,2021-02-01,San Luis Obispo County,31
+ab_3234_misdemeanor_diversion,2021-01-01,2021.02.04_Kern County_Misdemeanor Diversion Program Pamphlet.pdf,2021-02-04,Kern County,34
+ab_3234_misdemeanor_diversion,2021-01-01,2021.04.05_Santa Clara County_Letter RE Misdemeanor Diversion Services.pdf,2021-04-05,Santa Clara County,94
+ab_3234_misdemeanor_diversion,2021-01-01,2021.05.03_Fresno County_Mental Health Diversion.pdf,2021-05-03,Fresno County,122
+ab_3234_misdemeanor_diversion,2021-01-01,2021.05.05_Santa Clara County_Update from J. Delgado on Court Diversion _ Restitution .pdf,2021-05-05,Santa Clara County,124
+ab_3234_misdemeanor_diversion,2021-01-01,2021.05.20_San Diego County_DA Statement RE Juvenile Diversion Program.pdf,2021-05-20,San Diego County,139
+ab_3234_misdemeanor_diversion,2021-01-01,2021.06.24_LA County_Thursday Seminar-Alternative Sentencing Flyer.pdf,2021-06-24,Los Angeles County,174
+ab_3234_misdemeanor_diversion,2021-01-01,Yolo County_Diversion Policy v3.docx,2021-07-27,Yolo County,207
+ab_3234_misdemeanor_diversion,2021-01-01,Yolo County_Diversion Policy v3.pdf,2021-07-28,Yolo County,208
+ab_3234_misdemeanor_diversion,2021-01-01,Yolo County_Diversion-eligibility-Final.pdf,2021-07-28,Yolo County,208
+ab_3234_misdemeanor_diversion,2021-01-01,Shasta County_DA Pilot Drug Diversion Program.pdf,2021-08-16,Shasta County,227
+ab_3234_misdemeanor_diversion,2021-01-01,Sacramento County_AB 79 ALTA Diversion Summary.pdf,2021-08-17,Sacramento County,228
+ab_3234_misdemeanor_diversion,2021-01-01,Tulare County_DEJ FORM (Pre-Trial Diversion-Drug Court).docx,2021-08-17,Tulare County,228
+ab_3234_misdemeanor_diversion,2021-01-01,Napa County_Early Diversion Policy.pdf,2021-08-21,Napa County,232
+ab_3234_misdemeanor_diversion,2021-01-01,2021.08.23_Alameda County_DUI Diversion.mp4,2021-08-23,Alameda County,234
+ab_3234_misdemeanor_diversion,2021-01-01,2021.08.23_Alameda County_DUI Diversion.pdf,2021-08-23,Alameda County,234
+ab_3234_misdemeanor_diversion,2021-01-01,2021.08.31_Santa Clara County_Weapon Diversion Program for Women .pdf,2021-08-31,Santa Clara County,242
+ab_3234_misdemeanor_diversion,2021-01-01,Fresno County_Diversion Program.pdf,2021-10-15,Fresno County,287
+ab_3234_misdemeanor_diversion,2021-01-01,Fresno County_Mental Disorder Diversion.pdf,2021-10-15,Fresno County,287
+ab_3234_misdemeanor_diversion,2021-01-01,Fresno County_Military Diversion.pdf,2021-10-15,Fresno County,287
+ab_3234_misdemeanor_diversion,2021-01-01,Fresno County_Misdemeanor Pre-Filing Diversion Program for Petty Theft.pdf,2021-10-15,Fresno County,287
+ab_3234_misdemeanor_diversion,2021-01-01,Fresno County_PC1001.36 Mental Health Diversion (Trailer Bill).pdf,2021-10-15,Fresno County,287
+ab_3234_misdemeanor_diversion,2021-01-01,Marin County_Pretrial Drug Diversion-Eligibility Notice.docx,2021-10-26,Marin County,298
+ab_3234_misdemeanor_diversion,2021-01-01,2021.11.17_LA County_News Release DA Gascon Announces Launch of Pre-Filing Diversion Program for Youth.pdf,2021-11-17,Los Angeles County,320
+ab_3234_misdemeanor_diversion,2021-01-01,2022_Santa Clara County_Diversion and Special Procedures Presentation.pdf,2022-01-01,Santa Clara County,365
+ab_3234_misdemeanor_diversion,2021-01-01,2022_Santa Clara County_Diversion and Special Procedures.pdf,2022-01-01,Santa Clara County,365
+boudin_sf_takes_office,2020-01-08,2020.09.21_San Francisco County_Policy on Charging Decisions and Police-Accountability.pdf,2020-09-21,San Francisco County,257
+gascon_la_amended_enhancements,2020-12-18,2020.12.07_LA County Sentencing Enhancements (1).pdf,2020-12-07,Los Angeles County,-11
+gascon_la_amended_enhancements,2020-12-18,2020.12.07_LA County_Special Directive-Sentencing Enhancements.pdf,2020-12-07,Los Angeles County,-11
+gascon_la_amended_enhancements,2020-12-18,2020.12.18_LA County_News Release DA Gascon Issues Amended Directive on Sentencing Enhancements.pdf,2020-12-18,Los Angeles County,0
+gascon_la_amended_enhancements,2020-12-18,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,112
+gascon_la_sd_20_07_bail,2020-12-07,2020.06.23_LA County_Emergency Bail Schedule Memo.pdf,2020-06-23,Los Angeles County,-167
+gascon_la_sd_20_07_bail,2020-12-07,2020.11.12_LA County_LPM Chapter 8 Bail and Own Recongnizance.pdf,2020-11-12,Los Angeles County,-25
+gascon_la_sd_20_07_bail,2020-12-07,2020.12.07_LA County_Email from DA Gascon to LADA - ALL.pdf,2020-12-07,Los Angeles County,0
+gascon_la_sd_20_07_bail,2020-12-07,2020.12.07_LA County_Pretrial Release Policy Memo.pdf,2020-12-07,Los Angeles County,0
+gascon_la_sd_20_07_bail,2020-12-07,2020.12.18_LA County_News Release DA Gascon Issues Amended Directive on Sentencing Enhancements.pdf,2020-12-18,Los Angeles County,11
+gascon_la_sd_20_07_bail,2020-12-07,2021.01.05_LA County_News Release DA Gascon Issues Statement on Money Bail.pdf,2021-01-05,Los Angeles County,29
+gascon_la_sd_20_07_bail,2020-12-07,2021.01.12_LA County_News Release DA Gascon Supports Effort to Ban Death Penalty at Federal Level.pdf,2021-01-12,Los Angeles County,36
+gascon_la_sd_20_07_bail,2020-12-07,2021.02.25_LA County_News Release DA Gascon Applauds State Supreme Court Ruling on Youth Justice.pdf,2021-02-25,Los Angeles County,80
+gascon_la_sd_20_07_bail,2020-12-07,2021.03.04_LA County_DA Gascon Issues Statement on Survey of Crime Victims in LA County.pdf,2021-03-04,Los Angeles County,87
+gascon_la_sd_20_07_bail,2020-12-07,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More (2).pdf,2021-03-17,Los Angeles County,100
+gascon_la_sd_20_07_bail,2020-12-07,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More.pdf,2021-03-17,Los Angeles County,100
+gascon_la_sd_20_07_bail,2020-12-07,2021.03.25_LA County_News Release DA Gascon Applauds CA Supreme Court Ruling on Cash Bail.pdf,2021-03-25,Los Angeles County,108
+gascon_la_sd_20_07_bail,2020-12-07,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,123
+gascon_la_sd_20_07_bail,2020-12-07,2021.04.20_LA County_News Release DA Gascon Commends Board Supervisors Motion on Cash Bail.pdf,2021-04-20,Los Angeles County,134
+gascon_la_sd_20_07_bail,2020-12-07,2021.07.14_LA County_Press Release on Immigration Consultant Scam.pdf,2021-07-14,Los Angeles County,219
+gascon_la_sd_20_07_bail,2020-12-07,2021.09.03_LA County_Press Release on DA Lacey's Bill Helping Undocumented Victims of Juvenile Crime.pdf,2021-09-03,Los Angeles County,270
+gascon_la_sd_20_07_bail,2020-12-07,2021.11.17_LA County_News Release DA Gascon Announces Launch of Pre-Filing Diversion Program for Youth.pdf,2021-11-17,Los Angeles County,345
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.09_LA County_Special Directive 19-07.pdf,2019-12-09,Los Angeles County,-365
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.09_LA County_Special Directive-'Prison Priors' (SB 136).pdf,2019-12-09,Los Angeles County,-365
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.09_LA County_Special Directive-'Prison Priors' Eliminated (SB 136).pdf,2019-12-09,Los Angeles County,-365
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.17_LA County_Special Directive 19-08.pdf,2019-12-17,Los Angeles County,-357
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.17_LA County_Special Directive 19-09.pdf,2019-12-17,Los Angeles County,-357
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.17_LA County_Special Directive 19-10.pdf,2019-12-17,Los Angeles County,-357
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.17_LA County_Special Directive-DCS Updates.pdf,2019-12-17,Los Angeles County,-357
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.17_LA County_Special Directive-U Visa - Revisions to LPM 24.16.pdf,2019-12-17,Los Angeles County,-357
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.17_LA County_Special Directive-U Visa Cert (AB 917).pdf,2019-12-17,Los Angeles County,-357
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.18_LA County_Special Directive 19-11.pdf,2019-12-18,Los Angeles County,-356
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.19_LA County_Special Directive 19-12.pdf,2019-12-19,Los Angeles County,-355
+gascon_la_sd_20_08_enhancements,2020-12-08,2019.12.19_Los Angeles County_Special Directive on Senate Bill 923.pdf,2019-12-19,Los Angeles County,-355
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.02.27_LA County_Special Directive 20-01.pdf,2020-02-27,Los Angeles County,-285
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.03.11_LA County_Special Directive 20-02.pdf,2020-03-11,Los Angeles County,-272
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.04.28_LA County_Special Directive 20-03.pdf,2020-04-28,Los Angeles County,-224
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.05.22_LA County_Special Directive 20-04.pdf,2020-05-22,Los Angeles County,-200
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.10.26_LA County_Special Directive 20-05.pdf,2020-10-26,Los Angeles County,-43
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.10.26_LA County_Special Directive-Sealed Juvenile Records U Visa and T Visa.pdf,2020-10-26,Los Angeles County,-43
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County Sentencing Enhancements (1).pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Email from DA Gascon to LADA - ALL.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-06.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-07.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-08.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-09.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-10.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-11.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-12.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-13.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive 20-14.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive-Habeas Corpus Litigation Unit.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive-Misdemeanor Reform.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive-Resentencing.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive-Sentencing Enhancements.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.07_LA County_Special Directive-Youth Justice.pdf,2020-12-07,Los Angeles County,-1
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.15_LA County_Special Directive 20-08.1.pdf,2020-12-15,Los Angeles County,7
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.15_LA County_Special Directive-Clarification on Languages Provided in SD 20-08.pdf,2020-12-15,Los Angeles County,7
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.18_LA County_News Release DA Gascon Issues Amended Directive on Sentencing Enhancements.pdf,2020-12-18,Los Angeles County,10
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.18_LA County_Special Directive 20-08.2.pdf,2020-12-18,Los Angeles County,10
+gascon_la_sd_20_08_enhancements,2020-12-08,2020.12.18_LA County_Special Directive-Amendment RE Enhanced Sentences.pdf,2020-12-18,Los Angeles County,10
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.01.05_LA County_News Release DA Gascon Issues Statement on Money Bail.pdf,2021-01-05,Los Angeles County,28
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.01.12_LA County_News Release DA Gascon Supports Effort to Ban Death Penalty at Federal Level.pdf,2021-01-12,Los Angeles County,35
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.01.26_LA County_Special Directive 20-09.1.pdf,2021-01-26,Los Angeles County,49
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.01.26_LA County_Special Directive-Amendment RE Youth Justice.pdf,2021-01-26,Los Angeles County,49
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.02.25_LA County_News Release DA Gascon Applauds State Supreme Court Ruling on Youth Justice.pdf,2021-02-25,Los Angeles County,79
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.03.04_LA County_DA Gascon Issues Statement on Survey of Crime Victims in LA County.pdf,2021-03-04,Los Angeles County,86
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More (2).pdf,2021-03-17,Los Angeles County,99
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More.pdf,2021-03-17,Los Angeles County,99
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.03.19_LA County_Special Directive 21-01.pdf,2021-03-19,Los Angeles County,101
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.03.19_LA County_Special Directive-Preliminary Injunction.pdf,2021-03-19,Los Angeles County,101
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.03.25_LA County_News Release DA Gascon Applauds CA Supreme Court Ruling on Cash Bail.pdf,2021-03-25,Los Angeles County,107
+gascon_la_sd_20_08_enhancements,2020-12-08,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,122
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.04.20_LA County_News Release DA Gascon Commends Board Supervisors Motion on Cash Bail.pdf,2021-04-20,Los Angeles County,133
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.04.29_LA County_Special Directive 21-02.pdf,2021-04-29,Los Angeles County,142
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.04.29_LA County_Special Directive-Mental Health Division's Revised Protocols.pdf,2021-04-29,Los Angeles County,142
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.10.20_LA County_Special Directive 21-03.pdf,2021-10-20,Los Angeles County,316
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.11.17_LA County_News Release DA Gascon Announces Launch of Pre-Filing Diversion Program for Youth.pdf,2021-11-17,Los Angeles County,344
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.11.29_LA County_Special Directive 21-04.pdf,2021-11-29,Los Angeles County,356
+gascon_la_sd_20_08_enhancements,2020-12-08,2021.11.29_LA County_Special Directive-Habeas Corpus Litigation.pdf,2021-11-29,Los Angeles County,356
+gascon_la_takes_office,2020-12-07,2019.12.09_LA County_Special Directive 19-07.pdf,2019-12-09,Los Angeles County,-364
+gascon_la_takes_office,2020-12-07,2019.12.09_LA County_Special Directive-'Prison Priors' (SB 136).pdf,2019-12-09,Los Angeles County,-364
+gascon_la_takes_office,2020-12-07,2019.12.09_LA County_Special Directive-'Prison Priors' Eliminated (SB 136).pdf,2019-12-09,Los Angeles County,-364
+gascon_la_takes_office,2020-12-07,2019.12.17_LA County_Special Directive 19-08.pdf,2019-12-17,Los Angeles County,-356
+gascon_la_takes_office,2020-12-07,2019.12.17_LA County_Special Directive 19-09.pdf,2019-12-17,Los Angeles County,-356
+gascon_la_takes_office,2020-12-07,2019.12.17_LA County_Special Directive 19-10.pdf,2019-12-17,Los Angeles County,-356
+gascon_la_takes_office,2020-12-07,2019.12.17_LA County_Special Directive-DCS Updates.pdf,2019-12-17,Los Angeles County,-356
+gascon_la_takes_office,2020-12-07,2019.12.17_LA County_Special Directive-U Visa - Revisions to LPM 24.16.pdf,2019-12-17,Los Angeles County,-356
+gascon_la_takes_office,2020-12-07,2019.12.17_LA County_Special Directive-U Visa Cert (AB 917).pdf,2019-12-17,Los Angeles County,-356
+gascon_la_takes_office,2020-12-07,2019.12.18_LA County_Special Directive 19-11.pdf,2019-12-18,Los Angeles County,-355
+gascon_la_takes_office,2020-12-07,2019.12.19_LA County_Special Directive 19-12.pdf,2019-12-19,Los Angeles County,-354
+gascon_la_takes_office,2020-12-07,2019.12.19_Los Angeles County_Special Directive on Senate Bill 923.pdf,2019-12-19,Los Angeles County,-354
+gascon_la_takes_office,2020-12-07,2020.02.27_LA County_Special Directive 20-01.pdf,2020-02-27,Los Angeles County,-284
+gascon_la_takes_office,2020-12-07,2020.03.11_LA County_Special Directive 20-02.pdf,2020-03-11,Los Angeles County,-271
+gascon_la_takes_office,2020-12-07,2020.04.28_LA County_Special Directive 20-03.pdf,2020-04-28,Los Angeles County,-223
+gascon_la_takes_office,2020-12-07,2020.05.22_LA County_Special Directive 20-04.pdf,2020-05-22,Los Angeles County,-199
+gascon_la_takes_office,2020-12-07,2020.06.24_LA County_Prosecutorial Misconduct Motions.pdf,2020-06-24,Los Angeles County,-166
+gascon_la_takes_office,2020-12-07,2020.10.26_LA County_Special Directive 20-05.pdf,2020-10-26,Los Angeles County,-42
+gascon_la_takes_office,2020-12-07,2020.10.26_LA County_Special Directive-Sealed Juvenile Records U Visa and T Visa.pdf,2020-10-26,Los Angeles County,-42
+gascon_la_takes_office,2020-12-07,2020.11.12_LA County_LPM Ch. 2 Crime Charging - Generally.pdf,2020-11-12,Los Angeles County,-25
+gascon_la_takes_office,2020-12-07,2020.11.12_LA County_LPM Ch. 3 Crime Charging - Special Policies.pdf,2020-11-12,Los Angeles County,-25
+gascon_la_takes_office,2020-12-07,2020.11.12_LA County_LPM Ch. 4 Crime Charging - Specific Crimes.pdf,2020-11-12,Los Angeles County,-25
+gascon_la_takes_office,2020-12-07,2020.11.12_LA County_LPM Ch. 6 Alternatives to Charging.pdf,2020-11-12,Los Angeles County,-25
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Email from DA Gascon to LADA - ALL.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-06.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-07.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-08.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-09.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-10.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-11.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-12.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-13.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive 20-14.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive-Habeas Corpus Litigation Unit.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive-Misdemeanor Reform.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive-Resentencing.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive-Sentencing Enhancements.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.07_LA County_Special Directive-Youth Justice.pdf,2020-12-07,Los Angeles County,0
+gascon_la_takes_office,2020-12-07,2020.12.15_LA County_Special Directive 20-08.1.pdf,2020-12-15,Los Angeles County,8
+gascon_la_takes_office,2020-12-07,2020.12.15_LA County_Special Directive-Clarification on Languages Provided in SD 20-08.pdf,2020-12-15,Los Angeles County,8
+gascon_la_takes_office,2020-12-07,2020.12.18_LA County_News Release DA Gascon Issues Amended Directive on Sentencing Enhancements.pdf,2020-12-18,Los Angeles County,11
+gascon_la_takes_office,2020-12-07,2020.12.18_LA County_Special Directive 20-08.2.pdf,2020-12-18,Los Angeles County,11
+gascon_la_takes_office,2020-12-07,2020.12.18_LA County_Special Directive-Amendment RE Enhanced Sentences.pdf,2020-12-18,Los Angeles County,11
+gascon_la_takes_office,2020-12-07,2021.01.05_LA County_News Release DA Gascon Issues Statement on Money Bail.pdf,2021-01-05,Los Angeles County,29
+gascon_la_takes_office,2020-12-07,2021.01.12_LA County_News Release DA Gascon Supports Effort to Ban Death Penalty at Federal Level.pdf,2021-01-12,Los Angeles County,36
+gascon_la_takes_office,2020-12-07,2021.01.26_LA County_Special Directive 20-09.1.pdf,2021-01-26,Los Angeles County,50
+gascon_la_takes_office,2020-12-07,2021.01.26_LA County_Special Directive-Amendment RE Youth Justice.pdf,2021-01-26,Los Angeles County,50
+gascon_la_takes_office,2020-12-07,2021.02.25_LA County_News Release DA Gascon Applauds State Supreme Court Ruling on Youth Justice.pdf,2021-02-25,Los Angeles County,80
+gascon_la_takes_office,2020-12-07,2021.03.04_LA County_DA Gascon Issues Statement on Survey of Crime Victims in LA County.pdf,2021-03-04,Los Angeles County,87
+gascon_la_takes_office,2020-12-07,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More (2).pdf,2021-03-17,Los Angeles County,100
+gascon_la_takes_office,2020-12-07,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More.pdf,2021-03-17,Los Angeles County,100
+gascon_la_takes_office,2020-12-07,2021.03.19_LA County_Special Directive 21-01.pdf,2021-03-19,Los Angeles County,102
+gascon_la_takes_office,2020-12-07,2021.03.19_LA County_Special Directive-Preliminary Injunction.pdf,2021-03-19,Los Angeles County,102
+gascon_la_takes_office,2020-12-07,2021.03.25_LA County_News Release DA Gascon Applauds CA Supreme Court Ruling on Cash Bail.pdf,2021-03-25,Los Angeles County,108
+gascon_la_takes_office,2020-12-07,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,123
+gascon_la_takes_office,2020-12-07,2021.04.20_LA County_News Release DA Gascon Commends Board Supervisors Motion on Cash Bail.pdf,2021-04-20,Los Angeles County,134
+gascon_la_takes_office,2020-12-07,2021.04.29_LA County_Special Directive 21-02.pdf,2021-04-29,Los Angeles County,143
+gascon_la_takes_office,2020-12-07,2021.04.29_LA County_Special Directive-Mental Health Division's Revised Protocols.pdf,2021-04-29,Los Angeles County,143
+gascon_la_takes_office,2020-12-07,2021.09.16_LA County_Effective Prosecutions and Public Safety Practices Training.pdf,2021-09-16,Los Angeles County,283
+gascon_la_takes_office,2020-12-07,2021.10.20_LA County_Special Directive 21-03.pdf,2021-10-20,Los Angeles County,317
+gascon_la_takes_office,2020-12-07,2021.10.21_LA County_Prosecutors Alliance Ethical Voir Dire Training Flyer.pdf,2021-10-21,Los Angeles County,318
+gascon_la_takes_office,2020-12-07,2021.11.17_LA County_News Release DA Gascon Announces Launch of Pre-Filing Diversion Program for Youth.pdf,2021-11-17,Los Angeles County,345
+gascon_la_takes_office,2020-12-07,2021.11.29_LA County_Special Directive 21-04.pdf,2021-11-29,Los Angeles County,357
+gascon_la_takes_office,2020-12-07,2021.11.29_LA County_Special Directive-Habeas Corpus Litigation.pdf,2021-11-29,Los Angeles County,357
+la_zero_bail_extension,2020-06-20,2020.06.23_LA County_Emergency Bail Schedule Memo.pdf,2020-06-23,Los Angeles County,3
+la_zero_bail_extension,2020-06-20,2020.11.12_LA County_LPM Chapter 8 Bail and Own Recongnizance.pdf,2020-11-12,Los Angeles County,145
+la_zero_bail_extension,2020-06-20,2020.12.07_LA County_Pretrial Release Policy Memo.pdf,2020-12-07,Los Angeles County,170
+la_zero_bail_extension,2020-06-20,2020.12.18_LA County_News Release DA Gascon Issues Amended Directive on Sentencing Enhancements.pdf,2020-12-18,Los Angeles County,181
+la_zero_bail_extension,2020-06-20,2021.01.05_LA County_News Release DA Gascon Issues Statement on Money Bail.pdf,2021-01-05,Los Angeles County,199
+la_zero_bail_extension,2020-06-20,2021.01.12_LA County_News Release DA Gascon Supports Effort to Ban Death Penalty at Federal Level.pdf,2021-01-12,Los Angeles County,206
+la_zero_bail_extension,2020-06-20,2021.02.25_LA County_News Release DA Gascon Applauds State Supreme Court Ruling on Youth Justice.pdf,2021-02-25,Los Angeles County,250
+la_zero_bail_extension,2020-06-20,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More (2).pdf,2021-03-17,Los Angeles County,270
+la_zero_bail_extension,2020-06-20,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More.pdf,2021-03-17,Los Angeles County,270
+la_zero_bail_extension,2020-06-20,2021.03.25_LA County_News Release DA Gascon Applauds CA Supreme Court Ruling on Cash Bail.pdf,2021-03-25,Los Angeles County,278
+la_zero_bail_extension,2020-06-20,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,293
+la_zero_bail_extension,2020-06-20,2021.04.20_LA County_News Release DA Gascon Commends Board Supervisors Motion on Cash Bail.pdf,2021-04-20,Los Angeles County,304
+prop_47,2014-11-05,2014.06.24_San Francisco County_Prosecutorial Misconduct Policy Director.pdf,2014-06-24,San Francisco County,-134
+prop_47,2014-11-05,2014.10.27_Monterey County_Filing of Special Circs. Allegations.pdf,2014-10-27,Monterey County,-9
+prop_47,2014-11-05,2015_Contra Costa County_DUI Filings.pdf,2015-01-01,Contra Costa County,57
+prop_47,2014-11-05,2015_Fresno County_Implementing Prop 47 _Redacted.pdf,2015-01-01,Fresno County,57
+prop_47,2014-11-05,2015.01.10_LA County_Saturday Seminar-A Prosecutor's Story Flyer.pdf,2015-01-10,Los Angeles County,66
+prop_47,2014-11-05,2015.03.03_Fresno County_Prosecutorial Misconduct Inter-Office Memo.pdf,2015-03-03,Fresno County,118
+prop_47,2014-11-05,2015.03.27_San Luis Obispo County_MDP-Elim of Direct Filing Memo to Court.pdf,2015-03-27,San Luis Obispo County,142
+prop_47,2014-11-05,2015.03.30_Shasta County_Intro to Consumer Fraud Prosecution.pdf,2015-03-30,Shasta County,145
+prop_47,2014-11-05,2015.03.31_San Luis Obispo County_Flyer for Class on Cutting-Edge Prosecution Tools.pdf,2015-03-31,San Luis Obispo County,146
+prop_47,2014-11-05,"2015.04.14_LA County_Prop 47, Supplement 5 Memo.pdf",2015-04-14,Los Angeles County,160
+prop_47,2014-11-05,"2015.04.16_LA County_Prop 47, Supplement 6 Memo.pdf",2015-04-16,Los Angeles County,162
+prop_47,2014-11-05,"2015.04.20_LA County_Prop 47, Supplement 7 Memo.pdf",2015-04-20,Los Angeles County,166
+prop_47,2014-11-05,2015.10.29_Fresno County_Secrets to Prosecuting ID Theft_Redacted.pdf,2015-10-29,Fresno County,358
+prop_57,2016-11-09,2016.03.28_Alameda Count_BASIC FELONY SENTENCING.pdf,2016-03-28,Alameda County,-226
+prop_57,2016-11-09,2016.03.28_Alameda County_Intro to Felony Sentencing Part 1.mp4,2016-03-28,Alameda County,-226
+prop_57,2016-11-09,2016.04.04_Alameda County_Basic Felony Sentencing II).pdf,2016-04-04,Alameda County,-219
+prop_57,2016-11-09,2016.04.04_Alameda County_Intro to Felony Sentencing Part 2.mp4,2016-04-04,Alameda County,-219
+prop_57,2016-11-09,2016.08.01_Alameda County_Juvenile Sentencing Update.mp4,2016-08-01,Alameda County,-100
+prop_57,2016-11-09,2016.12.01_Ventura County_MCLE Proposition 57.pdf,2016-12-01,Ventura County,22
+prop_57,2016-11-09,2017.01.19_Los Angeles County_Motions To Transfer and Proposition 57.pdf,2017-01-19,Los Angeles County,71
+prop_57,2016-11-09,2017.01.19_Los Angeles County_Understanding Post-Miller Juvenile Resentencing.pdf,2017-01-19,Los Angeles County,71
+prop_57,2016-11-09,2017.01.20_Los Angeles County_Prop 57 Powerpoint.pdf,2017-01-20,Los Angeles County,72
+prop_57,2016-11-09,2017.04.18_LA County_Updated Prop 57 Transfer Hearings for Juvenile Defts Memo.pdf,2017-04-18,Los Angeles County,160
+prop_57,2016-11-09,2017.04.19_LA County_ Special Directive-Mental Health Diversion & Alternative Sentencing.pdf,2017-04-19,Los Angeles County,161
+prop_57,2016-11-09,2017.06.26_LA County_Proposition 57 and Juvenile Transfers Memo.pdf,2017-06-26,Los Angeles County,229
+prop_57,2016-11-09,2017.07.17_Alameda County_PROP 57 EARLY RELEASE.pdf,2017-07-17,Alameda County,250
+prop_57,2016-11-09,2017.07.17_Alameda County_Prop 57 Sentencing.mp4,2017-07-17,Alameda County,250
+prop_57,2016-11-09,2017.09.25_Alameda County_Felony Sentencing Pt.I.pdf,2017-09-25,Alameda County,320
+prop_57,2016-11-09,2017.09.25_Alameda County_Intro to Felony Sentencing Part 1.mp4,2017-09-25,Alameda County,320
+prop_57,2016-11-09,2017.10.02_Alameda County_Felony Sentencing Pt.II.pdf,2017-10-02,Alameda County,327
+prop_57,2016-11-09,2017.10.02_Alameda County_Intro to Felony Sentencing Part 2.mov,2017-10-02,Alameda County,327
+sb_1391_juvenile_transfer_ban,2019-01-01,2018_Amador County_Prosecutor's Brief (2).pdf,2018-01-01,Amador County,-365
+sb_1391_juvenile_transfer_ban,2019-01-01,2018_San Mateo County_New Laws for Prosecutors Presentation .pdf,2018-01-01,San Mateo County,-365
+sb_1391_juvenile_transfer_ban,2019-01-01,2018_Yolo County_Racial Profiling MCLE.pdf,2018-01-01,Yolo County,-365
+sb_1391_juvenile_transfer_ban,2019-01-01,Madera County_Report by Prosecuting Agency of Charges Against Attorney Form.pdf,2018-01-03,Madera County,-363
+sb_1391_juvenile_transfer_ban,2019-01-01,2018.03.29_Shasta County_Prosecutorial Ethics.pdf,2018-03-29,Shasta County,-278
+sb_1391_juvenile_transfer_ban,2019-01-01,2018.09.24_Calaveras County_Prosecuting DV Misdemeanors Seminar.pdf,2018-09-24,Calaveras County,-99
+sb_1391_juvenile_transfer_ban,2019-01-01,2018.10.10_Ventura County_DUI Prosecution Overview.pdf,2018-10-10,Ventura County,-83
+sb_1391_juvenile_transfer_ban,2019-01-01,2018.11.27_LA County_Expanded Charging Jurisdiction (AB 1065).pdf,2018-11-27,Los Angeles County,-35
+sb_1391_juvenile_transfer_ban,2019-01-01,2018.12.04_LA County_Prosecuting Minors Under 12 (SB 439).pdf,2018-12-04,Los Angeles County,-28
+sb_1391_juvenile_transfer_ban,2019-01-01,2019_Santa Barbara County_Voir Dire in Domestic Violence Cases-New Prosecutors.pdf,2019-01-01,Santa Barbara County,0
+sb_1391_juvenile_transfer_ban,2019-01-01,2019_Siskiyou County_Voir Dire Training for New Prosecutors (1).pdf,2019-01-01,Siskiyou County,0
+sb_1391_juvenile_transfer_ban,2019-01-01,2019_Siskiyou County_Voir Dire Training for New Prosecutors.pdf,2019-01-01,Siskiyou County,0
+sb_1391_juvenile_transfer_ban,2019-01-01,2019_Stanislaus County_Voir-Dire-New-Prosecutors.pdf,2019-01-01,Stanislaus County,0
+sb_1391_juvenile_transfer_ban,2019-01-01,2019_Ventura County_Rule 3.8 -Responsibilities of Prosecutors.pdf,2019-01-01,Ventura County,0
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.01.04_Ventura County_Domestic Violence Filing Criteria.docx,2019-01-04,Ventura County,3
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.01.07_San Luis Obispo County_Memo re CDAA Uniform Crime Charging Standards Manual.pdf,2019-01-07,San Luis Obispo County,6
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.01.08_Ventura County_Certifcate of Attendance Case Filing.pdf,2019-01-08,Ventura County,7
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.01.08_Ventura County_Record of Attendance Case Filing.pdf,2019-01-08,Ventura County,7
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.01.08_Ventura Couny_Domestic Violence Filing Criteria.docx,2019-01-08,Ventura County,7
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.02.12_Ventura County_Certifcate of Attendance Cellebrite for the Prosecution.pdf,2019-02-12,Ventura County,42
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.03.05_San Mateo County_How to Avoid Prosecutorial Misconduct Training.docx,2019-03-05,San Mateo County,63
+sb_1391_juvenile_transfer_ban,2019-01-01,Prosecutorial Misconduct by MXM - 03.08.2019.mp4,2019-03-08,San Mateo County,66
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.09.18_San Mateo County_The Whole Job of the Trial Prosecutor.docx,2019-09-18,San Mateo County,260
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.09.24_Ventura County_Prosecutorial Ethics and Discovery Presentation.ppt,2019-09-24,Ventura County,266
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.09.26_Ventura County_DUI Prosecution Overview (MCLE Rec. of Att.).pdf,2019-09-26,Ventura County,268
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.10.01_San Mateo County_NEW LAWS FOR PROSECUTORS.docx,2019-10-01,San Mateo County,273
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.10.07_Alameda County_Jane Doe Charging.pdf,2019-10-07,Alameda County,279
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.12.02_Marin County_Inquisitive Prosecutor's Guide-Brady Lists.pdf,2019-12-02,Marin County,335
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.12.10_Sacramento County_Legal & Case Prosecution Policy Manual.pdf,2019-12-10,Sacramento County,343
+sb_1391_juvenile_transfer_ban,2019-01-01,2019.12.10_Ventura County_Filing Cases (MCLE Rec. of Att.).pdf,2019-12-10,Ventura County,343
+sb_1391_juvenile_transfer_ban,2019-01-01,2020_San Mateo County_Avoiding Prosecutorial Misconduct Training.pptx,2020-01-01,San Mateo County,365
+sb_1393_enhancement_discretion,2019-01-01,2018.01.05_LA County_Gun Enhancements Memo.pdf,2018-01-05,Los Angeles County,-361
+sb_1393_enhancement_discretion,2019-01-01,2019.07.02_Stanislaus County_One Strike Power Point Training.pptx,2019-07-02,Stanislaus County,182
+sb_1437_felony_murder,2019-01-01,2018_Amador County_Prosecutor's Brief (2).pdf,2018-01-01,Amador County,-365
+sb_1437_felony_murder,2019-01-01,2018_San Mateo County_New Laws for Prosecutors Presentation .pdf,2018-01-01,San Mateo County,-365
+sb_1437_felony_murder,2019-01-01,2018_Yolo County_Racial Profiling MCLE.pdf,2018-01-01,Yolo County,-365
+sb_1437_felony_murder,2019-01-01,Madera County_Report by Prosecuting Agency of Charges Against Attorney Form.pdf,2018-01-03,Madera County,-363
+sb_1437_felony_murder,2019-01-01,2018.03.29_Shasta County_Prosecutorial Ethics.pdf,2018-03-29,Shasta County,-278
+sb_1437_felony_murder,2019-01-01,2018.09.24_Calaveras County_Prosecuting DV Misdemeanors Seminar.pdf,2018-09-24,Calaveras County,-99
+sb_1437_felony_murder,2019-01-01,2018.10.10_Ventura County_DUI Prosecution Overview.pdf,2018-10-10,Ventura County,-83
+sb_1437_felony_murder,2019-01-01,2018.11.26_Alameda County_SB 1437 Overview - Part 3.mp4,2018-11-26,Alameda County,-36
+sb_1437_felony_murder,2019-01-01,"2018.11.26_Alameda County_SB 1437III, CRIMS for Electronic Devices.pdf",2018-11-26,Alameda County,-36
+sb_1437_felony_murder,2019-01-01,2018.11.27_LA County_Expanded Charging Jurisdiction (AB 1065).pdf,2018-11-27,Los Angeles County,-35
+sb_1437_felony_murder,2019-01-01,2018.11.27_LA County_SB 1437-Changes to Accomplice Liability for Murder Memo.pdf,2018-11-27,Los Angeles County,-35
+sb_1437_felony_murder,2019-01-01,2018.12.04_LA County_Prosecuting Minors Under 12 (SB 439).pdf,2018-12-04,Los Angeles County,-28
+sb_1437_felony_murder,2019-01-01,2018.12.27_LA County_SB 1437-Murder Resentencing.pdf,2018-12-27,Los Angeles County,-5
+sb_1437_felony_murder,2019-01-01,2018.12.27_LA County_SB 1437-Resentencing Petitions.pdf,2018-12-27,Los Angeles County,-5
+sb_1437_felony_murder,2019-01-01,2019_Santa Barbara County_Voir Dire in Domestic Violence Cases-New Prosecutors.pdf,2019-01-01,Santa Barbara County,0
+sb_1437_felony_murder,2019-01-01,2019_Siskiyou County_Voir Dire Training for New Prosecutors (1).pdf,2019-01-01,Siskiyou County,0
+sb_1437_felony_murder,2019-01-01,2019_Siskiyou County_Voir Dire Training for New Prosecutors.pdf,2019-01-01,Siskiyou County,0
+sb_1437_felony_murder,2019-01-01,2019_Stanislaus County_Voir-Dire-New-Prosecutors.pdf,2019-01-01,Stanislaus County,0
+sb_1437_felony_murder,2019-01-01,2019_Ventura County_Rule 3.8 -Responsibilities of Prosecutors.pdf,2019-01-01,Ventura County,0
+sb_1437_felony_murder,2019-01-01,2019.01.04_Ventura County_Domestic Violence Filing Criteria.docx,2019-01-04,Ventura County,3
+sb_1437_felony_murder,2019-01-01,2019.01.07_San Luis Obispo County_Memo re CDAA Uniform Crime Charging Standards Manual.pdf,2019-01-07,San Luis Obispo County,6
+sb_1437_felony_murder,2019-01-01,2019.01.08_Ventura County_Certifcate of Attendance Case Filing.pdf,2019-01-08,Ventura County,7
+sb_1437_felony_murder,2019-01-01,2019.01.08_Ventura County_Record of Attendance Case Filing.pdf,2019-01-08,Ventura County,7
+sb_1437_felony_murder,2019-01-01,2019.01.08_Ventura Couny_Domestic Violence Filing Criteria.docx,2019-01-08,Ventura County,7
+sb_1437_felony_murder,2019-01-01,2019.02.12_Ventura County_Certifcate of Attendance Cellebrite for the Prosecution.pdf,2019-02-12,Ventura County,42
+sb_1437_felony_murder,2019-01-01,2019.03.05_San Mateo County_How to Avoid Prosecutorial Misconduct Training.docx,2019-03-05,San Mateo County,63
+sb_1437_felony_murder,2019-01-01,Prosecutorial Misconduct by MXM - 03.08.2019.mp4,2019-03-08,San Mateo County,66
+sb_1437_felony_murder,2019-01-01,2019.03.11_LA County_BVS Assistance SB 1437.pdf,2019-03-11,Los Angeles County,69
+sb_1437_felony_murder,2019-01-01,2019.07.22_LA County_Revision to SB 1437.pdf,2019-07-22,Los Angeles County,202
+sb_1437_felony_murder,2019-01-01,2019.09.18_San Mateo County_The Whole Job of the Trial Prosecutor.docx,2019-09-18,San Mateo County,260
+sb_1437_felony_murder,2019-01-01,2019.09.24_Ventura County_Prosecutorial Ethics and Discovery Presentation.ppt,2019-09-24,Ventura County,266
+sb_1437_felony_murder,2019-01-01,2019.09.26_Ventura County_DUI Prosecution Overview (MCLE Rec. of Att.).pdf,2019-09-26,Ventura County,268
+sb_1437_felony_murder,2019-01-01,2019.10.01_San Mateo County_NEW LAWS FOR PROSECUTORS.docx,2019-10-01,San Mateo County,273
+sb_1437_felony_murder,2019-01-01,2019.10.07_Alameda County_Jane Doe Charging.pdf,2019-10-07,Alameda County,279
+sb_1437_felony_murder,2019-01-01,2019.12.02_Marin County_Inquisitive Prosecutor's Guide-Brady Lists.pdf,2019-12-02,Marin County,335
+sb_1437_felony_murder,2019-01-01,2019.12.10_Sacramento County_Legal & Case Prosecution Policy Manual.pdf,2019-12-10,Sacramento County,343
+sb_1437_felony_murder,2019-01-01,2019.12.10_Ventura County_Filing Cases (MCLE Rec. of Att.).pdf,2019-12-10,Ventura County,343
+sb_1437_felony_murder,2019-01-01,2020_San Mateo County_Avoiding Prosecutorial Misconduct Training.pptx,2020-01-01,San Mateo County,365
+sb_180_drug_enhancement_repeal,2018-01-01,2017.11.20_LA County_Court Discretion to Strike Gun Allegations Memo.pdf,2017-11-20,Los Angeles County,-42
+sb_180_drug_enhancement_repeal,2018-01-01,2018.01.05_LA County_Gun Enhancements Memo.pdf,2018-01-05,Los Angeles County,4
+sb_620_firearm_enhancement_discretion,2018-01-01,2017.11.20_LA County_Court Discretion to Strike Gun Allegations Memo.pdf,2017-11-20,Los Angeles County,-42
+sb_620_firearm_enhancement_discretion,2018-01-01,2018.01.05_LA County_Gun Enhancements Memo.pdf,2018-01-05,Los Angeles County,4
+sb_81_enhancement_presumption,2022-01-01,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,-267
+zero_bail_statewide,2020-04-13,2020 Temporary Emergency Misdemeanor Bail Schedule.pdf,2020-01-01,Merced County,-103
+zero_bail_statewide,2020-04-13,2020_Merced County_Temporary Emergency Felony Bail Schedule Amended June.pdf,2020-01-01,Merced County,-103
+zero_bail_statewide,2020-04-13,2020_Orange County_Uniform Bail Schedule.pdf,2020-01-01,Orange County,-103
+zero_bail_statewide,2020-04-13,2020.01.22_San Francisco County_Pretrial Detention and Release Conditions.pdf,2020-01-22,San Francisco County,-82
+zero_bail_statewide,2020-04-13,2020.03.23_Fresno County_COVID-19 Emergency Bail Schedule.pdf,2020-03-23,Fresno County,-21
+zero_bail_statewide,2020-04-13,2020.04.07_San Luis Obispo County_Email re Evaluation of In Custody Defendants Under Emergency Bail Schedule INSTRUCTIONS.pdf,2020-04-07,San Luis Obispo County,-6
+zero_bail_statewide,2020-04-13,2020.04.09_San Luis Obispo County_Emergency Bail Provisions (Judge Couzens).pdf,2020-04-09,San Luis Obispo County,-4
+zero_bail_statewide,2020-04-13,2020.04.10_San Luis Obispo County_Email re DA Emergency Zero Bail Schedule (EBS) Memo and LEA Request for bail form_Redacted.pdf,2020-04-10,San Luis Obispo County,-3
+zero_bail_statewide,2020-04-13,2020.04.10_San Luis Obispo County_Emergency Bail Schedule Memo.pdf,2020-04-10,San Luis Obispo County,-3
+zero_bail_statewide,2020-04-13,2020.04.17_San Luis Obispo County_Emergency Bail Provisions.pdf,2020-04-17,San Luis Obispo County,4
+zero_bail_statewide,2020-04-13,2020.04.24_San Luis Obispo County_Source of Bail Declaration PC 1275 with check boxes.pdf,2020-04-24,San Luis Obispo County,11
+zero_bail_statewide,2020-04-13,2020.05.12_San Luis Obispo County_Emergency Bail Schedule Memo.pdf,2020-05-12,San Luis Obispo County,29
+zero_bail_statewide,2020-04-13,2020.06.12_Marin County_Inquisitive Prosecutor's Guide-Bail Issues.pdf,2020-06-12,Marin County,60
+zero_bail_statewide,2020-04-13,2020.06.19_San Luis Obispo County_Emergency Bail Schedule.pdf,2020-06-19,San Luis Obispo County,67
+zero_bail_statewide,2020-04-13,2020.06.19_San Luis Obispo County_Updated Emergency Bail Schedule Memo and Schedule.pdf,2020-06-19,San Luis Obispo County,67
+zero_bail_statewide,2020-04-13,2020.06.23_LA County_Emergency Bail Schedule Memo.pdf,2020-06-23,Los Angeles County,71
+zero_bail_statewide,2020-04-13,2020.06.29_San Diego County_Temp Emergency Mod. to the Bail Schedule.pdf,2020-06-29,San Diego County,77
+zero_bail_statewide,2020-04-13,2020.11.12_LA County_LPM Chapter 8 Bail and Own Recongnizance.pdf,2020-11-12,Los Angeles County,213
+zero_bail_statewide,2020-04-13,2020.12.07_LA County_Pretrial Release Policy Memo.pdf,2020-12-07,Los Angeles County,238
+zero_bail_statewide,2020-04-13,2020.12.18_LA County_News Release DA Gascon Issues Amended Directive on Sentencing Enhancements.pdf,2020-12-18,Los Angeles County,249
+zero_bail_statewide,2020-04-13,2021_Inyo County_Peoples' Opposition to Motion to Reduce Bail.pdf,2021-01-01,Inyo County,263
+zero_bail_statewide,2020-04-13,2021.01.05_LA County_News Release DA Gascon Issues Statement on Money Bail.pdf,2021-01-05,Los Angeles County,267
+zero_bail_statewide,2020-04-13,2021.01.12_LA County_News Release DA Gascon Supports Effort to Ban Death Penalty at Federal Level.pdf,2021-01-12,Los Angeles County,274
+zero_bail_statewide,2020-04-13,2021.02.25_LA County_News Release DA Gascon Applauds State Supreme Court Ruling on Youth Justice.pdf,2021-02-25,Los Angeles County,318
+zero_bail_statewide,2020-04-13,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More (2).pdf,2021-03-17,Los Angeles County,338
+zero_bail_statewide,2020-04-13,2021.03.17_LA County_News Release DA Gascon Outlines Reforms Made During First 100 Days In Office Promises More.pdf,2021-03-17,Los Angeles County,338
+zero_bail_statewide,2020-04-13,2021.03.25_LA County_News Release DA Gascon Applauds CA Supreme Court Ruling on Cash Bail.pdf,2021-03-25,Los Angeles County,346
+zero_bail_statewide,2020-04-13,2021.03.26_Fresno County_Cash Bail and In re Humphrey Memo.pdf,2021-03-26,Fresno County,347
+zero_bail_statewide,2020-04-13,2021.04.01_Marin County_Bail Procedures per Humphrey.pdf,2021-04-01,Marin County,353
+zero_bail_statewide,2020-04-13,"2021.04.09_LA County_News Release DA Gascon, Assembly Member Santiago Unveil Juvenile 3 Strikes Reform Bill.pdf",2021-04-09,Los Angeles County,361
