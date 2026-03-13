@@ -56,20 +56,13 @@
 % ---------- TITLE ----------
 \maketitle
 
-% ---------- SLIDE: Framing — Addressing AV Feedback ----------
-\begin{frame}{Thank You for the Second Look}
-Last time, you raised two concerns: whether \textbf{outcome data} could support the causal questions, and whether the project was \textbf{targeted enough} toward specific causal research questions.
-\vspace{6pt}
-
-Those concerns were fair. Here is what has changed:
-\vspace{6pt}
-\begin{enumerate}\setlength\itemsep{6pt}
-    \item \textbf{We linked outcome data and found a real signal} --- pilot results survive year fixed effects; pretrial detention shows a clean causal signal ($p_{\text{pre-trend}} = 0.90$)
-    \item \textbf{We identified 6 specific causal designs} aligned to specific research questions --- each one mapped to the exact outcome data source it requires
-    \item \textbf{We restructured the ask} so that each funded phase directly unlocks a specific causal study, not just more infrastructure
+% ---------- SLIDE: Project Summary ----------
+\begin{frame}{Project Summary}
+\begin{enumerate}\setlength\itemsep{10pt}
+    \item \textbf{The dataset.} We built the first systematic corpus of District Attorney policy documents---1,865 memos from 41+ offices, coded by topic and ideological direction using an AI-assisted pipeline.
+    \item \textbf{What it enables.} This measurement infrastructure supports 6+ credible causal designs linking prosecutorial policy changes to criminal justice outcomes, including diversion rates, pretrial detention, and sentencing.
+    \item \textbf{What we need.} Funding to link outcome data, scale nationally, and convert pilot results into published causal evidence.
 \end{enumerate}
-\vspace{6pt}
-{\small The next 15 minutes will walk you through the evidence.}
 \end{frame}
 
 % ---------- SLIDE: The Research Problem ----------
@@ -442,9 +435,7 @@ Without outcome linkage, we have \textbf{policy variation without a dependent va
 \end{column}
 \end{columns}
 \vspace{8pt}
-\begin{block}{Related Work}
-Felix Owusu's AV-funded project exploits two specific internal DA memos for a causal design. Our contribution scales this logic: \textbf{systematic measurement across 41+ offices and 1,865 documents}, creating variation needed for average causal effects and heterogeneity analysis.
-\end{block}
+{\small\emph{Our approach scales the logic of single-memo causal designs to systematic measurement across \textbf{41+ offices and 1,865 documents}, creating the variation needed for average causal effects and heterogeneity analysis.}}
 \end{frame}
 
 % ---------- SLIDE: Funding ----------
@@ -611,24 +602,24 @@ DA Transition & 10\% & New administration detection \\
 {\small\textbf{Top disruptions:} SF 2020 (Boudin, 0.572), LA 2021 (Gasc\'on, 0.549), Sacramento 2022 (0.412)}
 \end{frame}
 
-% ---------- BACKUP: Anticipated Objections (1/2) ----------
-\begin{frame}{Anticipated Objections (1/2)}
-\begin{block}{``Policy changes aren't random. Where's the identification strategy?''}
+% ---------- BACKUP: FAQ (1/2) ----------
+\begin{frame}{Frequently Asked Questions (1/2)}
+\begin{block}{What is the identification strategy?}
 {\small (1)~\textbf{Close elections are as-good-as-random}---RDD at 50\% cutoff; national expansion gives 30--50 races. (2)~\textbf{Election margin is an IV}---$r = -0.50$ with ideology. (3)~\textbf{Memo timing is plausibly exogenous}---the exact date a DA issues a specific memo has quasi-random administrative variation; staggered DiD exploits this. (4)~\textbf{Synthetic control} needs parallel trends, not randomization---LA pilot: $p_{\text{pre-trend}} = 0.90$. (5)~\textbf{Triangulation}: when all four designs agree, combined evidence is strong.}
 \end{block}
 \vspace{6pt}
-\begin{block}{``Policy documents $\neq$ practice. How do you know memos change anything?''}
-{\small That's why Extension 2 is Priority 1. We test whether ``diversion-positive'' memos predict more diversions. Even the stated-policy variation is \emph{itself} a novel descriptive contribution.}
+\begin{block}{Do policy memos translate to practice?}
+{\small Extension 2 directly tests this: do ``diversion-positive'' memos predict more diversions? Even the stated-policy variation is \emph{itself} a novel descriptive contribution.}
 \end{block}
 \end{frame}
 
-% ---------- BACKUP: Anticipated Objections (2/2) ----------
-\begin{frame}{Anticipated Objections (2/2)}
-\begin{block}{``You only have California. Isn't this just a Blue State story?''}
-{\small That's the point of Extension 1. CA has internal variation (Bay Area vs.\ Central Valley), but external validity requires the 100 largest DA offices nationally.}
+% ---------- BACKUP: FAQ (2/2) ----------
+\begin{frame}{Frequently Asked Questions (2/2)}
+\begin{block}{How does the project generalize beyond California?}
+{\small Extension 1 addresses this directly. CA has internal variation (Bay Area vs.\ Central Valley), but external validity requires the 100 largest DA offices nationally.}
 \end{block}
 \vspace{6pt}
-\begin{block}{``AI coding isn't reliable enough for research.''}
+\begin{block}{How reliable is the AI-based coding?}
 {\small Face validity is strong ($d = 0.75$ on Gasc\'on, geographic clustering matches expectations). Phase 1 includes 200-doc human validation for gold-standard IRR. Pipeline cost: \$80, runtime: 2 hours.}
 \end{block}
 \end{frame}

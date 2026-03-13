@@ -182,7 +182,7 @@ The pilot's main weaknesses — COVID confounding, violated parallel trends, and
 
 ### Related Work: Exploiting Internal Memos for Causal Designs
 
-Our approach connects to an emerging research agenda on using internal policy documents for causal identification. Felix Owusu's project, funded by Arnold Ventures, exploits two specific internal DA policy memos to construct a causal design estimating their effects on criminal justice outcomes. [Placeholder — details of design and findings to be discussed verbally.] Our contribution scales this logic: rather than relying on a small number of memos from individual offices, we provide **systematic measurement across 41+ offices and 1,865 documents**, creating the variation needed to estimate average causal effects and explore heterogeneity.
+Our approach connects to an emerging research agenda on using internal policy documents for causal identification. Felix Owusu's project exploits two specific internal DA policy memos to construct a causal design estimating their effects on criminal justice outcomes. [Placeholder — details of design and findings to be discussed verbally.] Our contribution scales this logic: rather than relying on a small number of memos from individual offices, we provide **systematic measurement across 41+ offices and 1,865 documents**, creating the variation needed to estimate average causal effects and explore heterogeneity.
 
 ### Value for Policymakers and Practitioners
 

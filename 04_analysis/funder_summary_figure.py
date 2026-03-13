@@ -1,5 +1,5 @@
 """
-Arnold Ventures Funder Summary Figure
+Funder Summary Figure
 4-panel narrative arc:
   A. Measurement works (progressive surge)
   B. Causal design feasible (IV first stage: margin → ideology)
