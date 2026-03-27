@@ -1,0 +1,333 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} % Times font
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\singlespacing
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Prosecutorial Policy, Racial Justice Reform, and Disparities\\in California's Criminal Justice System}}
+
+\vspace{0.5em}
+{\normalsize \textbf{Principal Investigators:} Dvir Yogev, UC Berkeley School of Law, Center for Law and Justice;\\Rebecca Goldstein, New York University}
+\end{center}
+
+\vspace{0.5em}
+\noindent\rule{\textwidth}{0.4pt}
+
+\section{Introduction and Research Question}
+
+What if the most celebrated criminal justice reforms of the past decade made racial disparities \textit{worse}---not by design, but by disproportionately benefiting the white defendants easiest to divert, while leaving Black and Hispanic defendants trapped in the serious-charge pipeline that reform never reached? This question sits at the center of a heated national debate: the wave of progressive district attorneys elected after 2020 promised to dismantle systemic racism in charging and sentencing, yet systematic evidence on whether their policies actually narrow racial disparities remains scarce. We lack this evidence not because the question is intractable, but because no measurement infrastructure exists to capture what prosecutors \textit{do} inside their offices---the policies, directives, and memoranda that translate electoral mandates into daily charging decisions.
+
+This project addresses that gap. Building on a pilot that coded 1,865 internal district attorney policy documents from 41 California counties using large language models, we propose to (1) complete the remaining 17 counties to build a full state panel covering all 58 California DA offices, (2) link this policy panel to race-disaggregated outcome data from the California Department of Justice, and (3) estimate the causal effects of prosecutorial policy variation on racial disparities in charging, sentencing, and incarceration. The project is situated within the institutional context of California's Racial Justice Act (AB 2542, 2020), which, for the first time, allows defendants to challenge convictions on the basis of statistical evidence of racial disparities---making the measurement of prosecutorial policy variation not only scientifically important but legally consequential.
+
+\textbf{Central Research Questions:}
+\begin{enumerate}
+    \item Do counties whose DA offices adopt progressive policies---particularly those emphasizing racial justice---exhibit smaller racial disparities in charging, sentencing, and incarceration?
+    \item Does the election of reform-oriented prosecutors causally reduce racial disparities, or do aggregate reductions mask persistent or widening racial gaps?
+    \item Has the California Racial Justice Act's passage altered the relationship between prosecutorial policy and racial disparities?
+\end{enumerate}
+
+\section{Literature Review}
+
+Prosecutors wield more discretion over case outcomes than any other actor in the criminal justice system \citep{pfaff2017,davis2007}. Charging decisions---which offenses to file, whether to seek enhancements, whom to divert---largely determine defendants' exposure to incarceration, yet these decisions occur behind closed doors with minimal oversight \citep{sklansky2018}. A growing literature documents that this discretion produces racial disparities: Black defendants face more serious charges \citep{rehavi2014}, longer sentences \citep{ussc2017}, and less access to diversion \citep{kutateladze2014} than similarly situated white defendants.
+
+Recent work has begun to examine whether the election of progressive prosecutors alters these patterns. \citet{agan2023} show that progressive prosecutors in large jurisdictions reduce incarceration without increasing crime, but their analysis focuses on aggregate outcomes rather than racial disparities. Critically, the partisan and demographic identity of prosecutors shapes racial disparities directly: \citet{yntiso2022} uses a regression discontinuity design to show that marginally elected Republican prosecutors seek significantly tougher charges than Democrats, but only in cases involving Black defendants, with these partisan differences propagating into longer incarceration lengths. \citet{gunderson2022} finds that Black prosecutors are associated with fewer felony closures and convictions, and female prosecutors with lower Black jail populations and prison admissions, suggesting that descriptive representation may partially counteract carceral disparities. Meanwhile, \citet{petersen2024} find that progressive prosecutors are associated with approximately 7\% higher property and total crime rates relative to traditional jurisdictions, though violent crime shows no significant increase---complicating the political narrative but underscoring the need to examine \textit{which} outcomes improve and for \textit{whom}. The challenge across this literature is measurement: researchers typically classify prosecutors as ``progressive'' or ``traditional'' based on a single dimension (campaign platform, endorsements, or party affiliation), obscuring the multidimensional policy variation within and across offices \citep{bellin2019}.
+
+Our project addresses this measurement problem directly. Using large language models to code the actual internal policy documents DA offices produce, we capture variation along multiple dimensions---ideology, charging posture, enhancement policy, diversion support, and racial justice emphasis---at the document level. This approach builds on the text-as-data framework for turning large unstructured corpora into quantitative social-science measurements \citep{gentzkow2019}, and leverages recent evidence that LLM-based annotation outperforms both crowd workers \citep{gilardi2023} and expert human coders \citep{tornberg2025} on political text classification tasks. In a companion study, \citet{yogev2026} applies a multi-method NLP pipeline to 136,313 news articles covering California prosecutors, demonstrating that computational text analysis can reliably extract multidimensional measurements from large document collections in the criminal justice domain. These methods have not yet been applied to prosecutorial policy documents themselves. Preliminary coding of 1,865 documents from 41 California counties reveals that the measurement is both valid and informative: racial justice content surged 30 percentage points in 2020, closely tracking the national reckoning following George Floyd's murder, and racial justice emphasis emerged as the single strongest predictor of progressive prosecutorial ideology ($\chi^2 = 421$, $p < 0.001$, Cramer's $V = 0.47$).
+
+The California Racial Justice Act (RJA) provides a critical institutional context. Enacted in 2020 and expanded retroactively by AB 256 (2022), the RJA allows defendants to challenge convictions using statistical evidence of racial disparities in charging and sentencing---explicitly overriding the \textit{McCleskey v.\ Kemp} (1987) standard that had required proof of intentional discrimination. Early applications demonstrate the Act's significance: in Contra Costa County (2024), gang enhancements were dismissed after data showed Black men were 44\% more likely to receive enhancements \citep{byrne2025}. Critically, the court in \textit{People v.\ Windom} (2023) cited the \textit{absence} of formal charging policies as evidence of RJA violations, establishing that prosecutorial policy documents---or their absence---are now legally material to racial disparity claims. Yet no systematic data exists on what policies California DA offices actually have, making it impossible to evaluate the RJA's effectiveness at scale.
+
+\section{Hypotheses}
+
+\textbf{H1 (Policy-Disparity Link):} Counties whose DA offices adopt policies emphasizing racial justice, diversion, and limits on sentence enhancements will exhibit smaller Black-white and Hispanic-white disparities in felony charging rates, sentence lengths, and incarceration rates.
+
+\textbf{H2 (Reform Prosecutor Effect):} The election of progressive prosecutors in close races causally reduces racial disparities in charging and sentencing, not merely aggregate case volumes. We test whether the extensive margin (who enters the system) narrows racial gaps more than the intensive margin (severity of treatment).
+
+\textbf{H3 (RJA Interaction):} The passage of the Racial Justice Act in 2020 amplified the relationship between prosecutorial racial justice policies and downstream disparities---DA offices that adopted RJA-responsive policies post-2020 show greater disparity reduction than those maintaining pre-2020 postures.
+
+\textbf{H4 (Lowest-Hanging-Fruit Retrenchment):} Progressive reforms disproportionately benefit non-minority defendants by targeting the most easily diverted, least serious cases---populations that skew whiter. If reform prosecutors expand diversion, reduce low-level charging, or decline misdemeanors, the marginal defendants who exit the system may be disproportionately white, while Black and Hispanic defendants---who face more serious charges, longer criminal histories inflated by prior over-policing, and enhancement-heavy cases---remain. Under this hypothesis, aggregate caseloads fall but racial disparities \textit{widen}, producing a perverse equity outcome that headline statistics obscure.
+
+\textbf{H5 (Policy Heterogeneity):} The effect of prosecutorial policy on racial disparities varies by policy dimension. Enhancement limitations and diversion expansion disproportionately benefit Black defendants, given documented baseline disparities in enhancement application (92\% of gang-enhanced defendants are Black or Hispanic) and diversion access. H5 stands in tension with H4: if reforms target enhancements and gang allegations specifically, they may reach the populations where racial disparities are most concentrated. The empirical question is which policy dimensions dominate in practice.
+
+\section{Data}
+
+\subsection{Prosecutorial Policy Data (Existing + Extension)}
+
+The ACLU of Northern California's Racial Justice Act Public Records Database contains 2,665 internal DA policy documents obtained through public records requests to all 58 California counties. Our pilot used the Anthropic Claude API to code 1,865 documents from 41 counties across 37 dimensions, including ideological orientation (7-point scale), extensive- and intensive-margin posture, specific policy positions (diversion, enhancements, bail, racial justice), and document metadata. Total coding cost was approximately \$80 in API fees, completed in under 2 hours---demonstrating the approach's scalability.
+
+The requested funding would complete the panel along two dimensions. First, we will file new public records requests to obtain documents from the 17 counties not covered by the ACLU's original requests, which targeted specific offices and time periods. Second, we will expand temporal coverage for the 41 existing counties, where the ACLU's FOIAs were often narrowly scoped---some counties provided documents only from a single administration or a limited date range. Filling these geographic and temporal gaps is essential for causal designs: the missing counties are disproportionately rural and conservative, biasing cross-sectional estimates, and incomplete time series within covered counties undermine the pre-period data needed for difference-in-differences and event-study designs.
+
+\subsection{Criminal Justice Outcome Data (Race-Disaggregated)}
+
+We will link the policy panel to race-disaggregated outcome data from three sources:
+
+\begin{itemize}
+    \item \textbf{California DOJ OpenJustice}: County-level data on arrests, felony filings, dispositions, and sentences disaggregated by race/ethnicity. Available annually for all 58 counties.
+    \item \textbf{California DOJ Sentencing Data}: Individual-level sentencing records including offense, enhancements, sentence length, and defendant demographics.
+    \item \textbf{Vera Institute Incarceration Trends}: County-level jail population, admission rates, and pretrial detention disaggregated by race. Our pilot merged this with policy data for 34 counties (137 county-years), finding that progressive-coded counties jail 68.5 fewer people per 100,000 (Cohen's $d = -0.81$, $p < 0.001$).
+\end{itemize}
+
+\subsection{Election Data}
+
+DA election results with candidate vote totals for computing 1st--2nd place margins, enabling regression discontinuity designs. Our pilot identified 16 elections with proper margin data, including extremely close races (LA 2020: 0.03pp margin; SF 2019: 4.63pp). The full 58-county panel will approximately double this sample.
+
+\subsection{Human Validation Sample}
+
+We will dual-code 200 documents (stratified by county, year, and pilot-coded ideology) with trained research assistants to establish inter-rater reliability and validate the LLM coding pipeline.
+
+\section{Research Methods and Analytic Plan}
+
+\subsection{Completing the Policy Panel}
+
+Completing the panel requires two efforts. First, we will file targeted public records requests to the 17 uncovered counties to obtain their internal policy documents. Second, we will file supplemental requests to the 41 existing counties to fill temporal gaps left by the ACLU's original FOIAs, which were often scoped to narrow time windows or specific administrations. Once obtained, all new documents will be coded using the existing LLM pipeline, which uses structured prompts to extract 37 variables per document with high consistency. Quality control includes automated validation checks and manual review of flagged cases. Upon completion, we will have a full 58-county panel with consistent temporal coverage, enabling the pre/post comparisons that causal designs require.
+
+\subsection{Measurement Validation}
+
+To establish that our AI-coded measures capture meaningful policy variation, we will:
+
+\begin{enumerate}
+    \item \textbf{Inter-rater reliability}: Dual-code 200 documents with trained RAs; compute Cohen's $\kappa$ for categorical variables and ICC for continuous measures.
+    \item \textbf{Construct validity}: Correlate coded ideology with known ground truth (e.g., LA County's Gasc\'{o}n transition shows a Cohen's $d = 0.75$ shift, $p < 0.001$; close elections produce 31.2pp more progressive policies, $p = 0.010$).
+    \item \textbf{Predictive validity}: Test whether coded policy dimensions predict race-disaggregated outcomes beyond what aggregate ideology captures.
+\end{enumerate}
+
+\subsection{Causal Identification Strategies}
+
+We employ three complementary designs to isolate causal effects on racial disparities:
+
+\subsubsection*{Design 1: Difference-in-Differences (DiD)}
+
+We exploit the staggered adoption of progressive policies across California counties. Our policy shock calendar identifies 24 precisely-dated policy changes (2011--2023) linked to 350+ internal documents. For each shock, we estimate:
+
+\begin{equation}
+Y_{ct} = \alpha_c + \gamma_t + \beta \cdot \text{PostPolicy}_{ct} + X_{ct}\delta + \epsilon_{ct}
+\end{equation}
+
+\noindent where $Y_{ct}$ is a racial disparity measure (e.g., Black-white felony charging rate ratio) in county $c$ and year $t$, and $\text{PostPolicy}_{ct}$ indicates the adoption of a progressive policy shift. We use the \citet{callaway2021} estimator to handle staggered treatment timing and test for parallel pre-trends.
+
+Our pilot's COVID-controlled DiD for LA County's Gasc\'{o}n transition found clean parallel pre-trends for pretrial detention rates (pre-trend $p = 0.897$), yielding a DiD estimate of $-32.1$ per 100,000---but racial disparity estimates require the race-disaggregated DOJ data this grant would fund.
+
+\textbf{Outcome variables for racial disparity:}
+\begin{itemize}
+    \item Black-white and Hispanic-white ratios in felony filing rates
+    \item Racial gaps in sentence length conditional on offense
+    \item Racial disparity in enhancement application (particularly gang enhancements)
+    \item Racial gaps in diversion rates
+    \item Black-white incarceration rate ratios
+\end{itemize}
+
+\subsubsection*{Design 2: Regression Discontinuity (RDD) Around Close DA Elections}
+
+Close DA elections provide quasi-random assignment of prosecutorial ideology. Our pilot found that elections decided by $\leq$15pp margins produce 31.2 percentage points more progressive policies than wider margins ($p = 0.010$), with a continuous relationship between margin and ideology ($r = -0.50$, $p = 0.009$). The complete 58-county panel will approximately double the number of close elections available for RDD, increasing statistical power.
+
+The RDD estimator compares racial disparity outcomes in counties where a progressive candidate barely won versus barely lost:
+
+\begin{equation}
+\text{Disparity}_{c,t+k} = f(\text{Margin}_c) + \tau \cdot \mathbf{1}[\text{Margin}_c > 0] + \epsilon_c
+\end{equation}
+
+\noindent where $\text{Margin}_c$ is the progressive candidate's margin of victory and $\tau$ captures the local average treatment effect on racial disparities.
+
+\subsubsection*{Design 3: Event Study Around the Racial Justice Act}
+
+The RJA's passage in 2020 and its retroactive extension in 2022 provide a common shock whose effects vary by county-level policy responsiveness. We estimate:
+
+\begin{equation}
+Y_{ct} = \alpha_c + \gamma_t + \sum_{k \neq -1} \beta_k \cdot \mathbf{1}[t = t^* + k] \times \text{HighRJPolicy}_c + X_{ct}\delta + \epsilon_{ct}
+\end{equation}
+
+\noindent where $\text{HighRJPolicy}_c$ indicates counties with above-median racial justice policy emphasis post-2020. This design tests whether the RJA's legal infrastructure translates into differential reductions in disparity across counties that substantively engaged with racial justice in their prosecutorial policies versus those that did not.
+
+\subsection{Racial Disparity Outcomes}
+
+Our primary disparity measures are:
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{llll}
+\toprule
+\textbf{Outcome} & \textbf{Source} & \textbf{Level} & \textbf{Available} \\
+\midrule
+Felony filing rate ratios (B/W, H/W) & CA DOJ OpenJustice & County-year & Annual, all 58 counties \\
+Sentence length gaps & CA DOJ Sentencing & Individual & Annual \\
+Enhancement application ratios & CA DOJ Sentencing & Individual & Annual \\
+Diversion rate gaps & CA DOJ Dispositions & County-year & Annual \\
+Incarceration rate ratios & Vera Institute & County-quarter & 1970--2023 \\
+Pretrial detention disparities & CA DOJ / Vera & County-year & Annual \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Addressing Threats to Validity}
+
+\begin{itemize}
+    \item \textbf{Selection into reform}: Counties that elect progressive prosecutors differ from those that don't. The RDD design addresses this directly; the DiD design tests parallel pre-trends. We additionally control for county demographics, crime rates, and political composition.
+    \item \textbf{COVID confounding}: The 2020 timing of both the RJA and many progressive DA elections coincides with COVID-19. Our pilot identified this challenge explicitly---COVID-controlled DiD estimates for aggregate jail outcomes differed substantially from naive estimates. Race-disaggregated data partially addresses this because COVID affected racial groups differentially in ways that can be modeled.
+    \item \textbf{Measurement error}: LLM coding introduces noise. The validation study quantifies this: measurement error in the treatment variable attenuates causal estimates toward zero, making our estimates conservative.
+    \item \textbf{SUTVA violations}: Prosecutorial policy in one county may affect neighboring counties through defendant migration or policy diffusion. We test for spatial spillovers using contiguous-county controls.
+\end{itemize}
+
+\section{Preliminary Results}
+
+Our pilot analysis provides strong evidence that the proposed measurement infrastructure captures meaningful variation in prosecutorial policy and that this variation correlates with criminal justice outcomes.
+
+\textbf{Policy measurement}: The LLM coding system identified six major empirical patterns in California prosecutorial policy: (1) a sustained progressive trend of $+0.062$ ideology points per year ($p = 0.003$); (2) a 30-percentage-point surge in racial justice content in 2020; (3) significant geographic clustering with Bay Area offices ranging from strongly progressive (Santa Clara, $+0.84$) to traditional (Alameda, $-0.15$); (4) a large Gasc\'{o}n effect in LA County ($d = 0.75$); (5) emerging emphasis on extensive-margin leniency (who enters the system) over intensive-margin leniency ($+11.3$pp difference); and (6) racial justice emphasis as the strongest single predictor of progressive ideology (4.6$\times$ more likely progressive when high RJ emphasis).
+
+\textbf{Outcome linkage}: Cross-sectional analysis merging policy data with Vera Institute jail data for 34 counties (137 county-years) found that ideology correlates with jail population rate at $r = -0.222$ ($p = 0.009$), robust to year controls. Progressive-coded counties jail 68.5 fewer people per 100,000 residents ($d = -0.81$, $p < 0.001$). However---and this is the critical gap the proposed research addresses---we cannot determine from aggregate jail data whether these differences reflect genuine racial equity gains or simply across-the-board reductions that leave disparities intact. The race-disaggregated DOJ data and complete county panel are necessary to answer this question.
+
+\textbf{Election effects}: Close DA elections ($\leq$15pp margin) produce 31.2 percentage points more progressive policies ($p = 0.010$) and 13 times more emphasis on racial justice than non-close elections, suggesting that electoral competition drives policy adoption. The continuous margin-ideology correlation ($r = -0.50$, $p = 0.009$) supports an RDD approach with the expanded sample.
+
+\section{Project Timeline}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lp{11cm}}
+\toprule
+\textbf{Period} & \textbf{Activity} \\
+\midrule
+Months 1--2 & File public records requests for 17 missing counties and supplemental requests to fill temporal gaps in 41 existing counties; begin human validation study (200 dual-coded documents); negotiate CA DOJ data access \\
+Months 3--4 & Merge policy panel with race-disaggregated DOJ data; construct racial disparity measures; descriptive analysis of full 58-county panel \\
+Months 5--7 & Implement causal designs: DiD around policy shocks, RDD around close elections, RJA event study; pre-trend tests and robustness checks \\
+Months 8--9 & Heterogeneity analysis: which policy dimensions drive disparity reduction? Which racial groups benefit most? \\
+Months 10--11 & Write and circulate working paper; present preliminary findings \\
+Month 12 & Submit to peer-reviewed journal; present at RSF conference; release replication data \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Budget Estimates}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Category} & \textbf{Amount} \\
+\midrule
+Co-PI salary---Yogev (2 months summer) & \$28,000 \\
+Co-PI salary---Goldstein (1 month summer) & \$12,000 \\
+Graduate research assistant (12 months, 10 hrs/week) & \$26,000 \\
+Human validation coding (200 docs $\times$ 2 coders) & \$6,000 \\
+Public records request fees (17 new counties + supplemental) & \$3,000 \\
+LLM API costs (new documents + validation runs) & \$1,000 \\
+CA DOJ data access fees & \$2,000 \\
+Travel (RSF conference + 1 academic conference) & \$5,500 \\
+Computing and software & \$3,450 \\
+\midrule
+\textbf{Subtotal (Direct Costs)} & \textbf{\$86,950} \\
+Indirect costs (15\%) & \$13,050 \\
+\midrule
+\textbf{Total} & \textbf{\$100,000} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Significance}
+
+This project makes three contributions. First, it produces the first complete panel of coded prosecutorial policies for an entire state, creating a public-use dataset that enables rigorous causal inference about prosecutorial decision-making and racial disparities. Second, it provides the first causal estimates of whether progressive prosecutorial reform reduces racial disparities---rather than aggregate case volumes---addressing a question of immediate policy relevance as reform prosecutors face electoral backlash. Third, by situating these estimates within the California Racial Justice Act's institutional framework, the project provides empirical evidence on whether the RJA's unprecedented legal infrastructure---allowing statistical evidence of disparities to challenge convictions---has been accompanied by substantive policy changes that actually reduce the disparities the Act was designed to expose.
+
+\bibliographystyle{apalike}
+
+\begin{thebibliography}{99}
+
+\bibitem[Agan et~al., 2023]{agan2023}
+Agan, A., Doleac, J.~L., \& Harvey, A. (2023).
+\newblock Misdemeanor prosecution.
+\newblock \textit{Quarterly Journal of Economics}, 138(3), 1453--1505.
+
+\bibitem[Gentzkow et~al., 2019]{gentzkow2019}
+Gentzkow, M., Kelly, B., \& Taddy, M. (2019).
+\newblock Text as data.
+\newblock \textit{Journal of Economic Literature}, 57(3), 535--574.
+
+\bibitem[Gilardi et~al., 2023]{gilardi2023}
+Gilardi, F., Alizadeh, M., \& Kubli, M. (2023).
+\newblock ChatGPT outperforms crowd workers for text-annotation tasks.
+\newblock \textit{Proceedings of the National Academy of Sciences}, 120, e2305016120.
+
+\bibitem[T\"{o}rnberg, 2025]{tornberg2025}
+T\"{o}rnberg, P. (2025).
+\newblock Large language models outperform expert coders and supervised classifiers at annotating political social media messages.
+\newblock \textit{Social Science Computer Review}, 43(1).
+
+\bibitem[Yogev, 2026]{yogev2026}
+Yogev, D. (2026).
+\newblock Measuring media bias toward reform prosecutors: A multi-method NLP analysis of Bay Area news coverage, 2019--2024.
+\newblock Working Paper, Criminal Law \& Justice Center, UC Berkeley.
+
+\bibitem[Bellin, 2019]{bellin2019}
+Bellin, J. (2019).
+\newblock Reassessing prosecutorial power through the lens of mass incarceration.
+\newblock \textit{Michigan Law Review}, 116(5), 835--886.
+
+\bibitem[Byrne et~al., 2025]{byrne2025}
+Byrne, A., Kuang, A., \& Steel, A. (2025).
+\newblock The power to be lenient and the power to discriminate.
+\newblock \textit{Berkeley Journal of Criminal Law}, 30(1).
+
+\bibitem[Callaway \& Sant'Anna, 2021]{callaway2021}
+Callaway, B. \& Sant'Anna, P.~H.~C. (2021).
+\newblock Difference-in-differences with multiple time periods.
+\newblock \textit{Journal of Econometrics}, 225(2), 200--230.
+
+\bibitem[Davis, 2007]{davis2007}
+Davis, A.~J. (2007).
+\newblock \textit{Arbitrary Justice: The Power of the American Prosecutor}.
+\newblock Oxford University Press.
+
+\bibitem[Gunderson, 2022]{gunderson2022}
+Gunderson, A. (2022).
+\newblock Descriptive representation and prosecutorial discretion: Race, sex, and carceral disparities.
+\newblock \textit{American Politics Research}, 50(6), 823--836.
+
+\bibitem[Kutateladze et~al., 2014]{kutateladze2014}
+Kutateladze, B.~L., et~al. (2014).
+\newblock Cumulative disadvantage: Examining racial and ethnic disparity in prosecution and sentencing.
+\newblock \textit{Criminology}, 52(3), 514--551.
+
+\bibitem[Petersen et~al., 2024]{petersen2024}
+Petersen, N., Mitchell, O., \& Yan, S. (2024).
+\newblock Do progressive prosecutors increase crime? A quasi-experimental analysis of crime rates in the 100 largest counties, 2000--2020.
+\newblock \textit{Criminology \& Public Policy}, 23, 459--490.
+
+\bibitem[Pfaff, 2017]{pfaff2017}
+Pfaff, J.~F. (2017).
+\newblock \textit{Locked In: The True Causes of Mass Incarceration and How to Achieve Real Reform}.
+\newblock Basic Books.
+
+\bibitem[Rehavi \& Starr, 2014]{rehavi2014}
+Rehavi, M.~M. \& Starr, S.~B. (2014).
+\newblock Racial disparity in federal criminal sentences.
+\newblock \textit{Journal of Political Economy}, 122(6), 1320--1354.
+
+\bibitem[Sklansky, 2018]{sklansky2018}
+Sklansky, D.~A. (2018).
+\newblock The progressive prosecutor's handbook.
+\newblock \textit{UC Davis Law Review Online}, 50, 25--42.
+
+\bibitem[Yntiso, 2022]{yntiso2022}
+Yntiso, S. (2022).
+\newblock Does prosecutor partisanship exacerbate the racial charging gap? Evidence from district attorneys in three states.
+\newblock Working Paper, Harris School of Public Policy, University of Chicago.
+
+\bibitem[U.S. Sentencing Commission, 2017]{ussc2017}
+U.S. Sentencing Commission. (2017).
+\newblock \textit{Demographic Differences in Sentencing}.
+\newblock Washington, DC.
+
+\end{thebibliography}
+
+\end{document}
